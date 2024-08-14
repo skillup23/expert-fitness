@@ -1,13 +1,14 @@
 <script setup>
-import { ref } from "vue";
-import Heading from "@/components/Heading.vue";
-import SliderExpert from "@/components/SliderExpert.vue";
-import SliderLessonYoga from "@/components/SliderLessonYoga.vue";
-import SliderReviews from "@/components/SliderReviews.vue";
-import ButtonMain from "@/components/ButtonMain.vue";
-import AccordeonList from "@/components/AccordeonList.vue";
+import { ref } from 'vue';
+import Heading from '@/components/Heading.vue';
+import SliderExpert from '@/components/SliderExpert.vue';
+import SliderLessonYoga from '@/components/SliderLessonYoga.vue';
+import SliderReviews from '@/components/SliderReviews.vue';
+import ButtonMain from '@/components/ButtonMain.vue';
+import AccordeonList from '@/components/AccordeonList.vue';
+import FormFeedback from '@/components/FormFeedback.vue';
 
-import { programmYoga } from "@/assets/data";
+import { programmYoga } from '@/assets/data';
 
 const isKyrs = ref(true);
 function toogleKyrs(elem) {
@@ -366,7 +367,7 @@ function toggleAnswer(id) {
 
     <!--     Программа курса и Примеры уроков     -->
     <section
-      class="py-24 bg-[url('/media/Yoga/bg-mandala.png')] bg-no-repeat bg-[right_57vw_top_340px]"
+      class="pt-24 bg-[url('/media/Yoga/bg-mandala.png')] bg-no-repeat bg-[right_57vw_top_340px]"
     >
       <div class="wrapper px-16">
         <!--     Программа курса      -->
@@ -439,12 +440,30 @@ function toggleAnswer(id) {
     </section>
 
     <section
-      class="pb-24 bg-[url('/media/Yoga/bg-mandala.png')] bg-no-repeat bg-[right_57vw_top_340px]"
+      class="py-24 bg-[url('/media/Yoga/bg-mandala.png')] bg-no-repeat bg-[left_58vw_top_-41px]"
     >
       <div class="wrapper px-16">
         <div class="p-14 bg-purple rounded-[20px]">
           <Heading class="heading mb-14 text-white text-start">Отзывы</Heading>
           <SliderReviews />
+        </div>
+
+        <div>
+          <Heading class="heading mb-14 text-start"
+            >Записаться на обучение</Heading
+          >
+          <div>
+            <h6 class="text-purple uppercase">
+              Присоединяйтесь к нашей команде профессионалов!
+            </h6>
+            <div class="flex flex-col">
+              <FormFeedback />
+              <img
+                src="/media/Yoga/form-feedback.jpg"
+                alt="Выпускники школы Эксперт"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
