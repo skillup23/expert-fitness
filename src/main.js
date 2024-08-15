@@ -4,6 +4,9 @@ import { createApp } from 'vue';
 import { createWebHistory, createRouter } from 'vue-router';
 import App from './App.vue';
 
+import VueSweetalert2 from 'vue-sweetalert2';
+import 'sweetalert2/dist/sweetalert2.min.css';
+
 import Home from './pages/Home.vue';
 import Yoga from './pages/Yoga.vue';
 
@@ -14,34 +17,16 @@ const routes = [
   { path: '/yoga', name: 'yoga', component: Yoga },
 ];
 
+const options = {
+  confirmButtonColor: '#923EA1',
+  cancelButtonColor: '#ff7674',
+};
+
 const router = createRouter({
   history: createWebHistory(),
   routes,
 });
 
 app.use(router);
+app.use(VueSweetalert2, options);
 app.mount('#app');
-
-// import './assets/main.css';
-// import Vue from 'vue';
-// import { VueRouter } from 'vue-router';
-// import App from './App.vue';
-
-// import Home from './pages/Home.vue';
-// import Yoga from './pages/Yoga.vue';
-
-// Vue.use(VueRouter);
-
-// const router = new VueRouter({
-//   routes: [
-//     { path: '/', name: 'Home', component: Home },
-//     { path: '/yoga', name: 'yoga', component: Yoga },
-//   ],
-// });
-
-// new Vue({
-//   el: '#app',
-//   router,
-//   template: '<App></App>',
-//   components: { App },
-// });

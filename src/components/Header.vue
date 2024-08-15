@@ -1,45 +1,9 @@
 <script setup>
-import { ref } from "vue";
-import ButtonMain from "@/components/ButtonMain.vue";
-let id = 0;
+import { ref } from 'vue';
+import ButtonMain from '@/components/ButtonMain.vue';
+import { linksMenu } from '@/assets/data';
 
-const links = ref([
-  {
-    id: id++,
-    text: "Для кого",
-    url: "#",
-  },
-  {
-    id: id++,
-    text: "О курсе",
-    url: "#",
-  },
-  {
-    id: id++,
-    text: "Мини-курс",
-    url: "#",
-  },
-  {
-    id: id++,
-    text: "Программа",
-    url: "#",
-  },
-  {
-    id: id++,
-    text: "О нас",
-    url: "#",
-  },
-  {
-    id: id++,
-    text: "Уроки",
-    url: "#",
-  },
-  {
-    id: id++,
-    text: "Отзывы",
-    url: "#",
-  },
-]);
+const links = ref(linksMenu);
 </script>
 
 <template>

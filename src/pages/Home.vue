@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import Heading from '@/components/Heading.vue';
+import Footer from '@/components/Footer.vue';
 import SliderExpert from '@/components/SliderExpert.vue';
 import SliderLessonYoga from '@/components/SliderLessonYoga.vue';
 import SliderReviews from '@/components/SliderReviews.vue';
@@ -63,23 +64,19 @@ function toggleAnswer(id) {
           <div class="mt-[35px] flex flex-col items-end">
             <div class="mb-[74px] flex flex-col gap-[12px]">
               <RouterLink to="#">
+                <img src="/media/vk.svg" alt="ВК" class="w-[27px] h-[27px]" />
+              </RouterLink>
+              <RouterLink to="#">
                 <img
-                  src="/media/Yoga/vk.svg"
+                  src="/media/youtube.svg"
                   alt="ВК"
                   class="w-[27px] h-[27px]"
                 />
               </RouterLink>
               <RouterLink to="#">
                 <img
-                  src="/media/Yoga/youtube.svg"
-                  alt="ВК"
-                  class="w-[27px] h-[27px]"
-                />
-              </RouterLink>
-              <RouterLink to="#">
-                <img
-                  src="/media/Yoga/telegram.svg"
-                  alt="ВК"
+                  src="/media/telegram.svg"
+                  alt="Телеграм"
                   class="w-[27px] h-[27px]"
                 />
               </RouterLink>
@@ -274,16 +271,13 @@ function toggleAnswer(id) {
             <div class="mt-[121px] flex flex-col gap-6">
               <RouterLink to="#">
                 <ButtonMain class="flex items-center gap-2">
-                  <img src="/media/Yoga/vk-white.svg" alt="ВК ссылка" />
+                  <img src="/media/vk-white.svg" alt="ВК ссылка" />
                   <span>Учиться в вк</span>
                 </ButtonMain>
               </RouterLink>
               <RouterLink to="#">
                 <ButtonMain class="flex items-center gap-2">
-                  <img
-                    src="/media/Yoga/telegram-white.svg"
-                    alt="Телеграм ссылка"
-                  />
+                  <img src="/media/telegram-white.svg" alt="Телеграм ссылка" />
                   <span>учиться в ТГ</span>
                 </ButtonMain>
               </RouterLink>
@@ -448,19 +442,24 @@ function toggleAnswer(id) {
           <SliderReviews />
         </div>
 
+        <!--     Записаться на обучение      -->
         <div>
-          <Heading class="heading mb-14 text-start"
+          <Heading class="heading mt-24 mb-14 text-start"
             >Записаться на обучение</Heading
           >
           <div>
             <h6 class="text-purple uppercase">
               Присоединяйтесь к нашей команде профессионалов!
             </h6>
-            <div class="flex flex-col">
-              <FormFeedback />
+            <div class="mt-6 flex gap-14">
+              <div class="w-1/2 mt-6 px-[22px]">
+                <FormFeedback />
+              </div>
+
               <img
                 src="/media/Yoga/form-feedback.jpg"
                 alt="Выпускники школы Эксперт"
+                class="w-1/2 rounded-[20px]"
               />
             </div>
           </div>
@@ -468,4 +467,6 @@ function toggleAnswer(id) {
       </div>
     </section>
   </main>
+
+  <Footer />
 </template>

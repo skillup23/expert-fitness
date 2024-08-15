@@ -4,60 +4,60 @@
 
 @layer base {
   @font-face {
-    font-family: "Unbounded";
+    font-family: 'Unbounded';
     font-style: bold;
     font-weight: 600;
     src:
-      url(/fonts/unbounded/Unbounded-Bold.woff2) format("woff2"),
-      url(/fonts/unbounded/Unbounded-Bold.ttf) format("ttf");
+      url(/fonts/unbounded/Unbounded-Bold.woff2) format('woff2'),
+      url(/fonts/unbounded/Unbounded-Bold.ttf) format('ttf');
   }
   @font-face {
-    font-family: "Unbounded";
+    font-family: 'Unbounded';
     font-style: medium;
     font-weight: 500;
     src:
-      url(/fonts/unbounded/Unbounded-Medium.woff2) format("woff2"),
-      url(/fonts/unbounded/Unbounded-Medium.ttf) format("ttf");
+      url(/fonts/unbounded/Unbounded-Medium.woff2) format('woff2'),
+      url(/fonts/unbounded/Unbounded-Medium.ttf) format('ttf');
   }
   @font-face {
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-style: light;
     font-weight: 300;
     src:
-      url(/fonts/roboto/Roboto-Light.woff2) format("woff2"),
-      url(/fonts/roboto/Roboto-Light.woff) format("woff"),
-      url(/fonts/roboto/Roboto-Light.ttf) format("ttf");
+      url(/fonts/roboto/Roboto-Light.woff2) format('woff2'),
+      url(/fonts/roboto/Roboto-Light.woff) format('woff'),
+      url(/fonts/roboto/Roboto-Light.ttf) format('ttf');
   }
   @font-face {
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     src:
-      url(/fonts/roboto/Roboto-Regular.woff2) format("woff2"),
-      url(/fonts/roboto/Roboto-Regular.woff) format("woff"),
-      url(/fonts/roboto/Roboto-Regular.ttf) format("ttf");
+      url(/fonts/roboto/Roboto-Regular.woff2) format('woff2'),
+      url(/fonts/roboto/Roboto-Regular.woff) format('woff'),
+      url(/fonts/roboto/Roboto-Regular.ttf) format('ttf');
   }
   @font-face {
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-style: medium;
     font-weight: 500;
     src:
-      url(/fonts/roboto/Roboto-Medium.woff2) format("woff2"),
-      url(/fonts/roboto/Roboto-Medium.woff) format("woff"),
-      url(/fonts/roboto/Roboto-Medium.ttf) format("ttf");
+      url(/fonts/roboto/Roboto-Medium.woff2) format('woff2'),
+      url(/fonts/roboto/Roboto-Medium.woff) format('woff'),
+      url(/fonts/roboto/Roboto-Medium.ttf) format('ttf');
   }
   @font-face {
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-style: bold;
     font-weight: 600;
     src:
-      url(/fonts/roboto/Roboto-Bold.woff2) format("woff2"),
-      url(/fonts/roboto/Roboto-Bold.woff) format("woff"),
-      url(/fonts/roboto/Roboto-Bold.ttf) format("ttf");
+      url(/fonts/roboto/Roboto-Bold.woff2) format('woff2'),
+      url(/fonts/roboto/Roboto-Bold.woff) format('woff'),
+      url(/fonts/roboto/Roboto-Bold.ttf) format('ttf');
   }
 
   html {
-    font-family: "Roboto", system-ui, sans-serif;
+    font-family: 'Roboto', system-ui, sans-serif;
   }
   h1,
   h2,
@@ -88,6 +88,42 @@
 
   body {
     @apply bg-white;
+  }
+
+  input,
+  select {
+    width: 100%;
+    padding: 16px;
+    font-family: inherit; /* 1 */
+    font-size: inherit; /* 1 */
+    line-height: inherit; /* 1 */
+    margin: 0; /* 2 */
+    outline: none;
+    border: 2px solid #923ea1;
+    border-radius: 8px;
+  }
+  input::placeholder,
+  select::placeholder {
+    color: #242424;
+  }
+  input[type='checkbox'] {
+    accent-color: #923ea1;
+  }
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('/media/arrow-form-select.svg') 96% / 3% no-repeat;
+  }
+  select::-ms-expand {
+    display: none; /* удалите стрелку по умолчанию в IE 10 и 11 */
+  }
+  option {
+    background-color: #923ea1;
+    color: #f8f4f3;
+  }
+  option:hover {
+    background-color: #eec5f5;
   }
 }
 
