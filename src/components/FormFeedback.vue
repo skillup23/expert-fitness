@@ -34,7 +34,7 @@
     </select>
     <button
       type="submit"
-      class="button-main mt-20 rounded-[8px] bg-black text-white hover:bg-purple"
+      class="button-main mt-10 2xl:mt-20 rounded-[8px] bg-black text-white hover:bg-purple"
     >
       Записаться
     </button>
@@ -60,16 +60,16 @@
 </template>
 
 <script>
-const botToken = '7230527247:AAHyB7HsKfJgYdiLXJO3eLyGclYVBIzD54k';
+const botToken = "7230527247:AAHyB7HsKfJgYdiLXJO3eLyGclYVBIzD54k";
 const chatId = -4263099299;
 
 export default {
   data() {
     return {
-      name: '',
-      tel: '',
-      feedback: '',
-      term: '',
+      name: "",
+      tel: "",
+      feedback: "",
+      term: "",
     };
   },
   methods: {
@@ -77,9 +77,9 @@ export default {
       //   Отправка заявки в Телеграмм
       const telegram_message = `Имя: ${this.name}\nТелефон: ${this.tel}\nСпособ связи: ${this.feedback}\nСогласие на обработку персональных данных: ${this.term}`;
       fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
-        method: 'POST',
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           chat_id: chatId,
@@ -91,24 +91,24 @@ export default {
           this.success();
         })
         .catch((error) => {
-          console.error('Error sending message:', error);
+          console.error("Error sending message:", error);
           this.error();
         });
     },
     success() {
       // Всплывающее окно об успехе отправки
       this.$swal({
-        icon: 'success',
-        title: 'Отлично!',
-        text: 'Заявка отправлена!',
+        icon: "success",
+        title: "Отлично!",
+        text: "Заявка отправлена!",
       });
     },
     error() {
       // Всплывающее окно об успехе отправки
       this.$swal({
-        icon: 'error',
-        title: 'Ошибка!',
-        text: 'Попробуйте позже.',
+        icon: "error",
+        title: "Ошибка!",
+        text: "Попробуйте позже.",
       });
     },
   },

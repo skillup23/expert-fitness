@@ -1,6 +1,7 @@
 <script setup>
-import { ref } from 'vue';
-import { linksMenu } from '@/assets/data';
+import { ref } from "vue";
+import { linksMenu } from "@/assets/data";
+import YandexMap from "./YandexMap.vue";
 
 const links = ref(linksMenu);
 </script>
@@ -11,7 +12,7 @@ const links = ref(linksMenu);
       <div class="flex">
         <div class="flex gap-14 justify-between">
           <nav
-            class="flex flex-col justify-between text-4 text-white font-roboto font-light gap-4"
+            class="flex flex-col justify-between text-[20px] text-white font-roboto font-light gap-4"
           >
             <RouterLink
               v-for="link in links"
@@ -21,6 +22,7 @@ const links = ref(linksMenu);
             >
               {{ link.text }}
             </RouterLink>
+            <p class="mt-24 text-[16px]">© 2024 ЦДО ”ЭКСПЕРТ”</p>
           </nav>
           <div class="text-white">
             <h6 class="uppercase">Контакты</h6>
@@ -28,24 +30,72 @@ const links = ref(linksMenu);
               <a
                 href="https://yandex.ru/maps/-/CDgRVDO1"
                 target="_blank"
-                class="mb-4 flex item-center gap-4"
+                class="mb-4 flex item-center gap-4 opacity-100 hover:opacity-70 transition-hover"
               >
                 <img src="/media/marker.svg" alt="Адрес" class="w-5 h-5" />
                 <p>г. Краснодар, ул.Шоссе Нефтяников, 28</p>
               </a>
-              <a href="tel:89615858995" class="mb-4 flex item-center gap-4">
+              <a
+                href="tel:89615858995"
+                target="_blank"
+                class="mb-4 flex item-center gap-4 opacity-100 hover:opacity-70 transition-hover"
+              >
                 <img src="/media/phone.svg" alt="Телефон" class="w-5 h-5" />
                 <p>+7(961) 585-89-95</p>
               </a>
               <a
                 href="mailto:info@fitnesstrener23.ru"
-                class="mb-4 flex item-center gap-4"
+                target="_blank"
+                class="mb-4 flex item-center gap-4 opacity-100 hover:opacity-70 transition-hover"
               >
                 <img src="/media/mail.svg" alt="Майл" class="w-5 h-5" />
                 <p>info@fitnesstrener23.ru</p>
               </a>
             </div>
+
+            <div class="flex gap-5">
+              <a href="#" target="_blank">
+                <img
+                  src="/media/vk-white.svg"
+                  alt="Вконтакте"
+                  class="w-8 h-8 opacity-100 hover:opacity-70 transition-hover"
+                />
+              </a>
+              <a href="#" target="_blank">
+                <img
+                  src="/media/youtube-white.svg"
+                  alt="Вконтакте"
+                  class="w-8 h-8 opacity-100 hover:opacity-70 transition-hover"
+                />
+              </a>
+              <a href="#" target="_blank">
+                <img
+                  src="/media/telegram-white.svg"
+                  alt="Вконтакте"
+                  class="w-8 h-8 opacity-100 hover:opacity-70 transition-hover"
+                />
+              </a>
+            </div>
+
+            <div class="mt-[18px] flex gap-5">
+              <a href="#" target="_blank">
+                <img
+                  src="/media/yandex-rating.jpg"
+                  alt="Вконтакте"
+                  class="rounded-lg"
+                />
+              </a>
+              <a href="#" target="_blank">
+                <img
+                  src="/media/2gis-rating.jpg"
+                  alt="Вконтакте"
+                  class="rounded-lg"
+                />
+              </a>
+            </div>
           </div>
+
+          <YandexMap />
         </div>
       </div>
     </div>

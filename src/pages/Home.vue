@@ -1,15 +1,15 @@
 <script setup>
-import { ref } from 'vue';
-import Heading from '@/components/Heading.vue';
-import Footer from '@/components/Footer.vue';
-import SliderExpert from '@/components/SliderExpert.vue';
-import SliderLessonYoga from '@/components/SliderLessonYoga.vue';
-import SliderReviews from '@/components/SliderReviews.vue';
-import ButtonMain from '@/components/ButtonMain.vue';
-import AccordeonList from '@/components/AccordeonList.vue';
-import FormFeedback from '@/components/FormFeedback.vue';
+import { ref } from "vue";
+import Heading from "@/components/Heading.vue";
+import Footer from "@/components/Footer.vue";
+import SliderExpert from "@/components/SliderExpert.vue";
+import SliderLessonYoga from "@/components/SliderLessonYoga.vue";
+import SliderReviews from "@/components/SliderReviews.vue";
+import ButtonMain from "@/components/ButtonMain.vue";
+import AccordeonList from "@/components/AccordeonList.vue";
+import FormFeedback from "@/components/FormFeedback.vue";
 
-import { programmYoga } from '@/assets/data';
+import { programmYoga } from "@/assets/data";
 
 const isKyrs = ref(true);
 function toogleKyrs(elem) {
@@ -456,11 +456,13 @@ function toggleAnswer(id) {
                 <FormFeedback />
               </div>
 
-              <img
-                src="/media/Yoga/form-feedback.jpg"
-                alt="Выпускники школы Эксперт"
-                class="w-1/2 rounded-[20px]"
-              />
+              <div class="w-1/2">
+                <img
+                  src="/media/Yoga/form-feedback.jpg"
+                  alt="Выпускники школы Эксперт"
+                  class="rounded-[20px]"
+                />
+              </div>
             </div>
           </div>
         </div>
