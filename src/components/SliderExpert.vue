@@ -27,14 +27,16 @@ const slides = ref(slideExpert);
     <Slide v-for="slide in slides" :key="slide.id">
       <div class="carousel__item p-14 gap-[85px]">
         <div class="text-start w-[59%] mb-8">
-          <h3 class="mb-8 text-4xl font-bold text-start">
+          <h3 class="mb-8 text-3xl xl:text-4xl font-bold text-start">
             {{ slide.title }}
           </h3>
-          <h4 class="mb-8 text-2xl font-light leading-6">
+          <h4 class="mb-8 text-xl xl:text-2xl font-light leading-6">
             {{ slide.subtitle }}
           </h4>
           <ul v-for="listText in slide.listText" :key="listText">
-            <li class="ml-7 mb-5 text-xl leading-6 font-light list-disc">
+            <li
+              class="ml-7 mb-3 xl:mb-5 texl-lg xl:text-xl leading-6 font-light list-disc"
+            >
               {{ listText }}
             </li>
           </ul>

@@ -25,10 +25,16 @@ const slides = ref(sliderReviewYouga);
 <template>
   <Carousel :wrap-around="true" class="slider__review -mx-3">
     <Slide v-for="slide in slides" :key="slide.id">
-      <div class="carousel__item bg-purple flex gap-[118px]">
-        <img :src="slide.image" :alt="slide.name" class="rounded-[22px]" />
+      <div class="carousel__item bg-purple flex gap-[80px] xl:gap-[118px]">
+        <img
+          :src="slide.image"
+          :alt="slide.name"
+          class="w-5/12 xl:w-1/2 rounded-[22px]"
+        />
         <div class="text-white">
-          <div class="relative min-h-[400px] flex flex-col justify-between">
+          <div
+            class="relative min-h-[350px] xl:min-h-[400px] flex flex-col justify-between"
+          >
             <p class="absolute top-0 -left-14 heading">“</p>
             <p class="absolute bottom-24 right-0 heading">“</p>
 
@@ -42,7 +48,7 @@ const slides = ref(sliderReviewYouga);
               </p>
             </div>
 
-            <div class="mb-20 flex gap-[195px]">
+            <div class="mt-6 xl:mt-0 mb-20 flex gap-[40px] xl:gap-[195px]">
               <h6>{{ slide.name }}</h6>
               <h6>{{ slide.date }}</h6>
             </div>
@@ -71,6 +77,7 @@ const slides = ref(sliderReviewYouga);
 .slider__review .carousel__slide {
   padding-left: 12px;
   padding-right: 12px;
+  align-items: start;
 }
 
 .slider__review .carousel__prev,

@@ -28,12 +28,12 @@ import {
   YandexMapDefaultFeaturesLayer,
   YandexMapDefaultSchemeLayer,
   YandexMapMarker,
-} from 'vue-yandex-maps';
+} from "vue-yandex-maps";
 
 const markers = [
   {
     coordinates: [38.983218, 45.0681],
-    iconSrc: '/media/boolen-yandex-map.png',
+    iconSrc: "/media/boolen-yandex-map.png",
   },
 ];
 </script>

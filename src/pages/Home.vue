@@ -37,13 +37,15 @@ function toggleAnswer(id) {
     >
       <div class="wrapper">
         <div class="flex justify-between">
-          <div class="flex flex-col items-start max-w-[502px] mt-14">
-            <h1 class="heading leading-tight text-[52px] text-black">
+          <div class="flex flex-col items-start w-5/12 xl:max-w-[502px] mt-14">
+            <h1
+              class="heading leading-tight text-3xl xl:text-[52px] text-black"
+            >
               <span class="text-purple">Тренер</span> по фитнес-йоге пилатесу и
               стретчингу
             </h1>
             <p
-              class="max-w-[438px] mt-6 text-2xl leading-none font-roboto font-light"
+              class="max-w-[438px] mt-6 text-xl xl:text-2xl leading-none font-roboto font-light"
             >
               Образовательный курс с выдачей
               <span class="text-purple font-bold">диплома гос.обазца.</span>
@@ -58,7 +60,7 @@ function toggleAnswer(id) {
           <img
             src="/media/Yoga/main-foto.png"
             alt="Фото Йога"
-            class="-ml-[12vw]"
+            class="-ml-[4vw] xl:-ml-[12vw] w-6/12 xl:w-6/12"
           />
 
           <div class="mt-[35px] flex flex-col items-end">
@@ -119,12 +121,12 @@ function toggleAnswer(id) {
           <img
             src="/media/Yoga/foto-top-3.jpg"
             alt="Начинающим Фото"
-            class="rounded-2xl"
+            class="w-5/12 rounded-2xl"
           />
           <img
             src="/media/Yoga/foto-top-4.jpg"
             alt="Тренерам Фото"
-            class="rounded-2xl"
+            class="w-5/12 rounded-2xl"
           />
         </div>
       </div>
@@ -132,9 +134,9 @@ function toggleAnswer(id) {
 
     <!--     О курсе      -->
     <section class="py-14 bg-purple">
-      <div class="wrapper px-16">
+      <div class="wrapper">
         <div class="flex gap-6">
-          <div class="w-1/2 text-white">
+          <div class="w-5/12 xl:w-1/2 text-white">
             <Heading class="heading mb-8 text-start">О курсе</Heading>
             <p class="mb-[37px]">
               Наш курс основан на таком направлении фитнеса как Mind and Body
@@ -150,7 +152,7 @@ function toggleAnswer(id) {
             />
           </div>
           <div
-            class="w-1/2 p-8 flex flex-col justify-between bg-white rounded-[20px]"
+            class="w-7/12 xl:w-1/2 p-8 flex flex-col justify-between bg-white rounded-[20px]"
           >
             <div class="flex flex-col gap-[3vw]">
               <article class="flex">
@@ -200,10 +202,10 @@ function toggleAnswer(id) {
     <section
       class="py-24 bg-[url('/media/Yoga/bg-mandala.png')] bg-no-repeat bg-[left_58vw_bottom_43vh]"
     >
-      <div class="wrapper px-16">
+      <div class="wrapper">
         <Heading class="heading mb-14 text-start">Бесплатный мини-курс</Heading>
-        <div class="w-full flex">
-          <div class="w-1/2 flex flex-col items-start">
+        <div class="w-full flex items-start">
+          <div class="w-7/12 xl:w-1/2 flex flex-col items-start">
             <h4 class="text-purple">
               Чтобы понять подходит ли вам курс, вы&nbsp;можете&nbsp;пройти
               тест-драйв
@@ -268,7 +270,7 @@ function toggleAnswer(id) {
               </div>
             </div>
 
-            <div class="mt-[121px] flex flex-col gap-6">
+            <div class="mt-[121px] flex xl:flex-col gap-6">
               <RouterLink to="#">
                 <ButtonMain class="flex items-center gap-2">
                   <img src="/media/vk-white.svg" alt="ВК ссылка" />
@@ -278,7 +280,7 @@ function toggleAnswer(id) {
               <RouterLink to="#">
                 <ButtonMain class="flex items-center gap-2">
                   <img src="/media/telegram-white.svg" alt="Телеграм ссылка" />
-                  <span>учиться в ТГ</span>
+                  <span>Учиться в ТГ</span>
                 </ButtonMain>
               </RouterLink>
             </div>
@@ -287,7 +289,7 @@ function toggleAnswer(id) {
           <img
             src="/media/Yoga/free-kyrs.jpg"
             alt="Асана Йога"
-            class="ml-24 rounded-[20px]"
+            class="w-5/12 xl:w-1/2 ml-6 xl:ml-24 rounded-[20px]"
           />
         </div>
       </div>
@@ -295,7 +297,7 @@ function toggleAnswer(id) {
 
     <!--     Преимущества      -->
     <section class="pt-14 pb-24 bg-purple">
-      <div class="wrapper px-16">
+      <div class="wrapper">
         <Heading class="heading text-white mb-14">наши преимущества</Heading>
         <div class="grid grid-cols-4 gap-6">
           <img
@@ -353,7 +355,7 @@ function toggleAnswer(id) {
 
     <!--     Эксперты      -->
     <section class="pt-14 pb-24 bg-purple">
-      <div class="wrapper px-16">
+      <div class="wrapper">
         <Heading class="heading text-white mb-14">Наши эксперты</Heading>
         <SliderExpert class="-mx-3" />
       </div>
@@ -363,7 +365,7 @@ function toggleAnswer(id) {
     <section
       class="pt-24 bg-[url('/media/Yoga/bg-mandala.png')] bg-no-repeat bg-[right_57vw_top_340px]"
     >
-      <div class="wrapper px-16">
+      <div class="wrapper">
         <!--     Программа курса      -->
         <Heading class="heading mb-14 text-start">Программа курса</Heading>
         <div class="-mt-28 flex flex-col">
@@ -371,24 +373,24 @@ function toggleAnswer(id) {
             class="w-[550px] 2xl:w-[664px] flex bg-pink self-end rounded-t-[20px]"
           >
             <div
-              class="w-1/2 py-[26px] flex items-center justify-center cursor-pointer rounded-t-[20px]"
+              class="w-1/2 py-5 xl:py-[26px] flex items-center justify-center cursor-pointer rounded-t-[20px]"
               :class="[isKyrs ? `bg-pink` : `bg-purple`]"
               @click="toogleKyrs(false)"
             >
               <h4
-                class="text-3xl 2xl:text-[36px]"
+                class="text-2xl xl:text-3xl 2xl:text-[36px]"
                 :class="[isKyrs ? `text-black` : `text-white`]"
               >
                 ОНЛАЙН
               </h4>
             </div>
             <div
-              class="w-1/2 py-[26px] flex items-center justify-center cursor-pointer rounded-t-[20px]"
+              class="w-1/2 py-5 xl:py-[26px] flex items-center justify-center cursor-pointer rounded-t-[20px]"
               :class="[isKyrs ? `bg-purple` : `bg-pink`]"
               @click="toogleKyrs(true)"
             >
               <h4
-                class="text-3xl 2xl:text-[36px]"
+                class="text-2xl xl:text-3xl 2xl:text-[36px]"
                 :class="[isKyrs ? `text-white` : `text-black`]"
               >
                 ОЧНО
@@ -433,12 +435,15 @@ function toggleAnswer(id) {
       </div>
     </section>
 
+    <!--     Отзывы      -->
     <section
       class="py-24 bg-[url('/media/Yoga/bg-mandala.png')] bg-no-repeat bg-[left_58vw_top_-41px]"
     >
-      <div class="wrapper px-16">
+      <div class="wrapper">
         <div class="p-14 bg-purple rounded-[20px]">
-          <Heading class="heading mb-14 text-white text-start">Отзывы</Heading>
+          <Heading class="heading mb-6 xl:mb-14 text-white text-start"
+            >Отзывы</Heading
+          >
           <SliderReviews />
         </div>
 

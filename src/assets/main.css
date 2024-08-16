@@ -4,60 +4,60 @@
 
 @layer base {
   @font-face {
-    font-family: 'Unbounded';
+    font-family: "Unbounded";
     font-style: bold;
     font-weight: 600;
     src:
-      url(/fonts/unbounded/Unbounded-Bold.woff2) format('woff2'),
-      url(/fonts/unbounded/Unbounded-Bold.ttf) format('ttf');
+      url(/fonts/unbounded/Unbounded-Bold.woff2) format("woff2"),
+      url(/fonts/unbounded/Unbounded-Bold.ttf) format("ttf");
   }
   @font-face {
-    font-family: 'Unbounded';
+    font-family: "Unbounded";
     font-style: medium;
     font-weight: 500;
     src:
-      url(/fonts/unbounded/Unbounded-Medium.woff2) format('woff2'),
-      url(/fonts/unbounded/Unbounded-Medium.ttf) format('ttf');
+      url(/fonts/unbounded/Unbounded-Medium.woff2) format("woff2"),
+      url(/fonts/unbounded/Unbounded-Medium.ttf) format("ttf");
   }
   @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: light;
     font-weight: 300;
     src:
-      url(/fonts/roboto/Roboto-Light.woff2) format('woff2'),
-      url(/fonts/roboto/Roboto-Light.woff) format('woff'),
-      url(/fonts/roboto/Roboto-Light.ttf) format('ttf');
+      url(/fonts/roboto/Roboto-Light.woff2) format("woff2"),
+      url(/fonts/roboto/Roboto-Light.woff) format("woff"),
+      url(/fonts/roboto/Roboto-Light.ttf) format("ttf");
   }
   @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
     src:
-      url(/fonts/roboto/Roboto-Regular.woff2) format('woff2'),
-      url(/fonts/roboto/Roboto-Regular.woff) format('woff'),
-      url(/fonts/roboto/Roboto-Regular.ttf) format('ttf');
+      url(/fonts/roboto/Roboto-Regular.woff2) format("woff2"),
+      url(/fonts/roboto/Roboto-Regular.woff) format("woff"),
+      url(/fonts/roboto/Roboto-Regular.ttf) format("ttf");
   }
   @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: medium;
     font-weight: 500;
     src:
-      url(/fonts/roboto/Roboto-Medium.woff2) format('woff2'),
-      url(/fonts/roboto/Roboto-Medium.woff) format('woff'),
-      url(/fonts/roboto/Roboto-Medium.ttf) format('ttf');
+      url(/fonts/roboto/Roboto-Medium.woff2) format("woff2"),
+      url(/fonts/roboto/Roboto-Medium.woff) format("woff"),
+      url(/fonts/roboto/Roboto-Medium.ttf) format("ttf");
   }
   @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: bold;
     font-weight: 600;
     src:
-      url(/fonts/roboto/Roboto-Bold.woff2) format('woff2'),
-      url(/fonts/roboto/Roboto-Bold.woff) format('woff'),
-      url(/fonts/roboto/Roboto-Bold.ttf) format('ttf');
+      url(/fonts/roboto/Roboto-Bold.woff2) format("woff2"),
+      url(/fonts/roboto/Roboto-Bold.woff) format("woff"),
+      url(/fonts/roboto/Roboto-Bold.ttf) format("ttf");
   }
 
   html {
-    font-family: 'Roboto', system-ui, sans-serif;
+    font-family: "Roboto", system-ui, sans-serif;
   }
   h1,
   h2,
@@ -71,13 +71,13 @@
   }
 
   h4 {
-    @apply text-[36px] leading-none font-roboto font-bold;
+    @apply text-[26px]  xl:text-[36px] leading-none font-roboto font-bold;
   }
   h6 {
-    @apply text-[20px] leading-none font-roboto font-medium;
+    @apply lg:text-[18px] 2xl:text-[20px] leading-none font-roboto font-medium;
   }
   p {
-    @apply text-[20px] leading-none font-roboto font-light;
+    @apply lg:text-[18px] 2xl:text-[20px] leading-none font-roboto font-light;
   }
 
   li,
@@ -101,19 +101,20 @@
     outline: none;
     border: 2px solid #923ea1;
     border-radius: 8px;
+    background-color: #f8f4f3;
   }
   input::placeholder,
   select::placeholder {
     color: #242424;
   }
-  input[type='checkbox'] {
+  input[type="checkbox"] {
     accent-color: #923ea1;
   }
   select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: url('/media/arrow-form-select.svg') 96% / 3% no-repeat;
+    background: url("/media/arrow-form-select.svg") 96% / 3% no-repeat;
   }
   select::-ms-expand {
     display: none; /* удалите стрелку по умолчанию в IE 10 и 11 */
@@ -129,16 +130,16 @@
 
 @layer components {
   .wrapper {
-    @apply max-w-[1512px] mx-auto container px-20;
+    @apply max-w-[1512px] mx-auto container px-8 xl:px-14 2xl:px-20;
   }
   .heading {
-    @apply text-5xl font-bold font-unbounded uppercase tracking-tighter leading-none;
+    @apply text-3xl xl:text-5xl font-bold font-unbounded uppercase tracking-tighter leading-none;
   }
   .transition-hover {
     @apply transition duration-150 ease-out hover:ease-in;
   }
   .button-main {
-    @apply px-6 py-4 flex justify-center items-center rounded-full bg-purple text-white text-xl font-medium uppercase hover:bg-black transition-hover;
+    @apply px-6 py-4 flex justify-center items-center rounded-full bg-purple text-white text-lg xl:text-xl font-medium uppercase hover:bg-black transition-hover;
   }
 }
 
