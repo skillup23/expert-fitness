@@ -1,16 +1,16 @@
 <script setup>
-import { ref } from "vue";
-import { linksMenu } from "@/assets/data";
-import YandexMap from "./YandexMap.vue";
+import { ref } from 'vue';
+import { linksMenu } from '@/assets/data';
+import YandexMap from './YandexMap.vue';
 
 const links = ref(linksMenu);
 </script>
 
 <template>
   <footer class="bg-purple py-14">
-    <div class="wrapper">
-      <div class="flex">
-        <div class="flex gap-14 justify-between">
+    <div class="wrapper px-16">
+      <div class="w-full">
+        <div class="w-full flex gap-14 justify-between">
           <nav
             class="flex flex-col justify-between text-[20px] text-white font-roboto font-light gap-4"
           >
@@ -94,8 +94,9 @@ const links = ref(linksMenu);
               </a>
             </div>
           </div>
-
-          <YandexMap />
+          <div class="w-[48%] rounded-[20px]">
+            <YandexMap />
+          </div>
         </div>
       </div>
     </div>
