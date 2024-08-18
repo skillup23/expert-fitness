@@ -1,7 +1,7 @@
 <script setup>
-import { ref } from 'vue';
-import ButtonMain from '@/components/ButtonMain.vue';
-import { linksMenu } from '@/assets/data';
+import { ref } from "vue";
+import ButtonMain from "@/components/ButtonMain.vue";
+import { linksMenu } from "@/assets/data";
 
 const links = ref(linksMenu);
 </script>
@@ -26,7 +26,7 @@ const links = ref(linksMenu);
         </RouterLink>
 
         <nav
-          class="flex justify-between text-4 text-white font-roboto font-light gap-8 xl:gap-10 2xl:gap-12"
+          class="hidden lg:flex justify-between text-4 text-white font-roboto font-light gap-8 xl:gap-10 2xl:gap-12"
         >
           <RouterLink
             v-for="link in links"
@@ -40,7 +40,7 @@ const links = ref(linksMenu);
 
         <RouterLink to="#">
           <ButtonMain
-            class="px-4 py-2 bg-white text-[16px] text-black hover:text-white"
+            class="hidden lg:block px-4 py-2 bg-white text-[16px] text-black hover:text-white"
           >
             Записаться
           </ButtonMain>

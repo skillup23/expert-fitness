@@ -25,20 +25,23 @@ const slides = ref(sliderReviewYouga);
 <template>
   <Carousel :wrap-around="true" class="slider__review -mx-3">
     <Slide v-for="slide in slides" :key="slide.id">
-      <div class="carousel__item bg-purple flex gap-[80px] xl:gap-[118px]">
+      <div
+        class="carousel__item bg-purple flex flex-col lg:flex-row lg:gap-[80px] xl:gap-[118px]"
+      >
         <img
           :src="slide.image"
           :alt="slide.name"
-          class="w-5/12 xl:w-1/2 rounded-[22px]"
+          class="w-full lg:w-5/12 xl:w-1/2 mb-4 lg:mb-0 rounded-[38px] lg:rounded-[22px]"
         />
         <div class="text-white">
           <div
-            class="relative min-h-[350px] xl:min-h-[400px] flex flex-col justify-between"
+            class="relative lg:min-h-[350px] xl:min-h-[400px] flex flex-col justify-between"
           >
             <p class="absolute top-0 -left-14 heading">“</p>
-            <p class="absolute bottom-24 right-0 heading">“</p>
+            <p class="absolute -bottom-4 lg:bottom-24 right-0 heading">“</p>
 
             <div class="flex flex-col gap-4">
+              <h6 class="block lg:hidden text-start">{{ slide.name }}</h6>
               <p
                 v-for="listText in slide.listText"
                 :key="listText"
@@ -48,7 +51,9 @@ const slides = ref(sliderReviewYouga);
               </p>
             </div>
 
-            <div class="mt-6 xl:mt-0 mb-20 flex gap-[40px] xl:gap-[195px]">
+            <div
+              class="hidden lg:flex mt-6 xl:mt-0 mb-20 gap-[40px] xl:gap-[195px]"
+            >
               <h6>{{ slide.name }}</h6>
               <h6>{{ slide.date }}</h6>
             </div>
@@ -59,7 +64,7 @@ const slides = ref(sliderReviewYouga);
 
     <template #addons>
       <div
-        class="xl:ml-[170px] 2xl:mx-auto -mt-12 flex items-center justify-center"
+        class="xl:ml-[170px] 2xl:mx-auto mt-4 lg:-mt-12 flex items-center justify-center"
       >
         <div class="hide_next ml-auto">
           <Navigation />
@@ -75,8 +80,8 @@ const slides = ref(sliderReviewYouga);
 
 <style>
 .slider__review .carousel__slide {
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 45px;
+  padding-right: 45px;
   align-items: start;
 }
 
@@ -127,5 +132,18 @@ const slides = ref(sliderReviewYouga);
 }
 .slider__review .carousel__pagination-button--active::after {
   opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .slider__review .carousel__slide {
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+}
+@media (min-width: 1024px) {
+  .slider__review .carousel__slide {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }
 </style>

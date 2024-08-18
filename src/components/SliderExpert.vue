@@ -25,33 +25,57 @@ const slides = ref(slideExpert);
 <template>
   <Carousel :wrap-around="true" class="slider__expert">
     <Slide v-for="slide in slides" :key="slide.id">
-      <div class="carousel__item p-14 gap-[85px]">
-        <div class="text-start w-[59%] mb-8">
-          <h3 class="mb-8 text-3xl xl:text-4xl font-bold text-start">
+      <div class="carousel__item p-6 lg:p-14 gap-4 lg:gap-[85px]">
+        <div class="text-start w-full lg:w-[59%] lg:mb-8">
+          <h3
+            class="mb-4 lg:mb-8 text-[24px] lg:text-3xl xl:text-4xl font-bold text-start"
+          >
             {{ slide.title }}
           </h3>
-          <h4 class="mb-8 text-xl xl:text-2xl font-light leading-6">
+
+          <h4
+            class="hidden lg:block mb-8 text-xl xl:text-2xl font-light leading-6"
+          >
             {{ slide.subtitle }}
           </h4>
-          <ul v-for="listText in slide.listText" :key="listText">
+
+          <ul
+            v-for="listText in slide.listText"
+            :key="listText"
+            class="hidden lg:block"
+          >
             <li
               class="ml-7 mb-3 xl:mb-5 texl-lg xl:text-xl leading-6 font-light list-disc"
             >
               {{ listText }}
             </li>
           </ul>
+
+          <ul
+            v-for="listMobileText in slide.listMobileText"
+            :key="listMobileText"
+            class="lg:hidden"
+          >
+            <li
+              class="mb-3 xl:mb-5 text-[14px] sm:text-lg xl:text-xl leading-6 font-light"
+            >
+              {{ listMobileText }}
+            </li>
+          </ul>
         </div>
-        <img :src="slide.image" :alt="slide.title" class="w-[36%]" />
+        <img :src="slide.image" :alt="slide.title" class="w-full lg:w-[36%]" />
       </div>
     </Slide>
 
     <template #addons>
-      <div class="mr-auto ml-10 -mt-24 flex items-center justify-start">
-        <div class="hide_next ml-10">
+      <div
+        class="mx-auto lg:mr-auto lg:ml-10 mt-10 lg:-mt-20 xl:-mt-24 flex items-center justify-center lg:justify-start"
+      >
+        <div class="hide_next lg:ml-10">
           <Navigation />
         </div>
         <Pagination />
-        <div class="hide_prev mr-auto">
+        <div class="hide_prev lg:mr-auto">
           <Navigation />
         </div>
       </div>
@@ -61,15 +85,16 @@ const slides = ref(slideExpert);
 
 <style>
 .slider__expert .carousel__slide {
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
 .slider__expert .carousel__item {
-  min-height: 792px;
   background-color: #f8f4f3;
   color: #242424;
+  flex-direction: column-reverse;
 }
+
 .slider__expert .carousel__prev,
 .slider__expert .carousel__next {
   top: 0;
@@ -78,8 +103,8 @@ const slides = ref(slideExpert);
   width: 40px;
   height: 40px;
   box-sizing: content-box;
-  color: #f8f4f3;
-  background-color: #923ea1;
+  color: #923ea1;
+  background-color: #f8f4f3;
   border-radius: 50%;
   transform: translateY(0%);
 }
@@ -113,9 +138,41 @@ const slides = ref(slideExpert);
   height: 6px;
   border-radius: 50%;
   opacity: 0.3;
-  background-color: #f8f4f3;
+  background-color: #923ea1;
 }
 .slider__expert .carousel__pagination-button--active::after {
   opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .slider__expert .carousel__slide {
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+}
+@media (min-width: 1024px) {
+  .slider__expert .carousel__slide {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .slider__expert .carousel__item {
+    min-height: 750px;
+  }
+  .slider__expert .carousel__item {
+    flex-direction: row;
+  }
+  .slider__expert .carousel__prev,
+  .slider__expert .carousel__next {
+    color: #f8f4f3;
+    background-color: #923ea1;
+  }
+  .slider__expert .carousel__pagination-button::after {
+    background-color: #f8f4f3;
+  }
+}
+@media (min-width: 1280px) {
+  .slider__expert .carousel__item {
+    min-height: 825px;
+  }
 }
 </style>

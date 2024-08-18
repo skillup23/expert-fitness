@@ -21,9 +21,14 @@ export default defineComponent({
     // breakpoints are mobile first
     // any settings not specified will fallback to the carousel settings
     breakpoints: {
+      // 500px and up
+      500: {
+        itemsToShow: 1,
+        snapAlign: "center",
+      },
       // 700px and up
       700: {
-        itemsToShow: 3,
+        itemsToShow: 2,
         snapAlign: "center",
       },
       // 1024 and up
@@ -109,6 +114,7 @@ const slides = ref(sliderLessonYouga);
   margin-right: 32px;
   margin-top: 0;
   padding: 12px;
+  background-color: #923ea1;
 }
 .slide__less_youga .carousel__pagination-button {
   padding: 0 6px;

@@ -7,12 +7,12 @@ const links = ref(linksMenu);
 </script>
 
 <template>
-  <footer class="bg-purple py-14">
+  <footer class="bg-purple py-8 lg:py-14">
     <div class="wrapper">
-      <div class="w-full">
-        <div class="w-full flex gap-14 justify-between">
+      <div class="mx-auto lg:mx-0 w-[320px] lg:w-full">
+        <div class="lg:w-full flex flex-col lg:flex-row gap-14 justify-between">
           <nav
-            class="flex flex-col justify-between lg:text-[18px] 2xl:text-[20px] text-white font-roboto font-light gap-4"
+            class="flex flex-row flex-wrap lg:flex-nowrap lg:flex-col justify-between text-[14px] sm:text-[16px] lg:text-[18px] 2xl:text-[20px] text-white font-roboto font-light gap-4"
           >
             <RouterLink
               v-for="link in links"
@@ -22,7 +22,9 @@ const links = ref(linksMenu);
             >
               {{ link.text }}
             </RouterLink>
-            <p class="mt-24 text-[16px]">© 2024 ЦДО ”ЭКСПЕРТ”</p>
+            <p class="hidden lg:block mt-24 text-[16px]">
+              © 2024 ЦДО ”ЭКСПЕРТ”
+            </p>
           </nav>
           <div class="text-white">
             <h6 class="uppercase">Контакты</h6>
@@ -33,7 +35,9 @@ const links = ref(linksMenu);
                 class="mb-4 flex item-center gap-4 opacity-100 hover:opacity-70 transition-hover"
               >
                 <img src="/media/marker.svg" alt="Адрес" class="w-5 h-5" />
-                <p>г. Краснодар, ул.Шоссе Нефтяников, 28</p>
+                <p class="text-[14px] sm:text-[16px]">
+                  г. Краснодар, ул.Шоссе Нефтяников, 28
+                </p>
               </a>
               <a
                 href="tel:89615858995"
@@ -41,7 +45,7 @@ const links = ref(linksMenu);
                 class="mb-4 flex item-center gap-4 opacity-100 hover:opacity-70 transition-hover"
               >
                 <img src="/media/phone.svg" alt="Телефон" class="w-5 h-5" />
-                <p>+7(961) 585-89-95</p>
+                <p class="text-[14px] sm:text-[16px]">+7(961) 585-89-95</p>
               </a>
               <a
                 href="mailto:info@fitnesstrener23.ru"
@@ -49,7 +53,9 @@ const links = ref(linksMenu);
                 class="mb-4 flex item-center gap-4 opacity-100 hover:opacity-70 transition-hover"
               >
                 <img src="/media/mail.svg" alt="Майл" class="w-5 h-5" />
-                <p>info@fitnesstrener23.ru</p>
+                <p class="text-[14px] sm:text-[16px]">
+                  info@fitnesstrener23.ru
+                </p>
               </a>
             </div>
 
@@ -94,10 +100,13 @@ const links = ref(linksMenu);
               </a>
             </div>
           </div>
-          <div class="w-[47%] rounded-[20px]">
+          <div class="hidden lg:block w-[47%] rounded-[20px]">
             <YandexMap />
           </div>
         </div>
+        <p class="block lg:hidden mt-24 text-[16px] text-white">
+          © 2024 ЦДО ”ЭКСПЕРТ”
+        </p>
       </div>
     </div>
   </footer>

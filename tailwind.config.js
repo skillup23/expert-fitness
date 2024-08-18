@@ -13,6 +13,14 @@ export default {
       white: "#F8F4F3",
     },
     extend: {},
+    backgroundSize: {
+      auto: "auto",
+      cover: "cover",
+      contain: "contain",
+      "150%": "150%",
+      "90%": "90%",
+      "80%": "80%",
+    },
   },
   variants: {
     fill: ["hover", "focus"],

@@ -15,8 +15,18 @@ import Yoga from "./pages/Yoga.vue";
 const app = createApp(App);
 
 const routes = [
-  { path: "/", name: "Home", component: Home },
-  { path: "/yoga", name: "yoga", component: Yoga },
+  {
+    path: "/",
+    name: "Home",
+    meta: { title: "Фитнес школа Эксперт" },
+    component: Home,
+  },
+  {
+    path: "/yoga",
+    name: "yoga",
+    meta: { title: "Курс по йоге" },
+    component: Yoga,
+  },
 ];
 
 const options = {
@@ -27,6 +37,12 @@ const options = {
 const router = createRouter({
   history: createWebHistory(),
   routes,
+});
+
+router.beforeEach((to, from, next) => {
+  // console.log(to);
+  document.title = to.meta.title;
+  next();
 });
 
 const ymaps = createYmaps({
