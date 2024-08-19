@@ -1,16 +1,16 @@
 <script setup>
-import { ref } from "vue";
-import Heading from "@/components/Heading.vue";
-import SliderExpert from "@/components/SliderExpert.vue";
-import SliderLessonYoga from "@/components/SliderLessonYoga.vue";
-import SliderReviews from "@/components/SliderReviews.vue";
-import ButtonMain from "@/components/ButtonMain.vue";
-import AccordeonList from "@/components/AccordeonList.vue";
-import FormFeedback from "@/components/FormFeedback.vue";
+import { ref } from 'vue';
+import Heading from '@/components/Heading.vue';
+import SliderExpert from '@/components/SliderExpert.vue';
+import SliderLessonYoga from '@/components/SliderLessonYoga.vue';
+import SliderReviews from '@/components/SliderReviews.vue';
+import ButtonMain from '@/components/ButtonMain.vue';
+import AccordeonList from '@/components/AccordeonList.vue';
+import FormFeedback from '@/components/FormFeedback.vue';
 
-import { programmYoga } from "@/assets/data";
-import SliderAdvantages from "@/components/SliderAdvantages.vue";
-import YandexMap from "@/components/YandexMap.vue";
+import { programmYoga } from '@/assets/data';
+import SliderAdvantages from '@/components/SliderAdvantages.vue';
+import YandexMap from '@/components/YandexMap.vue';
 
 const isKyrs = ref(true);
 function toogleKyrs(elem) {
@@ -34,7 +34,7 @@ function toggleAnswer(id) {
 <template>
   <main>
     <section
-      class="mt-8 sm:mt-10 mb-10 sm:mb-24 relative bg-[url('/media/Yoga/bg-mandala.png')] bg-no-repeat bg-150% sm:bd-auto bg-[left_35vw_top_-10px] sm:bg-[left_45vw_top_-70px] lg:bg-[left_62vw_bottom_2vh]"
+      class="mt-8 sm:mt-10 mb-10 sm:mb-24 relative bg-[url('/media/Yoga/bg-mandala.png')] bg-no-repeat bg-150% sm:bg-50% bg-[left_35vw_top_-10px] sm:bg-[left_45vw_top_-70px] lg:bg-[left_62vw_bottom_2vh]"
     >
       <div class="wrapper">
         <div class="flex flex-col lg:flex-row justify-between">
@@ -428,11 +428,13 @@ function toggleAnswer(id) {
 
     <!--     Программа курса и Примеры уроков     -->
     <section
-      class="pt-24 bg-[url('/media/Yoga/bg-mandala.png')] bg-no-repeat bg-[right_36vw_top_-200px] lg:bg-[right_57vw_top_340px]"
+      class="pt-10 sm:pt-24 bg-[url('/media/Yoga/bg-mandala.png')] bg-no-repeat bg-150% sm:bg-50% bg-[left_25vw_top_750px] sm:bg-[right_36vw_top_-200px] lg:bg-[right_57vw_top_340px]"
     >
       <div class="wrapper">
         <!--     Программа курса      -->
-        <Heading class="heading mb-14 lg:text-start">Программа курса</Heading>
+        <Heading class="heading mb-8 sm:mb-14 lg:text-start"
+          >Программа курса</Heading
+        >
         <div class="lg:-mt-28 flex flex-col">
           <div
             class="w-full lg:w-[550px] 2xl:w-[664px] flex bg-pink self-end rounded-t-[20px]"
@@ -443,7 +445,7 @@ function toggleAnswer(id) {
               @click="toogleKyrs(false)"
             >
               <h4
-                class="text-2xl xl:text-3xl 2xl:text-[36px]"
+                class="text-base sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-[36px]"
                 :class="[isKyrs ? `text-black` : `text-white`]"
               >
                 ОНЛАЙН
@@ -455,7 +457,7 @@ function toggleAnswer(id) {
               @click="toogleKyrs(true)"
             >
               <h4
-                class="text-2xl xl:text-3xl 2xl:text-[36px]"
+                class="text-base sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-[36px]"
                 :class="[isKyrs ? `text-white` : `text-black`]"
               >
                 ОЧНО
@@ -465,7 +467,7 @@ function toggleAnswer(id) {
 
           <div
             v-if="isKyrs"
-            class="w-full min-h-96 p-14 grid lg:grid-cols-2 gap-x-6 bg-purple rounded-b-[20px] lg:rounded-tl-[20px]"
+            class="-mt-[1px] w-full min-h-96 p-6 sm:p-14 grid lg:grid-cols-2 gap-x-4 sm:gap-x-6 bg-purple rounded-b-[20px] lg:rounded-tl-[20px]"
           >
             <AccordeonList
               :programms="programms.slice(0, 5)"
@@ -480,7 +482,7 @@ function toggleAnswer(id) {
 
           <div
             v-else
-            class="w-full min-h-96 p-14 grid lg:grid-cols-2 gap-x-6 bg-purple rounded-b-[20px] rounded-tl-[20px]"
+            class="-mt-[1px] w-full min-h-96 p-6 sm:p-14 grid lg:grid-cols-2 gap-x-4 sm:gap-x-6 bg-purple rounded-b-[20px] lg:rounded-tl-[20px]"
           >
             <AccordeonList
               :programms="programms.slice(0, 4)"
@@ -495,8 +497,10 @@ function toggleAnswer(id) {
         </div>
 
         <!--     Примеры уроков и связок      -->
-        <div class="mt-24">
-          <Heading class="heading mb-14">Примеры уроков и связок</Heading>
+        <div class="mt-10 sm:mt-24">
+          <Heading class="heading mb-8 sm:mb-14"
+            >Примеры уроков и связок</Heading
+          >
           <SliderLessonYoga class="-mx-6" />
         </div>
       </div>
@@ -508,23 +512,26 @@ function toggleAnswer(id) {
     >
       <div class="wrapper px-0 lg:px-6">
         <div class="p-8 lg:p-14 bg-purple lg:rounded-[20px]">
-          <Heading class="heading mb-6 xl:mb-14 ml-[71px] text-white text-start"
+          <Heading
+            class="heading mb-8 xl:mb-14 ml-[22px] sm:ml-[71px] text-white text-start"
             >Отзывы</Heading
           >
           <SliderReviews />
         </div>
 
         <!--     Записаться на обучение      -->
-        <div class="sm:px-28 lg:px-0">
-          <Heading class="heading mt-10 lg:mt-24 mb-14 lg:text-start"
+        <div class="px-[23px] sm:px-28 lg:px-0">
+          <Heading class="heading mt-10 lg:mt-24 mb-4 sm:mb-14 lg:text-start"
             >Записаться на обучение</Heading
           >
           <div>
-            <h6 class="text-purple uppercase text-center lg:text-start">
+            <h6
+              class="text-purple uppercase text-center lg:text-start font-bold sm:font-medium"
+            >
               Присоединяйтесь к нашей команде профессионалов!
             </h6>
             <div class="mt-6 flex gap-14 justify-center lg:justify-start">
-              <div class="lg:w-1/2 mt-6 px-[22px]">
+              <div class="lg:w-1/2 sm:mt-6 px-[22px]">
                 <FormFeedback />
               </div>
 
@@ -539,7 +546,7 @@ function toggleAnswer(id) {
           </div>
         </div>
         <div
-          class="block lg:hidden mx-auto mt-10 px-14 w-full h-[500px] rounded-[20px]"
+          class="block lg:hidden mx-auto mt-10 px-6 sm:px-14 w-full h-[210px] sm:h-[500px] rounded-[20px]"
         >
           <YandexMap />
         </div>

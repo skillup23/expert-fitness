@@ -3,11 +3,11 @@ defineProps({
   programms: Array,
 });
 
-const emit = defineEmits(["toggleAnswer"]);
+const emit = defineEmits(['toggleAnswer']);
 </script>
 
 <template>
-  <div class="flex flex-col gap-y-8">
+  <div class="flex flex-col gap-y-6 sm:gap-y-8">
     <div
       v-for="programm in programms"
       :key="programm.id"
@@ -37,7 +37,7 @@ const emit = defineEmits(["toggleAnswer"]);
         class="px-[22px] bg-white"
         :class="[programm.isOpen ? `drop-faq` : `drop-faq-close`]"
       >
-        <li v-for="text in programm.text" :key="text" class="py-3">
+        <li v-for="text in programm.text" :key="text" class="py-1 sm:py-3">
           <p class="">{{ text }}</p>
         </li>
       </ul>

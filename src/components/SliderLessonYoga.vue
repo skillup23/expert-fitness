@@ -1,11 +1,11 @@
 <script>
-import { defineComponent } from "vue";
-import { Carousel, Navigation, Pagination, Slide } from "vue3-carousel";
+import { defineComponent } from 'vue';
+import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel';
 
-import "vue3-carousel/dist/carousel.css";
+import 'vue3-carousel/dist/carousel.css';
 
 export default defineComponent({
-  name: "Breakpoints",
+  name: 'Breakpoints',
   components: {
     Carousel,
     Slide,
@@ -16,7 +16,7 @@ export default defineComponent({
     // carousel settings
     settings: {
       itemsToShow: 1,
-      snapAlign: "center",
+      snapAlign: 'center',
     },
     // breakpoints are mobile first
     // any settings not specified will fallback to the carousel settings
@@ -24,17 +24,17 @@ export default defineComponent({
       // 500px and up
       500: {
         itemsToShow: 1,
-        snapAlign: "center",
+        snapAlign: 'center',
       },
       // 700px and up
       700: {
         itemsToShow: 2,
-        snapAlign: "center",
+        snapAlign: 'center',
       },
       // 1024 and up
       1024: {
         itemsToShow: 4,
-        snapAlign: "start",
+        snapAlign: 'start',
       },
     },
   }),
@@ -42,8 +42,8 @@ export default defineComponent({
 </script>
 
 <script setup>
-import { ref } from "vue";
-import { sliderLessonYouga } from "@/assets/data";
+import { ref } from 'vue';
+import { sliderLessonYouga } from '@/assets/data';
 
 const slides = ref(sliderLessonYouga);
 </script>
@@ -79,6 +79,8 @@ const slides = ref(sliderLessonYouga);
 .slide__less_youga .carousel__slide {
   padding-left: 24px;
   padding-right: 24px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .slide__less_youga .carousel__prev,

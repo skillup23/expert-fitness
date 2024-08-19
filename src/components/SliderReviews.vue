@@ -1,11 +1,11 @@
 <script>
-import { defineComponent } from "vue";
-import { Carousel, Navigation, Pagination, Slide } from "vue3-carousel";
+import { defineComponent } from 'vue';
+import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel';
 
-import "vue3-carousel/dist/carousel.css";
+import 'vue3-carousel/dist/carousel.css';
 
 export default defineComponent({
-  name: "Basic",
+  name: 'Basic',
   components: {
     Carousel,
     Slide,
@@ -16,8 +16,8 @@ export default defineComponent({
 </script>
 
 <script setup>
-import { ref } from "vue";
-import { sliderReviewYouga } from "@/assets/data";
+import { ref } from 'vue';
+import { sliderReviewYouga } from '@/assets/data';
 
 const slides = ref(sliderReviewYouga);
 </script>
@@ -37,7 +37,9 @@ const slides = ref(sliderReviewYouga);
           <div
             class="relative lg:min-h-[350px] xl:min-h-[400px] flex flex-col justify-between"
           >
-            <p class="absolute top-0 -left-14 heading">“</p>
+            <p class="absolute top-10 sm:top-0 -left-4 sm:-left-14 heading">
+              “
+            </p>
             <p class="absolute -bottom-4 lg:bottom-24 right-0 heading">“</p>
 
             <div class="flex flex-col gap-4">
@@ -45,7 +47,7 @@ const slides = ref(sliderReviewYouga);
               <p
                 v-for="listText in slide.listText"
                 :key="listText"
-                class="text-start"
+                class="text-start leading-5"
               >
                 {{ listText }}
               </p>
@@ -80,8 +82,8 @@ const slides = ref(sliderReviewYouga);
 
 <style>
 .slider__review .carousel__slide {
-  padding-left: 45px;
-  padding-right: 45px;
+  padding-left: 26px;
+  padding-right: 26px;
   align-items: start;
 }
 

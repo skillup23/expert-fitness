@@ -1,29 +1,29 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     fontFamily: {
-      unbounded: ["Unbounded"],
-      roboto: ["Roboto"],
+      unbounded: ['Unbounded'],
+      roboto: ['Roboto'],
     },
     colors: {
-      black: "#242424",
-      purple: "#923EA1",
-      pink: "#D17CE0",
-      white: "#F8F4F3",
+      black: '#242424',
+      purple: '#923EA1',
+      pink: '#D17CE0',
+      white: '#F8F4F3',
     },
     extend: {},
     backgroundSize: {
-      auto: "auto",
-      cover: "cover",
-      contain: "contain",
-      "150%": "150%",
-      "90%": "90%",
-      "80%": "80%",
+      auto: 'auto',
+      cover: 'cover',
+      contain: 'contain',
+      '150%': '150%',
+      '100%': '100%',
+      '50%': '50%',
     },
   },
   variants: {
-    fill: ["hover", "focus"],
+    fill: ['hover', 'focus'],
   },
   plugins: [],
 };

@@ -1,7 +1,7 @@
 <script setup>
-import { ref } from "vue";
-import { linksMenu } from "@/assets/data";
-import YandexMap from "./YandexMap.vue";
+import { ref } from 'vue';
+import { linksMenu } from '@/assets/data';
+import YandexMap from './YandexMap.vue';
 
 const links = ref(linksMenu);
 </script>
@@ -10,9 +10,11 @@ const links = ref(linksMenu);
   <footer class="bg-purple py-8 lg:py-14">
     <div class="wrapper">
       <div class="mx-auto lg:mx-0 w-[320px] lg:w-full">
-        <div class="lg:w-full flex flex-col lg:flex-row gap-14 justify-between">
+        <div
+          class="lg:w-full flex flex-col lg:flex-row gap-8 sm:gap-14 justify-between"
+        >
           <nav
-            class="flex flex-row flex-wrap lg:flex-nowrap lg:flex-col justify-between text-[14px] sm:text-[16px] lg:text-[18px] 2xl:text-[20px] text-white font-roboto font-light gap-4"
+            class="flex flex-row flex-wrap lg:flex-nowrap lg:flex-col justify-center sm:justify-between text-[14px] sm:text-[16px] lg:text-[18px] 2xl:text-[20px] text-white font-roboto font-light gap-4"
           >
             <RouterLink
               v-for="link in links"
@@ -59,7 +61,7 @@ const links = ref(linksMenu);
               </a>
             </div>
 
-            <div class="flex gap-5">
+            <div class="mt-6 sm:mt-0 flex gap-5">
               <a href="#" target="_blank">
                 <img
                   src="/media/vk-white.svg"
@@ -83,7 +85,7 @@ const links = ref(linksMenu);
               </a>
             </div>
 
-            <div class="mt-[18px] flex gap-5">
+            <div class="mt-6 sm:mt-[18px] flex gap-5">
               <a href="#" target="_blank">
                 <img
                   src="/media/yandex-rating.jpg"
@@ -104,7 +106,7 @@ const links = ref(linksMenu);
             <YandexMap />
           </div>
         </div>
-        <p class="block lg:hidden mt-24 text-[16px] text-white">
+        <p class="block lg:hidden mt-6 sm:mt-12 text-[16px] text-white">
           © 2024 ЦДО ”ЭКСПЕРТ”
         </p>
       </div>
