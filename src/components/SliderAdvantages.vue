@@ -30,7 +30,9 @@ const slides = ref(sliderAdvantages);
       class="p-6 sm:p-12 hidden lg:flex items-start rounded-[20px] bg-white gap-4"
     >
       <img :src="slide.image" alt="Преимущества" class="w-1/2 rounded-[20px]" />
-      <p class="w-1/2 text-[14px] sm:text-[24px]">
+      <p
+        class="w-1/2 text-[14px] sm:text-[24px] text-start leading-4 sm:leading-5"
+      >
         {{ slide.text }}
       </p>
     </Slide>

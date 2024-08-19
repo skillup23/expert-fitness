@@ -1,16 +1,16 @@
 <script setup>
-import { ref } from 'vue';
-import Heading from '@/components/Heading.vue';
-import SliderExpert from '@/components/SliderExpert.vue';
-import SliderLessonYoga from '@/components/SliderLessonYoga.vue';
-import SliderReviews from '@/components/SliderReviews.vue';
-import ButtonMain from '@/components/ButtonMain.vue';
-import AccordeonList from '@/components/AccordeonList.vue';
-import FormFeedback from '@/components/FormFeedback.vue';
+import { ref } from "vue";
+import Heading from "@/components/Heading.vue";
+import SliderExpert from "@/components/SliderExpert.vue";
+import SliderLessonYoga from "@/components/SliderLessonYoga.vue";
+import SliderReviews from "@/components/SliderReviews.vue";
+import ButtonMain from "@/components/ButtonMain.vue";
+import AccordeonList from "@/components/AccordeonList.vue";
+import FormFeedback from "@/components/FormFeedback.vue";
 
-import { programmYoga } from '@/assets/data';
-import SliderAdvantages from '@/components/SliderAdvantages.vue';
-import YandexMap from '@/components/YandexMap.vue';
+import { programmYoga } from "@/assets/data";
+import SliderAdvantages from "@/components/SliderAdvantages.vue";
+import YandexMap from "@/components/YandexMap.vue";
 
 const isKyrs = ref(true);
 function toogleKyrs(elem) {
@@ -143,9 +143,14 @@ function toggleAnswer(id) {
             <h6 class="text-xl text-purple font-medium">3 месяца</h6>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!--     Курс идеально подойдет      -->
-
+    <!--     Курс идеально подойдет      -->
+    <section
+      class="mt-8 sm:mt-10 mb-10 sm:mb-24 relative bg-[url('/media/Yoga/bg-mandala.png')] bg-no-repeat bg-150% sm:bg-50% bg-[right_50vw_top_10px] sm:bg-none"
+    >
+      <div class="wrapper">
         <Heading class="heading text-black mt-14 sm:mt-24 mb-8 sm:mb-14">
           Курс идеально подойдет
         </Heading>
@@ -153,12 +158,12 @@ function toggleAnswer(id) {
           <img
             src="/media/Yoga/foto-top-3.jpg"
             alt="Начинающим Фото"
-            class="w-full sm:w-5/12 rounded-2xl"
+            class="mx-auto sm:mx-0 w-10/12 sm:w-5/12 rounded-2xl"
           />
           <img
             src="/media/Yoga/foto-top-4.jpg"
             alt="Тренерам Фото"
-            class="w-full sm:w-5/12 rounded-2xl"
+            class="mx-auto sm:mx-0 w-10/12 sm:w-5/12 rounded-2xl"
           />
         </div>
       </div>
@@ -222,7 +227,7 @@ function toggleAnswer(id) {
             >
               <RouterLink to="#">
                 <ButtonMain
-                  class="px-[22px] py-[14px] bg-purple lg:bg-white border-white lg:border-purple border-2 text-white lg:text-purple hover:bg-purple hover:text-white"
+                  class="px-4 py-[14px] sm:px-[22px] sm:py-[14px] bg-purple lg:bg-white border-white lg:border-purple border-2 text-white lg:text-purple hover:bg-purple hover:text-white"
                   >Программа</ButtonMain
                 >
               </RouterLink>
@@ -240,10 +245,10 @@ function toggleAnswer(id) {
 
     <!--     Бесплатный мини-курс      -->
     <section
-      class="py-10 lg:py-24 bg-[url('/media/Yoga/bg-mandala.png')] bg-no-repeat bg-[left_60vw_top_-100px] lg:bg-[left_58vw_bottom_43vh]"
+      class="py-10 lg:py-24 bg-[url('/media/Yoga/bg-mandala.png')] bg-no-repeat bg-150% sm:bg-50% bg-[left_53vw_top_-30px] sm:bg-[left_60vw_top_-100px] lg:bg-[left_58vw_bottom_43vh]"
     >
       <div class="wrapper">
-        <Heading class="heading mb-14 text-center lg:text-start"
+        <Heading class="heading mb-4 sm:mb-14 text-center lg:text-start"
           >Бесплатный мини-курс</Heading
         >
         <div class="w-full flex items-start">
@@ -257,14 +262,16 @@ function toggleAnswer(id) {
               тест-драйв
             </h4>
             <div
-              class="mt-8 flex flex-col lg:flex-row items-center lg:items-start"
+              class="mx-[45px] sm:mx-0 mt-8 flex flex-col lg:flex-row items-start sm:items-center lg:items-start"
             >
-              <div class="w-1/2 flex flex-col items-start gap-6">
+              <div
+                class="w-full sm:w-1/2 flex flex-col items-start gap-3 sm:gap-6"
+              >
                 <article class="flex items-center gap-2">
                   <img
                     src="/media/Yoga/free-kyrs-icon-1.svg"
                     alt="Иконка"
-                    class="w-6 h-6"
+                    class="w-4 sm:w-6 h-6"
                   />
                   <p>Анатомия человека</p>
                 </article>
@@ -272,7 +279,7 @@ function toggleAnswer(id) {
                   <img
                     src="/media/Yoga/free-kyrs-icon-2.svg"
                     alt="Иконка"
-                    class="w-6 h-6"
+                    class="w-4 sm:w-6 h-6"
                   />
                   <p>Фитнес-диагностика</p>
                 </article>
@@ -280,7 +287,7 @@ function toggleAnswer(id) {
                   <img
                     src="/media/Yoga/free-kyrs-icon-3.svg"
                     alt="Иконка"
-                    class="w-6 h-6"
+                    class="w-4 sm:w-6 h-6"
                   />
                   <p>Фитнес-йога</p>
                 </article>
@@ -288,7 +295,7 @@ function toggleAnswer(id) {
                   <img
                     src="/media/Yoga/free-kyrs-icon-4.svg"
                     alt="Иконка"
-                    class="w-6 h-6"
+                    class="w-4 sm:w-6 h-6"
                   />
                   <p>Система Пилатес</p>
                 </article>
@@ -296,40 +303,50 @@ function toggleAnswer(id) {
                   <img
                     src="/media/Yoga/free-kyrs-icon-5.svg"
                     alt="Иконка"
-                    class="w-6 h-6"
+                    class="w-4 sm:w-6 h-6"
                   />
                   <p>Cтретчинг</p>
                 </article>
               </div>
 
-              <div class="mt-6 lg:mt-0 w-1/2 lg:w-[45%] flex flex-col gap-6">
-                <p class="text-[16px]">
+              <div
+                class="mt-6 lg:mt-0 w-full sm:w-1/2 lg:w-[45%] flex flex-col gap-4 sm:gap-6"
+              >
+                <p class="text-sm sm:text-[16px]">
                   Мини-курс содержит 6 уроков и тестовые задания после каждого
                   урока
                 </p>
-                <p class="text-[16px]">
+                <p class="text-sm sm:text-[16px]">
                   Уроки вы изучаете последовательно, начиная с теоретических
                   дисциплин, после каждого урока вы проходите мини-тест для
                   закрепления знаний.
                 </p>
-                <p class="text-[16px]">
+                <p class="text-sm sm:text-[16px]">
                   Мини-курс можно пройти на платформе ВКонтакте или Телеграм.
                 </p>
               </div>
             </div>
 
             <div
-              class="mx-auto lg:mx-0 mt-8 lg:mt-[121px] flex xl:flex-col gap-6"
+              class="mx-auto lg:mx-0 mt-8 lg:mt-[121px] flex xl:flex-col gap-4 sm:gap-6"
             >
               <RouterLink to="#">
                 <ButtonMain class="flex items-center gap-2">
-                  <img src="/media/vk-white.svg" alt="ВК ссылка" />
+                  <img
+                    src="/media/vk-white.svg"
+                    alt="ВК ссылка"
+                    class="w-5 sm:w-10"
+                  />
                   <span>Учиться в вк</span>
                 </ButtonMain>
               </RouterLink>
               <RouterLink to="#">
                 <ButtonMain class="flex items-center gap-2">
-                  <img src="/media/telegram-white.svg" alt="Телеграм ссылка" />
+                  <img
+                    src="/media/telegram-white.svg"
+                    alt="Телеграм ссылка"
+                    class="w-5 sm:w-10"
+                  />
                   <span>Учиться в ТГ</span>
                 </ButtonMain>
               </RouterLink>
@@ -417,7 +434,9 @@ function toggleAnswer(id) {
     </section>
 
     <!--     Эксперты      -->
-    <section class="-mt-[1px] lg:mt-0 py-10 lg:pt-14 lg:pb-24 bg-purple">
+    <section
+      class="-mt-[1px] lg:mt-0 pt-4 pb-10 sm:py-10 lg:pt-14 lg:pb-24 bg-purple"
+    >
       <div class="wrapper">
         <Heading class="heading text-white mb-8 lg:mb-14"
           >Наши эксперты</Heading

@@ -25,10 +25,14 @@ const slides = ref(slideExpert);
 <template>
   <Carousel :wrap-around="true" class="slider__expert">
     <Slide v-for="slide in slides" :key="slide.id">
-      <div class="carousel__item p-6 lg:p-14 gap-4 lg:gap-[85px]">
-        <div class="text-start w-full lg:w-[59%] lg:mb-8">
+      <div
+        class="carousel__item px-6 pt-0 pb-6 sm:p-6 lg:p-14 gap-4 lg:gap-[85px]"
+      >
+        <div
+          class="-mt-28 sm:mt-0 text-start w-full lg:w-[59%] lg:mb-8 bg-white"
+        >
           <h3
-            class="mb-4 lg:mb-8 text-[24px] lg:text-3xl xl:text-4xl font-bold text-start"
+            class="mt-4 sm:mt-0 mb-4 lg:mb-8 text-[14px] sm:text-[24px] lg:text-3xl xl:text-4xl font-bold text-start"
           >
             {{ slide.title }}
           </h3>
@@ -57,7 +61,7 @@ const slides = ref(slideExpert);
             class="lg:hidden"
           >
             <li
-              class="mb-3 xl:mb-5 text-[14px] sm:text-lg xl:text-xl leading-6 font-light"
+              class="mb-3 xl:mb-5 text-[14px] sm:text-lg xl:text-xl leading-4 sm:leading-6 font-light"
             >
               {{ listMobileText }}
             </li>
@@ -85,8 +89,8 @@ const slides = ref(slideExpert);
 
 <style>
 .slider__expert .carousel__slide {
-  padding-left: 45px;
-  padding-right: 45px;
+  padding-left: 34px;
+  padding-right: 34px;
 }
 
 .slider__expert .carousel__item {
