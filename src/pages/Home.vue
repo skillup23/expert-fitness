@@ -1,16 +1,16 @@
 <script setup>
-import { ref } from "vue";
-import Heading from "@/components/Heading.vue";
-import SliderExpert from "@/components/SliderExpert.vue";
-import SliderLessonYoga from "@/components/SliderLessonYoga.vue";
-import SliderReviews from "@/components/SliderReviews.vue";
-import ButtonMain from "@/components/ButtonMain.vue";
-import AccordeonList from "@/components/AccordeonList.vue";
-import FormFeedback from "@/components/FormFeedback.vue";
+import { ref } from 'vue';
+import Heading from '@/components/Heading.vue';
+import SliderExpert from '@/components/SliderExpert.vue';
+import SliderLessonYoga from '@/components/SliderLessonYoga.vue';
+import SliderReviews from '@/components/SliderReviews.vue';
+import ButtonMain from '@/components/ButtonMain.vue';
+import AccordeonList from '@/components/AccordeonList.vue';
+import FormFeedback from '@/components/FormFeedback.vue';
 
-import { programmYoga } from "@/assets/data";
-import SliderAdvantages from "@/components/SliderAdvantages.vue";
-import YandexMap from "@/components/YandexMap.vue";
+import { programmYoga } from '@/assets/data';
+import SliderAdvantages from '@/components/SliderAdvantages.vue';
+import YandexMap from '@/components/YandexMap.vue';
 
 const isKyrs = ref(true);
 function toogleKyrs(elem) {
@@ -529,7 +529,7 @@ function toggleAnswer(id) {
     <section
       class="py-10 lg:py-24 lg:bg-[url('/media/Yoga/bg-mandala.png')] lg:bg-no-repeat lg:bg-[left_58vw_top_-41px]"
     >
-      <div class="wrapper px-0 lg:px-6">
+      <div class="wrapper px-0 lg:px-6 xl:px-14 2xl:px-20">
         <div class="p-8 lg:p-14 bg-purple lg:rounded-[20px]">
           <Heading
             class="heading mb-8 xl:mb-14 ml-[22px] sm:ml-[71px] text-white text-start"

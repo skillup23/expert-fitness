@@ -2,6 +2,8 @@
 import { ref } from 'vue';
 import ButtonMain from '@/components/ButtonMain.vue';
 import { linksMenu } from '@/assets/data';
+import SocialMedia from './SocialMedia.vue';
+import Contacts from './Contacts.vue';
 
 const links = ref(linksMenu);
 
@@ -39,6 +41,7 @@ function menuOpen() {
           </div>
         </RouterLink>
 
+        <!-- Меню ПК -->
         <nav
           class="hidden lg:flex justify-between text-4 text-white font-roboto font-light gap-8 xl:gap-10 2xl:gap-12"
         >
@@ -46,13 +49,14 @@ function menuOpen() {
             v-for="link in links"
             :key="link.id"
             :to="link.url"
-            class="opacity-100 hover:opacity-70 transition-hover"
+            class="lg:text-[16px] opacity-100 hover:opacity-70 transition-hover"
           >
             {{ link.text }}
           </RouterLink>
         </nav>
 
-        <div @click="menuOpen" class="flex md:hidden hamburger-lines">
+        <!-- Бургер меню кнопка -->
+        <div @click="menuOpen" class="flex lg:hidden hamburger-lines">
           <span
             class="line transition-transform"
             :class="[isOpen ? `rotate-45 translate-y-[9px]` : `origin-[0%_0%]`]"
@@ -78,20 +82,35 @@ function menuOpen() {
         </RouterLink>
       </div>
     </div>
-  </header>
-  <div
-    class="menu-items"
-    :class="[isOpen ? `translate-x-0` : `-translate-x-full`]"
-  >
-    <RouterLink
-      v-for="link in links"
-      :key="link.id"
-      :to="link.url"
-      class="opacity-100 hover:opacity-70 transition-hover"
+
+    <!-- Меню мобильное -->
+    <div
+      class="flex lg:hidden absolute w-full bg-purple p-8 top-[63px] sm:top-[93px] flex-col gap-8 rounded-b-[15px] transition-hover z-30"
+      :class="[isOpen ? `translate-x-0` : `translate-x-full`]"
     >
-      {{ link.text }}
-    </RouterLink>
-  </div>
+      <RouterLink
+        v-for="link in links"
+        :key="link.id"
+        :to="link.url"
+        class="text-[20px] text-white uppercase opacity-100 hover:opacity-70 transition-hover"
+      >
+        {{ link.text }}
+      </RouterLink>
+
+      <div class="mt-2 flex gap-9">
+        <RouterLink
+          to="#"
+          class="text-[20px] text-white uppercase underline hover:text-black"
+        >
+          Связаться
+        </RouterLink>
+
+        <SocialMedia />
+      </div>
+
+      <Contacts class="text-white" />
+    </div>
+  </header>
 </template>
 
 <style>
@@ -111,19 +130,15 @@ function menuOpen() {
   background: #f8f4f3;
 }
 
-.menu-items {
-  padding-top: 120px;
-  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
-  height: 100vh;
-  width: 100%;
-  /* transform: translate(-150%); */
+/* .menu-items {
   position: absolute;
+  width: 100%;
+  background-color: #923ea1;
+  top: 63px;
   display: flex;
   flex-direction: column;
-  margin-left: -40px;
-  padding-left: 50px;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.2s ease-in-out;
   text-align: center;
-  z-index: 200;
-}
+  z-index: 45;
+} */
 </style>
