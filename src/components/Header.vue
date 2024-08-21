@@ -15,7 +15,7 @@ function menuOpen() {
 </script>
 
 <template>
-  <header class="w-full bg-purple z-50">
+  <header class="w-full bg-purple z-50 overflow-hidden">
     <div class="wrapper">
       <div class="flex justify-between items-center">
         <RouterLink
@@ -86,7 +86,7 @@ function menuOpen() {
     <!-- Меню мобильное -->
     <div
       class="flex lg:hidden absolute w-full bg-purple p-8 top-[63px] sm:top-[93px] flex-col gap-8 rounded-b-[15px] transition-hover z-30"
-      :class="[isOpen ? `translate-x-0` : `translate-x-full`]"
+      :class="[isOpen ? `translate-x-0` : `-translate-x-full`]"
     >
       <RouterLink
         v-for="link in links"
