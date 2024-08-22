@@ -1,11 +1,11 @@
 <script>
-import { defineComponent } from "vue";
-import { Carousel, Navigation, Pagination, Slide } from "vue3-carousel";
+import { defineComponent } from 'vue';
+import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel';
 
-import "vue3-carousel/dist/carousel.css";
+import 'vue3-carousel/dist/carousel.css';
 
 export default defineComponent({
-  name: "Basic",
+  name: 'Basic',
   components: {
     Carousel,
     Slide,
@@ -16,8 +16,8 @@ export default defineComponent({
 </script>
 
 <script setup>
-import { ref } from "vue";
-import { slideExpert } from "@/assets/data";
+import { ref } from 'vue';
+import { slideExpert } from '@/assets/data';
 
 const slides = ref(slideExpert);
 </script>
@@ -29,7 +29,7 @@ const slides = ref(slideExpert);
         class="carousel__item px-6 pt-0 pb-6 sm:p-6 lg:p-14 gap-4 lg:gap-[85px]"
       >
         <div
-          class="-mt-28 sm:mt-0 text-start w-full lg:w-[59%] lg:mb-8 bg-white"
+          class="-mt-28 sm:mt-0 text-start w-full lg:w-[59%] lg:mb-8 bg-white z-10"
         >
           <h3
             class="mt-4 sm:mt-0 mb-4 lg:mb-8 text-[14px] sm:text-[24px] lg:text-3xl xl:text-4xl font-bold text-start"

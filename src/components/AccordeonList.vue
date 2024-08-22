@@ -7,7 +7,7 @@ const emit = defineEmits(['toggleAnswer']);
 </script>
 
 <template>
-  <div class="flex flex-col gap-y-6 sm:gap-y-8">
+  <div class="flex flex-col gap-y-5 sm:gap-y-8">
     <div
       v-for="programm in programms"
       :key="programm.id"
@@ -17,7 +17,7 @@ const emit = defineEmits(['toggleAnswer']);
       class="overflow-hidden rounded-xl bg-white"
     >
       <div
-        class="p-4 flex justify-between items-center cursor-pointer"
+        class="p-3 lg:p-4 flex justify-between items-center cursor-pointer"
         :class="[
           programm.isOpen ? `bg-black text-white mb-2` : `bg-white text-black `,
         ]"
