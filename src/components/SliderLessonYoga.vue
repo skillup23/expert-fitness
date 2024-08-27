@@ -1,11 +1,11 @@
 <script>
-import { defineComponent } from "vue";
-import { Carousel, Navigation, Pagination, Slide } from "vue3-carousel";
+import { defineComponent } from 'vue';
+import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel';
 
-import "vue3-carousel/dist/carousel.css";
+import 'vue3-carousel/dist/carousel.css';
 
 export default defineComponent({
-  name: "Breakpoints",
+  name: 'Breakpoints',
   components: {
     Carousel,
     Slide,
@@ -16,7 +16,7 @@ export default defineComponent({
     // carousel settings
     settings: {
       itemsToShow: 1,
-      snapAlign: "center",
+      snapAlign: 'center',
     },
     // breakpoints are mobile first
     // any settings not specified will fallback to the carousel settings
@@ -24,17 +24,22 @@ export default defineComponent({
       // 500px and up
       500: {
         itemsToShow: 1,
-        snapAlign: "center",
+        snapAlign: 'center',
       },
       // 700px and up
       700: {
         itemsToShow: 2,
-        snapAlign: "center",
+        snapAlign: 'center',
       },
       // 1024 and up
       1024: {
+        itemsToShow: 3,
+        snapAlign: 'start',
+      },
+      // 1350 and up
+      1350: {
         itemsToShow: 4,
-        snapAlign: "start",
+        snapAlign: 'start',
       },
     },
   }),
@@ -42,8 +47,8 @@ export default defineComponent({
 </script>
 
 <script setup>
-import { ref } from "vue";
-import { sliderLessonYouga } from "@/assets/data";
+import { ref } from 'vue';
+import { sliderLessonYouga } from '@/assets/data';
 
 const slides = ref(sliderLessonYouga);
 </script>
@@ -57,7 +62,24 @@ const slides = ref(sliderLessonYouga);
   >
     <Slide v-for="slide in slides" :key="slide.id">
       <div class="carousel__item">
-        <img :src="slide.image" :alt="slide.id" />
+        <!-- <img :src="slide.image" :alt="slide.id" /> -->
+        <!-- <iframe
+          :src="slide.src"
+          width="305"
+          height="609"
+          frameborder="0"
+          allowfullscreen="1"
+          allow="encrypted-media; fullscreen; picture-in-picture"
+          style="border-radius: 30px"
+        ></iframe> -->
+        <video controls muted class="rounded-[20px]">
+          <source :src="slide.src" type="video/mp4" />
+          <p>
+            Ваш браузер не поддерживает встроенные видео. Попробуйте скачать его
+            по
+            <a :href="slide.src">этой ссылке</a>.
+          </p>
+        </video>
       </div>
     </Slide>
 

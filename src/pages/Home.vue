@@ -56,9 +56,9 @@ function toggleAnswer(id) {
               Стань экспертом “Mind and Body” - 3&nbsp;направления
               в&nbsp;одном&nbsp;курсе.
             </p>
-            <RouterLink to="#" class="hidden lg:block">
+            <a href="#zapisatca" class="hidden lg:block">
               <ButtonMain class="mt-6">Записаться</ButtonMain>
-            </RouterLink>
+            </a>
           </div>
 
           <img
@@ -68,9 +68,9 @@ function toggleAnswer(id) {
           />
 
           <div class="flex flex-col items-center lg:hidden">
-            <RouterLink to="#" class="w-full sm:w-9/12">
+            <a href="#zapisatca" class="w-full sm:w-9/12">
               <ButtonMain class="mt-6">Записаться</ButtonMain>
-            </RouterLink>
+            </a>
 
             <div class="mx-auto flex mt-6 sm:mt-8 mb-0 sm:mb-10 gap-9">
               <div>
@@ -92,15 +92,18 @@ function toggleAnswer(id) {
             class="mt-6 sm:mt-[35px] flex flex-row lg:flex-col items-end gap-4"
           >
             <div class="hidden lg:flex mb-[74px] flex-col gap-[12px]">
-              <RouterLink to="#">
+              <a href="https://vk.com/fitnesstrener123" target="_blank">
                 <img src="/media/vk.svg" alt="ВК" class="w-8 h-8" />
-              </RouterLink>
-              <RouterLink to="#">
-                <img src="/media/youtube.svg" alt="ВК" class="w-8 h-8" />
-              </RouterLink>
-              <RouterLink to="#">
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCcv3jQFkqR5G7hMGBEwxlXQ?view_as=subscriber"
+                target="_blank"
+              >
+                <img src="/media/youtube.svg" alt="Ютюб" class="w-8 h-8" />
+              </a>
+              <a href="https://t.me/fitnesstrener23" target="_blank">
                 <img src="/media/telegram.svg" alt="Телеграм" class="w-8 h-8" />
-              </RouterLink>
+              </a>
             </div>
 
             <img
@@ -181,7 +184,7 @@ function toggleAnswer(id) {
     </section>
 
     <!--     О курсе      -->
-    <section class="py-6 sm:py-10 lg:py-14 bg-purple">
+    <section id="kyrs" class="py-6 sm:py-10 lg:py-14 bg-purple -scroll-mt-1">
       <div class="wrapper">
         <div class="flex flex-col lg:flex-row gap-6">
           <div
@@ -238,18 +241,18 @@ function toggleAnswer(id) {
             <div
               class="mt-10 lg:mt-0 flex items-center justify-start lg:justify-end gap-6"
             >
-              <RouterLink to="#">
+              <a href="#programma">
                 <ButtonMain
                   class="px-4 py-[14px] sm:px-[22px] sm:py-[14px] bg-purple lg:bg-white border-white lg:border-purple border-2 text-white lg:text-purple hover:bg-purple hover:text-white"
                   >Программа</ButtonMain
                 >
-              </RouterLink>
-              <RouterLink to="#">
+              </a>
+              <a href="#zapisatca">
                 <ButtonMain
                   class="bg-white lg:bg-purple text-black lg:text-white"
                   >Записаться</ButtonMain
                 >
-              </RouterLink>
+              </a>
             </div>
           </div>
         </div>
@@ -258,7 +261,8 @@ function toggleAnswer(id) {
 
     <!--     Бесплатный мини-курс      -->
     <section
-      class="py-10 lg:py-24 bg-[url('/media/Yoga/bg-mandala.png')] bg-no-repeat bg-150% sm:bg-50% bg-[left_53vw_top_-30px] sm:bg-[left_60vw_top_-100px] lg:bg-[left_58vw_bottom_43vh]"
+      id="minikyrs"
+      class="py-10 lg:py-24 bg-[url('/media/Yoga/bg-mandala.png')] bg-no-repeat bg-150% sm:bg-50% bg-[left_53vw_top_-30px] sm:bg-[left_60vw_top_-100px] lg:bg-[left_58vw_bottom_43vh] -scroll-mt-1"
     >
       <div class="wrapper">
         <Heading class="heading mb-4 sm:mb-14 text-center lg:text-start"
@@ -343,7 +347,7 @@ function toggleAnswer(id) {
             <div
               class="mx-auto lg:mx-0 mt-8 lg:mt-[121px] flex xl:flex-col gap-4 sm:gap-6"
             >
-              <RouterLink to="#">
+              <a href="https://vk.com/fitnesstrener123" target="_blank">
                 <ButtonMain class="flex items-center gap-2">
                   <img
                     src="/media/vk-white.svg"
@@ -352,8 +356,8 @@ function toggleAnswer(id) {
                   />
                   <span>Учиться в вк</span>
                 </ButtonMain>
-              </RouterLink>
-              <RouterLink to="#">
+              </a>
+              <a href="https://vk.com/fitnesstrener123" target="_blank">
                 <ButtonMain class="flex items-center gap-2">
                   <img
                     src="/media/telegram-white.svg"
@@ -362,7 +366,7 @@ function toggleAnswer(id) {
                   />
                   <span>Учиться в ТГ</span>
                 </ButtonMain>
-              </RouterLink>
+              </a>
             </div>
           </div>
 
@@ -376,7 +380,7 @@ function toggleAnswer(id) {
     </section>
 
     <!--     Преимущества      -->
-    <section class="py-10 lg:pt-14 lg:pb-24 bg-purple">
+    <section id="onas" class="py-10 lg:pt-14 lg:pb-24 bg-purple -scroll-mt-1">
       <div class="wrapper">
         <Heading class="heading text-white mb-8 lg:mb-14"
           >Наши преимущества</Heading
@@ -460,7 +464,8 @@ function toggleAnswer(id) {
 
     <!--     Программа курса и Примеры уроков     -->
     <section
-      class="pt-10 sm:pt-24 bg-[url('/media/Yoga/bg-mandala.png')] bg-no-repeat bg-150% sm:bg-50% bg-[left_25vw_top_750px] sm:bg-[right_36vw_top_-200px] lg:bg-[right_57vw_top_340px]"
+      id="programma"
+      class="pt-10 sm:pt-24 bg-[url('/media/Yoga/bg-mandala.png')] bg-no-repeat bg-150% sm:bg-50% bg-[left_25vw_top_750px] sm:bg-[right_36vw_top_-200px] lg:bg-[right_57vw_top_340px] -scroll-mt-1"
     >
       <div class="wrapper">
         <!--     Программа курса      -->
@@ -529,7 +534,7 @@ function toggleAnswer(id) {
         </div>
 
         <!--     Примеры уроков и связок      -->
-        <div class="mt-10 sm:mt-24">
+        <div id="yroki" class="mt-10 sm:mt-24 scroll-mt-4">
           <Heading class="heading mb-8 sm:mb-14"
             >Примеры уроков и связок</Heading
           >
@@ -540,7 +545,8 @@ function toggleAnswer(id) {
 
     <!--     Отзывы      -->
     <section
-      class="py-10 lg:py-24 lg:bg-[url('/media/Yoga/bg-mandala.png')] lg:bg-no-repeat lg:bg-[left_58vw_top_-41px]"
+      id="otzivi"
+      class="py-10 lg:py-24 lg:bg-[url('/media/Yoga/bg-mandala.png')] lg:bg-no-repeat lg:bg-[left_58vw_top_-41px] -scroll-mt-1"
     >
       <div class="wrapper px-0 lg:px-6 xl:px-14 2xl:px-20">
         <div class="p-8 lg:p-14 bg-purple lg:rounded-[20px]">
@@ -552,7 +558,7 @@ function toggleAnswer(id) {
         </div>
 
         <!--     Записаться на обучение      -->
-        <div class="px-[23px] sm:px-28 lg:px-0">
+        <div id="zapisatca" class="px-[23px] sm:px-28 lg:px-0 scroll-mt-4">
           <Heading class="heading mt-10 lg:mt-24 mb-4 sm:mb-14 lg:text-start"
             >Записаться на обучение</Heading
           >
