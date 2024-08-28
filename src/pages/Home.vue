@@ -34,7 +34,7 @@ function toggleAnswer(id) {
 <template>
   <main>
     <section
-      class="pt-8 sm:pt-10 mb-10 sm:mb-24 relative bg-[url('/media/Yoga/bg-mandala.png')] bg-no-repeat bg-150% sm:bg-48% bg-[left_35vw_top_-10px] sm:bg-[left_45vw_top_-70px] lg:bg-[left_62vw_top_55vh]"
+      class="pt-8 sm:pt-10 mb-10 sm:mb-24 relative bg-mandala bg-[left_35vw_top_-10px] sm:bg-[left_45vw_top_-70px] lg:bg-[left_72vw_top_55vh]"
     >
       <div class="wrapper">
         <div class="flex flex-col lg:flex-row justify-between">
@@ -56,8 +56,8 @@ function toggleAnswer(id) {
               Стань экспертом “Mind and Body” - 3&nbsp;направления
               в&nbsp;одном&nbsp;курсе.
             </p>
-            <a href="#zapisatca" class="hidden lg:block">
-              <ButtonMain class="mt-6">Записаться</ButtonMain>
+            <a href="#minikyrs" class="hidden lg:block">
+              <ButtonMain class="mt-6">Учиться бесплатно</ButtonMain>
             </a>
           </div>
 
@@ -68,8 +68,8 @@ function toggleAnswer(id) {
           />
 
           <div class="flex flex-col items-center lg:hidden">
-            <a href="#zapisatca" class="w-full sm:w-9/12">
-              <ButtonMain class="mt-6">Записаться</ButtonMain>
+            <a href="#minikyrs" class="w-full sm:w-9/12">
+              <ButtonMain class="mt-6">Учиться бесплатно</ButtonMain>
             </a>
 
             <div class="mx-auto flex mt-6 sm:mt-8 mb-0 sm:mb-10 gap-9">
@@ -93,16 +93,28 @@ function toggleAnswer(id) {
           >
             <div class="hidden lg:flex mb-[74px] flex-col gap-[12px]">
               <a href="https://vk.com/fitnesstrener123" target="_blank">
-                <img src="/media/vk.svg" alt="ВК" class="w-8 h-8" />
+                <img
+                  src="/media/vk.svg"
+                  alt="ВК"
+                  class="w-8 h-8 transition-hover hover:scale-110"
+                />
               </a>
               <a
                 href="https://www.youtube.com/channel/UCcv3jQFkqR5G7hMGBEwxlXQ?view_as=subscriber"
                 target="_blank"
               >
-                <img src="/media/youtube.svg" alt="Ютюб" class="w-8 h-8" />
+                <img
+                  src="/media/youtube.svg"
+                  alt="Ютюб"
+                  class="w-8 h-8 transition-hover hover:scale-110"
+                />
               </a>
               <a href="https://t.me/fitnesstrener23" target="_blank">
-                <img src="/media/telegram.svg" alt="Телеграм" class="w-8 h-8" />
+                <img
+                  src="/media/telegram.svg"
+                  alt="Телеграм"
+                  class="w-8 h-8 transition-hover hover:scale-110"
+                />
               </a>
             </div>
 
@@ -162,7 +174,7 @@ function toggleAnswer(id) {
 
     <!--     Курс идеально подойдет Мобильная      -->
     <section
-      class="block lg:hidden mt-8 sm:mt-10 mb-10 sm:mb-24 relative bg-[url('/media/Yoga/bg-mandala.png')] bg-no-repeat bg-150% sm:bg-50% bg-[right_50vw_top_10px] sm:bg-none"
+      class="block lg:hidden mt-8 sm:mt-10 mb-10 sm:mb-24 relative bg-mandala bg-[right_50vw_top_10px] sm:bg-none"
     >
       <div class="wrapper">
         <Heading class="heading text-black mt-14 sm:mt-24 mb-8 sm:mb-14">
@@ -243,7 +255,7 @@ function toggleAnswer(id) {
             >
               <a href="#programma">
                 <ButtonMain
-                  class="px-4 py-[14px] sm:px-[22px] sm:py-[14px] bg-purple lg:bg-white border-white lg:border-purple border-2 text-white lg:text-purple hover:bg-purple hover:text-white"
+                  class="px-4 py-[14px] sm:px-[22px] sm:py-[14px] bg-purple lg:bg-white border-white lg:border-purple border-2 text-white lg:text-purple hover:border-black hover:text-white"
                   >Программа</ButtonMain
                 >
               </a>
@@ -262,7 +274,7 @@ function toggleAnswer(id) {
     <!--     Бесплатный мини-курс      -->
     <section
       id="minikyrs"
-      class="py-10 lg:py-24 bg-[url('/media/Yoga/bg-mandala.png')] bg-no-repeat bg-150% sm:bg-50% bg-[left_53vw_top_-30px] sm:bg-[left_60vw_top_-100px] lg:bg-[left_58vw_bottom_43vh] -scroll-mt-1"
+      class="py-10 lg:py-24 bg-mandala bg-[left_53vw_top_-30px] sm:bg-[left_60vw_top_-100px] lg:bg-[left_70vw_bottom_70vh] -scroll-mt-1"
     >
       <div class="wrapper">
         <Heading class="heading mb-4 sm:mb-14 text-center lg:text-start"
@@ -391,21 +403,6 @@ function toggleAnswer(id) {
             alt="Преимущества"
             class="w-full h-full row-span-2 col-span-2 rounded-[20px]"
           /> -->
-          <!-- <div class="w-full h-full row-span-2 col-span-2 rounded-[20px]">
-            <iframe
-              src="https://kinescope.io/embed/ikgpxoDrV9m2F1X11Nz9K3"
-              allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;"
-              frameborder="0"
-              allowfullscreen
-              style="
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-              "
-            ></iframe>
-          </div> -->
           <div
             class="relative w-full h-[290px] sm:h-[51.5vw] lg:h-full row-span-2 col-span-2 rounded-[20px] bg-white"
           >
@@ -424,32 +421,16 @@ function toggleAnswer(id) {
             ></iframe>
           </div>
 
-          <!-- <video
-            controls
-            muted
-            class="w-full h-full row-span-2 col-span-2 rounded-[20px]"
-          >
-            <source
-              src="https://kinescope.io/ikgpxoDrV9m2F1X11Nz9K3"
-              type="video/mp4"
-            />
-            <p>
-              Ваш браузер не поддерживает встроенные видео. Попробуйте скачать
-              его по
-              <a href="https://kinescope.io/ikgpxoDrV9m2F1X11Nz9K3"
-                >этой ссылке</a
-              >.
-            </p>
-          </video> -->
-
           <div
             class="p-[18px] hidden lg:flex items-start rounded-[20px] bg-white gap-4"
           >
-            <img
-              src="/media/Yoga/preim2.jpg"
-              alt="Преимущества"
-              class="w-1/2 rounded-[20px]"
-            />
+            <a href="/media/Yoga/preim2.jpg" target="_blank" class="w-1/2">
+              <img
+                src="/media/Yoga/preim2.jpg"
+                alt="Преимущества"
+                class="w-full rounded-[20px]"
+              />
+            </a>
             <p class="w-1/2 text-[14px] 2xl:text-[16px] xl:leading-5">
               Наш центр имеет лицензию на образователь-ную деятельность, после
               обучения вы можете получить налоговый вычет
@@ -515,7 +496,7 @@ function toggleAnswer(id) {
     <!--     Программа курса и Примеры уроков     -->
     <section
       id="programma"
-      class="pt-10 sm:pt-24 bg-[url('/media/Yoga/bg-mandala.png')] bg-no-repeat bg-150% sm:bg-50% bg-[left_25vw_top_750px] sm:bg-[right_36vw_top_-200px] lg:bg-[right_57vw_top_340px] -scroll-mt-1"
+      class="pt-10 sm:pt-24 bg-mandala bg-[left_25vw_top_750px] sm:bg-[right_36vw_top_-200px] lg:bg-[right_70vw_top_150px] -scroll-mt-1"
     >
       <div class="wrapper">
         <!--     Программа курса      -->
@@ -596,7 +577,7 @@ function toggleAnswer(id) {
     <!--     Отзывы      -->
     <section
       id="otzivi"
-      class="py-10 lg:py-24 lg:bg-[url('/media/Yoga/bg-mandala.png')] lg:bg-no-repeat lg:bg-[left_58vw_top_-41px] -scroll-mt-1"
+      class="py-10 lg:py-24 bg-150% sm:bg-48% lg:bg-[url('/media/Yoga/bg-mandala.png')] lg:bg-no-repeat lg:bg-[left_58vw_top_-41px] -scroll-mt-1"
     >
       <div class="wrapper px-0 lg:px-6 xl:px-14 2xl:px-20">
         <div class="p-8 lg:p-14 bg-purple lg:rounded-[20px]">

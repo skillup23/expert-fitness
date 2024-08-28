@@ -18,14 +18,14 @@ const links = ref(linksMenu);
           <nav
             class="flex flex-row flex-wrap lg:flex-nowrap lg:flex-col justify-center sm:justify-between text-[14px] sm:text-[16px] lg:text-[18px] 2xl:text-[20px] text-white font-roboto font-light gap-4"
           >
-            <RouterLink
+            <a
               v-for="link in links"
               :key="link.id"
-              :to="link.url"
+              :href="link.url"
               class="opacity-100 hover:opacity-70 transition-hover"
             >
               {{ link.text }}
-            </RouterLink>
+            </a>
             <p class="hidden lg:block mt-24 text-[16px]">
               © 2024 ЦДО ”ЭКСПЕРТ”
             </p>

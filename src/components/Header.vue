@@ -43,16 +43,8 @@ function menuOpen() {
 
         <!-- Меню ПК -->
         <nav
-          class="hidden lg:flex justify-between text-4 text-white font-roboto font-light gap-8 xl:gap-10 2xl:gap-12"
+          class="hidden lg:flex justify-between text-4 text-white font-roboto font-light gap-8 xl:gap-[20px] 2xl:gap-[60px]"
         >
-          <!-- <RouterLink
-            v-for="link in links"
-            :key="link.id"
-            :to="link.url"
-            class="lg:text-[16px] opacity-100 hover:opacity-70 transition-hover"
-          >
-            {{ link.text }}
-          </RouterLink> -->
           <a
             v-for="link in links"
             :key="link.id"
@@ -62,6 +54,11 @@ function menuOpen() {
             {{ link.text }}
           </a>
         </nav>
+
+        <a href="tel:89615858995" class="flex gap-2"
+          ><img src="/media/phone-header.svg" alt="Иконка" class="w-5 h-5" />
+          <h6 class="text-white">+7(961) 585-89-95</h6></a
+        >
 
         <!-- Бургер меню кнопка -->
         <div @click="menuOpen" class="flex lg:hidden hamburger-lines">
@@ -96,15 +93,6 @@ function menuOpen() {
       class="flex lg:hidden absolute w-full bg-purple p-8 top-[63px] sm:top-[93px] flex-col gap-8 rounded-b-[15px] transition-hover z-30"
       :class="[isOpen ? `translate-x-0` : `-translate-x-full`]"
     >
-      <!-- <RouterLink
-        v-for="link in links"
-        :key="link.id"
-        :to="link.url"
-        class="text-[20px] text-white uppercase opacity-100 hover:opacity-70 transition-hover"
-      >
-        {{ link.text }}
-      </RouterLink> -->
-
       <a
         v-for="link in links"
         :key="link.id"
@@ -116,12 +104,6 @@ function menuOpen() {
       </a>
 
       <div class="mt-2 flex gap-9">
-        <!-- <RouterLink
-          to="#"
-          class="text-[20px] text-white uppercase underline hover:text-black"
-        >
-          Связаться
-        </RouterLink> -->
         <a
           href="#zapisatca"
           class="text-[20px] text-white uppercase underline hover:text-black"
