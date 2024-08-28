@@ -386,11 +386,61 @@ function toggleAnswer(id) {
           >Наши преимущества</Heading
         >
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
-          <img
+          <!-- <img
             src="/media/Yoga/preim1.jpg"
             alt="Преимущества"
             class="w-full h-full row-span-2 col-span-2 rounded-[20px]"
-          />
+          /> -->
+          <!-- <div class="w-full h-full row-span-2 col-span-2 rounded-[20px]">
+            <iframe
+              src="https://kinescope.io/embed/ikgpxoDrV9m2F1X11Nz9K3"
+              allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;"
+              frameborder="0"
+              allowfullscreen
+              style="
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+              "
+            ></iframe>
+          </div> -->
+          <div
+            class="relative w-full h-[290px] sm:h-[51.5vw] lg:h-full row-span-2 col-span-2 rounded-[20px] bg-white"
+          >
+            <iframe
+              src="https://kinescope.io/embed/ikgpxoDrV9m2F1X11Nz9K3"
+              allow="fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;"
+              frameborder="0"
+              style="
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                border-radius: 20px;
+              "
+            ></iframe>
+          </div>
+
+          <!-- <video
+            controls
+            muted
+            class="w-full h-full row-span-2 col-span-2 rounded-[20px]"
+          >
+            <source
+              src="https://kinescope.io/ikgpxoDrV9m2F1X11Nz9K3"
+              type="video/mp4"
+            />
+            <p>
+              Ваш браузер не поддерживает встроенные видео. Попробуйте скачать
+              его по
+              <a href="https://kinescope.io/ikgpxoDrV9m2F1X11Nz9K3"
+                >этой ссылке</a
+              >.
+            </p>
+          </video> -->
 
           <div
             class="p-[18px] hidden lg:flex items-start rounded-[20px] bg-white gap-4"
