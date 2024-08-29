@@ -2,7 +2,7 @@
 import { ref } from "vue";
 import Heading from "@/components/Heading.vue";
 import SliderExpert from "@/components/SliderExpert.vue";
-import SliderLessonYoga from "@/components/SliderLessonYoga.vue";
+// import SliderLessonYoga from "@/components/SliderLessonYoga.vue";
 import SliderLessonYogaMobile from "@/components/SliderLessonYogaMobile.vue";
 import SliderReviews from "@/components/SliderReviews.vue";
 import ButtonMain from "@/components/ButtonMain.vue";
@@ -569,8 +569,8 @@ function toggleAnswer(id) {
           <Heading class="heading mb-8 sm:mb-14"
             >Примеры уроков и связок</Heading
           >
-          <SliderLessonYoga class="-mx-6 hidden sm:block" />
-          <SliderLessonYogaMobile class="-mx-6 block sm:hidden" />
+          <!-- <SliderLessonYoga class="-mx-6 hidden sm:block" /> -->
+          <SliderLessonYogaMobile class="-mx-6" />
         </div>
       </div>
     </section>
