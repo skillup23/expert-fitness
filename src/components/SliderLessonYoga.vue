@@ -81,16 +81,7 @@ const slides = ref(sliderLessonYouga);
           </p>
         </video> -->
 
-        <iframe
-          :src="slide.src"
-          width="333"
-          height="660"
-          frameborder="0"
-          allowfullscreen="1"
-          allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
-        ></iframe>
-
-        <!-- <div style="position: relative; padding-top: 177.78%; width: 100%">
+        <div style="position: relative; padding-top: 177.78%; width: 100%">
           <iframe
             :src="slide.src"
             allow=""
@@ -104,7 +95,7 @@ const slides = ref(sliderLessonYouga);
               border-radius: 20px;
             "
           ></iframe>
-        </div> -->
+        </div>
       </div>
     </Slide>
 

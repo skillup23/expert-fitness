@@ -121,22 +121,22 @@ const slideExpert = [
 
 //     Слайдер  Примеры уроков Йога
 const sliderLessonYouga = [
-  // {
-  //   id: id++,
-  //   src: 'https://kinescope.io/embed/8mqUyr5BTDC5zsmHAHUVJG?preload=0',
-  // },
-  // {
-  //   id: id++,
-  //   src: 'https://kinescope.io/embed/tEfDGJfkbikepWgF7GnZ9R?preload=0',
-  // },
-  // {
-  //   id: id++,
-  //   src: 'https://kinescope.io/embed/vSxieF2F3dM8xrnvQkpNzX?preload=0',
-  // },
-  // {
-  //   id: id++,
-  //   src: 'https://kinescope.io/embed/hjsQjxTK7B2faBw8p9HkoQ?preload=0',
-  // },
+  {
+    id: id++,
+    src: "https://kinescope.io/embed/8mqUyr5BTDC5zsmHAHUVJG?preload=0",
+  },
+  {
+    id: id++,
+    src: "https://kinescope.io/embed/tEfDGJfkbikepWgF7GnZ9R?preload=0",
+  },
+  {
+    id: id++,
+    src: "https://kinescope.io/embed/vSxieF2F3dM8xrnvQkpNzX?preload=0",
+  },
+  {
+    id: id++,
+    src: "https://kinescope.io/embed/hjsQjxTK7B2faBw8p9HkoQ?preload=0",
+  },
   // {
   //   id: id++,
   //   src: 'https://kinescope.io/embed/12Qu6X5e7PPsRYCQwwbVEN?preload=0',
@@ -179,34 +179,34 @@ const sliderLessonYouga = [
   //   src: '/media/Yoga/video/7.mp4',
   // },
 
-  {
-    id: id++,
-    src: "https://vk.com/video_ext.php?oid=-181150794&id=456241607&hash=08b70a2029d96828",
-  },
-  {
-    id: id++,
-    src: "https://vk.com/video_ext.php?oid=-181150794&id=456241565&hash=05a5a3f037691617",
-  },
-  {
-    id: id++,
-    src: "https://vk.com/video_ext.php?oid=-181150794&id=456241544&hash=f691912efe9843d6",
-  },
-  {
-    id: id++,
-    src: "https://vk.com/video_ext.php?oid=-181150794&id=456241465&hash=0710e6d86cac4f61",
-  },
-  {
-    id: id++,
-    src: "https://vk.com/video_ext.php?oid=-181150794&id=456241310&hash=77eba98b0ec999c8",
-  },
-  {
-    id: id++,
-    src: "https://vk.com/video_ext.php?oid=-181150794&id=456241306&hash=94aefb7b6821ff04",
-  },
-  {
-    id: id++,
-    src: "https://vk.com/video_ext.php?oid=-181150794&id=456241159&hash=187f55dae35a4d6b",
-  },
+  // {
+  //   id: id++,
+  //   src: "https://vk.com/video_ext.php?oid=-181150794&id=456241607&hash=08b70a2029d96828",
+  // },
+  // {
+  //   id: id++,
+  //   src: "https://vk.com/video_ext.php?oid=-181150794&id=456241565&hash=05a5a3f037691617",
+  // },
+  // {
+  //   id: id++,
+  //   src: "https://vk.com/video_ext.php?oid=-181150794&id=456241544&hash=f691912efe9843d6",
+  // },
+  // {
+  //   id: id++,
+  //   src: "https://vk.com/video_ext.php?oid=-181150794&id=456241465&hash=0710e6d86cac4f61",
+  // },
+  // {
+  //   id: id++,
+  //   src: "https://vk.com/video_ext.php?oid=-181150794&id=456241310&hash=77eba98b0ec999c8",
+  // },
+  // {
+  //   id: id++,
+  //   src: "https://vk.com/video_ext.php?oid=-181150794&id=456241306&hash=94aefb7b6821ff04",
+  // },
+  // {
+  //   id: id++,
+  //   src: "https://vk.com/video_ext.php?oid=-181150794&id=456241159&hash=187f55dae35a4d6b",
+  // },
 
   // {
   //   id: id++,
