@@ -120,6 +120,37 @@ const slideExpert = [
 ];
 
 //     Слайдер  Примеры уроков Йога
+const sliderLessonYougaMobile = [
+  {
+    id: id++,
+    src: "https://kinescope.io/embed/8mqUyr5BTDC5zsmHAHUVJG?preload=1",
+  },
+  {
+    id: id++,
+    src: "https://kinescope.io/embed/tEfDGJfkbikepWgF7GnZ9R?preload=1",
+  },
+  {
+    id: id++,
+    src: "https://kinescope.io/embed/vSxieF2F3dM8xrnvQkpNzX?preload=1",
+  },
+  {
+    id: id++,
+    src: "https://kinescope.io/embed/hjsQjxTK7B2faBw8p9HkoQ?preload=1",
+  },
+  {
+    id: id++,
+    src: "https://kinescope.io/embed/12Qu6X5e7PPsRYCQwwbVEN?preload=0",
+  },
+  {
+    id: id++,
+    src: "https://kinescope.io/embed/gKgNoVi7eEC53r3bkJF55X?preload=0",
+  },
+  {
+    id: id++,
+    src: "https://kinescope.io/embed/jWXLmutK13nFLEYXKX9m3D?preload=0",
+  },
+];
+
 const sliderLessonYouga = [
   {
     id: id++,
@@ -137,18 +168,18 @@ const sliderLessonYouga = [
     id: id++,
     src: "https://kinescope.io/embed/hjsQjxTK7B2faBw8p9HkoQ?preload=0",
   },
-  // {
-  //   id: id++,
-  //   src: 'https://kinescope.io/embed/12Qu6X5e7PPsRYCQwwbVEN?preload=0',
-  // },
-  // {
-  //   id: id++,
-  //   src: 'https://kinescope.io/embed/gKgNoVi7eEC53r3bkJF55X?preload=0',
-  // },
-  // {
-  //   id: id++,
-  //   src: 'https://kinescope.io/embed/jWXLmutK13nFLEYXKX9m3D?preload=0',
-  // },
+  {
+    id: id++,
+    src: "https://kinescope.io/embed/12Qu6X5e7PPsRYCQwwbVEN?preload=0",
+  },
+  {
+    id: id++,
+    src: "https://kinescope.io/embed/gKgNoVi7eEC53r3bkJF55X?preload=0",
+  },
+  {
+    id: id++,
+    src: "https://kinescope.io/embed/jWXLmutK13nFLEYXKX9m3D?preload=0",
+  },
 
   // {
   //   id: id++,
@@ -206,35 +237,6 @@ const sliderLessonYouga = [
   // {
   //   id: id++,
   //   src: "https://vk.com/video_ext.php?oid=-181150794&id=456241159&hash=187f55dae35a4d6b",
-  // },
-
-  // {
-  //   id: id++,
-  //   image: '/media/Yoga/slide-lesson1.jpg',
-  // },
-  // {
-  //   id: id++,
-  //   image: '/media/Yoga/slide-lesson2.jpg',
-  // },
-  // {
-  //   id: id++,
-  //   image: '/media/Yoga/slide-lesson3.jpg',
-  // },
-  // {
-  //   id: id++,
-  //   image: '/media/Yoga/slide-lesson4.jpg',
-  // },
-  // {
-  //   id: id++,
-  //   image: '/media/Yoga/slide-lesson5.jpg',
-  // },
-  // {
-  //   id: id++,
-  //   image: '/media/Yoga/slide-lesson6.jpg',
-  // },
-  // {
-  //   id: id++,
-  //   image: '/media/Yoga/slide-lesson7.jpg',
   // },
 ];
 
@@ -470,6 +472,7 @@ export {
   linksMenu,
   slideExpert,
   sliderLessonYouga,
+  sliderLessonYougaMobile,
   sliderReviewYouga,
   programmYoga,
   sliderAdvantages,

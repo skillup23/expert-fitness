@@ -3,6 +3,7 @@ import { ref } from "vue";
 import Heading from "@/components/Heading.vue";
 import SliderExpert from "@/components/SliderExpert.vue";
 import SliderLessonYoga from "@/components/SliderLessonYoga.vue";
+import SliderLessonYogaMobile from "@/components/SliderLessonYogaMobile.vue";
 import SliderReviews from "@/components/SliderReviews.vue";
 import ButtonMain from "@/components/ButtonMain.vue";
 import AccordeonList from "@/components/AccordeonList.vue";
@@ -407,7 +408,7 @@ function toggleAnswer(id) {
             class="relative w-full h-[260px] sm:h-[51.5vw] lg:h-full row-span-2 col-span-2 rounded-[20px] bg-white"
           >
             <iframe
-              src="https://kinescope.io/embed/ikgpxoDrV9m2F1X11Nz9K3"
+              src="https://kinescope.io/embed/ikgpxoDrV9m2F1X11Nz9K3?preload=1"
               allow="fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;"
               frameborder="0"
               style="
@@ -568,7 +569,8 @@ function toggleAnswer(id) {
           <Heading class="heading mb-8 sm:mb-14"
             >Примеры уроков и связок</Heading
           >
-          <SliderLessonYoga class="-mx-6" />
+          <SliderLessonYoga class="-mx-6 hidden sm:block" />
+          <SliderLessonYogaMobile class="-mx-6 block sm:hidden" />
         </div>
       </div>
     </section>
