@@ -11,6 +11,16 @@ const isOpen = ref(false);
 
 function menuOpen() {
   isOpen.value = !isOpen.value;
+
+  const b = document.querySelector('body');
+
+  if (isOpen.value === true) {
+    b.classList.add('overflow-hidden');
+    b.classList.remove('overflow-auto');
+  } else {
+    b.classList.add('overflow-auto');
+    b.classList.remove('overflow-hidden');
+  }
 }
 </script>
 
@@ -96,7 +106,7 @@ function menuOpen() {
 
     <!-- Меню мобильное -->
     <div
-      class="flex lg:hidden absolute w-full bg-purple p-8 top-[63px] sm:top-[93px] flex-col gap-8 rounded-b-[15px] transition-hover z-30"
+      class="flex lg:hidden absolute w-full h-dvh bg-purple p-8 top-[63px] sm:top-[93px] flex-col gap-8 rounded-b-[15px] transition-hover z-30"
       :class="[isOpen ? `translate-x-0` : `-translate-x-full`]"
     >
       <a

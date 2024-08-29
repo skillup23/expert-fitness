@@ -404,7 +404,7 @@ function toggleAnswer(id) {
             class="w-full h-full row-span-2 col-span-2 rounded-[20px]"
           /> -->
           <div
-            class="relative w-full h-[290px] sm:h-[51.5vw] lg:h-full row-span-2 col-span-2 rounded-[20px] bg-white"
+            class="relative w-full h-[260px] sm:h-[51.5vw] lg:h-full row-span-2 col-span-2 rounded-[20px] bg-white"
           >
             <iframe
               src="https://kinescope.io/embed/ikgpxoDrV9m2F1X11Nz9K3"
