@@ -123,31 +123,31 @@ const slideExpert = [
 const sliderLessonYouga = [
   {
     id: id++,
-    src: 'https://kinescope.io/embed/8mqUyr5BTDC5zsmHAHUVJG?preload=0',
+    src: 'https://kinescope.io/embed/8mqUyr5BTDC5zsmHAHUVJG?preload=1',
   },
   {
     id: id++,
-    src: 'https://kinescope.io/embed/tEfDGJfkbikepWgF7GnZ9R?preload=0',
+    src: 'https://kinescope.io/embed/tEfDGJfkbikepWgF7GnZ9R?preload=1',
   },
   {
     id: id++,
-    src: 'https://kinescope.io/embed/vSxieF2F3dM8xrnvQkpNzX?preload=0',
+    src: 'https://kinescope.io/embed/vSxieF2F3dM8xrnvQkpNzX?preload=1',
   },
   {
     id: id++,
-    src: 'https://kinescope.io/embed/hjsQjxTK7B2faBw8p9HkoQ?preload=0',
+    src: 'https://kinescope.io/embed/hjsQjxTK7B2faBw8p9HkoQ?preload=1',
   },
   {
     id: id++,
-    src: 'https://kinescope.io/embed/12Qu6X5e7PPsRYCQwwbVEN?preload=0',
+    src: 'https://kinescope.io/embed/12Qu6X5e7PPsRYCQwwbVEN?preload=1',
   },
   {
     id: id++,
-    src: 'https://kinescope.io/embed/gKgNoVi7eEC53r3bkJF55X?preload=0',
+    src: 'https://kinescope.io/embed/gKgNoVi7eEC53r3bkJF55X?preload=1',
   },
   {
     id: id++,
-    src: 'https://kinescope.io/embed/jWXLmutK13nFLEYXKX9m3D?preload=0',
+    src: 'https://kinescope.io/embed/jWXLmutK13nFLEYXKX9m3D?preload=1',
   },
 
   // {
