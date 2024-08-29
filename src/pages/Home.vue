@@ -416,7 +416,6 @@ function toggleAnswer(id) {
                 height: 100%;
                 top: 0;
                 left: 0;
-                border-radius: 20px;
               "
             ></iframe>
           </div>

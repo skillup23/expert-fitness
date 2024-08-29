@@ -121,63 +121,63 @@ const slideExpert = [
 
 //     Слайдер  Примеры уроков Йога
 const sliderLessonYouga = [
-  // {
-  //   id: id++,
-  //   src: 'https://kinescope.io/embed/8mqUyr5BTDC5zsmHAHUVJG',
-  // },
-  // {
-  //   id: id++,
-  //   src: 'https://kinescope.io/embed/tEfDGJfkbikepWgF7GnZ9R',
-  // },
-  // {
-  //   id: id++,
-  //   src: 'https://kinescope.io/embed/vSxieF2F3dM8xrnvQkpNzX',
-  // },
-  // {
-  //   id: id++,
-  //   src: 'https://kinescope.io/embed/hjsQjxTK7B2faBw8p9HkoQ',
-  // },
-  // {
-  //   id: id++,
-  //   src: 'https://kinescope.io/embed/12Qu6X5e7PPsRYCQwwbVEN',
-  // },
-  // {
-  //   id: id++,
-  //   src: 'https://kinescope.io/embed/gKgNoVi7eEC53r3bkJF55X',
-  // },
-  // {
-  //   id: id++,
-  //   src: 'https://kinescope.io/embed/jWXLmutK13nFLEYXKX9m3D',
-  // },
+  {
+    id: id++,
+    src: 'https://kinescope.io/embed/8mqUyr5BTDC5zsmHAHUVJG?preload=0',
+  },
+  {
+    id: id++,
+    src: 'https://kinescope.io/embed/tEfDGJfkbikepWgF7GnZ9R?preload=0',
+  },
+  {
+    id: id++,
+    src: 'https://kinescope.io/embed/vSxieF2F3dM8xrnvQkpNzX?preload=0',
+  },
+  {
+    id: id++,
+    src: 'https://kinescope.io/embed/hjsQjxTK7B2faBw8p9HkoQ?preload=0',
+  },
+  {
+    id: id++,
+    src: 'https://kinescope.io/embed/12Qu6X5e7PPsRYCQwwbVEN?preload=0',
+  },
+  {
+    id: id++,
+    src: 'https://kinescope.io/embed/gKgNoVi7eEC53r3bkJF55X?preload=0',
+  },
+  {
+    id: id++,
+    src: 'https://kinescope.io/embed/jWXLmutK13nFLEYXKX9m3D?preload=0',
+  },
 
-  {
-    id: id++,
-    src: '/media/Yoga/video/1.mp4',
-  },
-  {
-    id: id++,
-    src: '/media/Yoga/video/2.mp4',
-  },
-  {
-    id: id++,
-    src: '/media/Yoga/video/3.mp4',
-  },
-  {
-    id: id++,
-    src: '/media/Yoga/video/4.mp4',
-  },
-  {
-    id: id++,
-    src: '/media/Yoga/video/5.mp4',
-  },
-  {
-    id: id++,
-    src: '/media/Yoga/video/6.mp4',
-  },
-  {
-    id: id++,
-    src: '/media/Yoga/video/7.mp4',
-  },
+  // {
+  //   id: id++,
+  //   src: '/media/Yoga/video/1.mp4',
+  // },
+  // {
+  //   id: id++,
+  //   src: '/media/Yoga/video/2.mp4',
+  // },
+  // {
+  //   id: id++,
+  //   src: '/media/Yoga/video/3.mp4',
+  // },
+  // {
+  //   id: id++,
+  //   src: '/media/Yoga/video/4.mp4',
+  // },
+  // {
+  //   id: id++,
+  //   src: '/media/Yoga/video/5.mp4',
+  // },
+  // {
+  //   id: id++,
+  //   src: '/media/Yoga/video/6.mp4',
+  // },
+  // {
+  //   id: id++,
+  //   src: '/media/Yoga/video/7.mp4',
+  // },
 
   // {
   //   id: id++,

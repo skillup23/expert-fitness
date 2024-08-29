@@ -20,21 +20,21 @@ function menuOpen() {
       <div class="flex justify-between items-center">
         <RouterLink
           to="/"
-          class="w-[250px] my-2 sm:my-4 flex justify-between items-center gap-2 opacity-100 hover:opacity-90 transition-hover"
+          class="w-[220px] xl:w-[250px] my-2 sm:my-4 flex justify-between items-center gap-2 opacity-100 hover:opacity-90 transition-hover"
         >
           <img
             src="/media/logo.png"
             alt="Логотип"
-            class="w-12 sm:w-16 sm:h-16"
+            class="w-12 sm:w-14 xl:w-16 sm:h-14 xl:h-16"
           />
           <div class="w-full sm:p-[6px] text-white">
             <h6
-              class="mb-1 font-unbounded font-medium text-[14px] sm:text-[16px] leading-none"
+              class="mb-1 font-unbounded font-medium text-[14px] xl:text-[16px] leading-none"
             >
               ЭКСПЕРТ
             </h6>
             <p
-              class="font-roboto font-normal text-[12px] sm:text-[14px] leading-none"
+              class="font-roboto font-normal text-[12px] xl:text-[14px] leading-none"
             >
               Центр дополнительного образования
             </p>
@@ -43,7 +43,7 @@ function menuOpen() {
 
         <!-- Меню ПК -->
         <nav
-          class="hidden lg:flex justify-between text-4 text-white font-roboto font-light gap-8 xl:gap-[20px] 2xl:gap-[60px]"
+          class="hidden lg:flex justify-between text-4 text-white font-roboto font-light gap-6 xl:gap-[20px] 2xl:gap-[60px]"
         >
           <a
             v-for="link in links"
@@ -55,9 +55,15 @@ function menuOpen() {
           </a>
         </nav>
 
-        <a href="tel:89615858995" class="flex gap-2"
-          ><img src="/media/phone-header.svg" alt="Иконка" class="w-5 h-5" />
-          <h6 class="text-white">+7(961) 585-89-95</h6></a
+        <a href="tel:89615858995" class="hidden lg:flex gap-2"
+          ><img
+            src="/media/phone-header.svg"
+            alt="Иконка"
+            class="w-5 h-5 hidden xl:block"
+          />
+          <h6 class="text-white text-[14px] lg:text-[16px]">
+            +7(961) 585-89-95
+          </h6></a
         >
 
         <!-- Бургер меню кнопка -->
@@ -80,7 +86,7 @@ function menuOpen() {
 
         <a href="#zapisatca" class="hidden lg:block">
           <ButtonMain
-            class="px-4 py-2 bg-white text-[16px] text-black hover:text-white"
+            class="px-4 py-2 bg-white text-[14px] xl:text-[16px] text-black hover:text-white"
           >
             Записаться
           </ButtonMain>

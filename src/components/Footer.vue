@@ -37,15 +37,17 @@ const links = ref(linksMenu);
 
             <SocialMedia class="mt-6 sm:mt-0" />
 
-            <div class="mt-6 sm:mt-[18px] flex gap-5">
-              <a href="#" target="_blank">
+            <div
+              class="mt-6 sm:mt-[18px] flex gap-5 justify-between sm:justify-start"
+            >
+              <a href="#" target="_blank" class="w-[124px]">
                 <img
                   src="/media/yandex-rating.jpg"
                   alt="Вконтакте"
                   class="rounded-lg"
                 />
               </a>
-              <a href="#" target="_blank">
+              <a href="#" target="_blank" class="w-[124px]">
                 <img
                   src="/media/2gis-rating.jpg"
                   alt="Вконтакте"
@@ -58,7 +60,9 @@ const links = ref(linksMenu);
             <YandexMap />
           </div>
         </div>
-        <p class="block lg:hidden mt-6 sm:mt-12 text-[16px] text-white">
+        <p
+          class="block lg:hidden mt-6 sm:mt-12 text-[14px] sm:text-[16px] text-white"
+        >
           © 2024 ЦДО ”ЭКСПЕРТ”
         </p>
       </div>

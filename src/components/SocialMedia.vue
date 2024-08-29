@@ -4,7 +4,7 @@
       <img
         src="/media/vk-white.svg"
         alt="Вконтакте"
-        class="w-8 h-8 opacity-100 hover:opacity-70 transition-hover"
+        class="w-10 sm:w-8 h-10 sm:h-8 opacity-100 hover:opacity-70 transition-hover"
       />
     </a>
     <a
@@ -14,14 +14,14 @@
       <img
         src="/media/youtube-white.svg"
         alt="Ютюб"
-        class="w-8 h-8 opacity-100 hover:opacity-70 transition-hover"
+        class="w-10 sm:w-8 h-10 sm:h-8 opacity-100 hover:opacity-70 transition-hover"
       />
     </a>
     <a href="https://t.me/fitnesstrener23" target="_blank">
       <img
         src="/media/telegram-white.svg"
         alt="Телеграм"
-        class="w-8 h-8 opacity-100 hover:opacity-70 transition-hover"
+        class="w-10 sm:w-8 h-10 sm:h-8 opacity-100 hover:opacity-70 transition-hover"
       />
     </a>
   </div>
