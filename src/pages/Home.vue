@@ -1,16 +1,17 @@
 <script setup>
-import { ref } from 'vue';
-import Heading from '@/components/Heading.vue';
-import SliderExpert from '@/components/SliderExpert.vue';
-import SliderLessonYoga from '@/components/SliderLessonYoga.vue';
-import SliderReviews from '@/components/SliderReviews.vue';
-import ButtonMain from '@/components/ButtonMain.vue';
-import AccordeonList from '@/components/AccordeonList.vue';
-import FormFeedback from '@/components/FormFeedback.vue';
+import { ref } from "vue";
+import Heading from "@/components/Heading.vue";
+import SliderExpert from "@/components/SliderExpert.vue";
+import SliderLessonYoga from "@/components/SliderLessonYoga.vue";
+import SliderReviews from "@/components/SliderReviews.vue";
+import ButtonMain from "@/components/ButtonMain.vue";
+import AccordeonList from "@/components/AccordeonList.vue";
+import FormFeedback from "@/components/FormFeedback.vue";
 
-import { programmYoga } from '@/assets/data';
-import SliderAdvantages from '@/components/SliderAdvantages.vue';
-import YandexMap from '@/components/YandexMap.vue';
+import { programmYoga } from "@/assets/data";
+import SliderAdvantages from "@/components/SliderAdvantages.vue";
+import YandexMap from "@/components/YandexMap.vue";
+// import LessonYoga from "@/components/LessonYoga.vue";
 
 const isKyrs = ref(true);
 function toogleKyrs(elem) {
@@ -569,6 +570,7 @@ function toggleAnswer(id) {
             >Примеры уроков и связок</Heading
           >
           <SliderLessonYoga class="-mx-6" />
+          <!-- <LessonYoga class="block sm:hidden" /> -->
         </div>
       </div>
     </section>

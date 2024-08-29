@@ -23,7 +23,7 @@ export default defineComponent({
     breakpoints: {
       // 500px and up
       500: {
-        itemsToShow: 7,
+        itemsToShow: 1,
         snapAlign: "center",
       },
       // 700px and up
@@ -81,7 +81,16 @@ const slides = ref(sliderLessonYouga);
           </p>
         </video> -->
 
-        <div style="position: relative; padding-top: 177.78%; width: 100%">
+        <iframe
+          :src="slide.src"
+          width="333"
+          height="660"
+          frameborder="0"
+          allowfullscreen="1"
+          allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
+        ></iframe>
+
+        <!-- <div style="position: relative; padding-top: 177.78%; width: 100%">
           <iframe
             :src="slide.src"
             allow=""
@@ -95,7 +104,7 @@ const slides = ref(sliderLessonYouga);
               border-radius: 20px;
             "
           ></iframe>
-        </div>
+        </div> -->
       </div>
     </Slide>
 
