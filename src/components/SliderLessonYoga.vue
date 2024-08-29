@@ -72,16 +72,16 @@ const slides = ref(sliderLessonYouga);
           allow="encrypted-media; fullscreen; picture-in-picture"
           style="border-radius: 30px"
         ></iframe> -->
-        <!-- <video controls muted class="rounded-[20px]">
+        <video controls muted class="rounded-[20px]">
           <source :src="slide.src" type="video/mp4" />
           <p>
             Ваш браузер не поддерживает встроенные видео. Попробуйте скачать его
             по
             <a :href="slide.src">этой ссылке</a>.
           </p>
-        </video> -->
+        </video>
 
-        <div style="position: relative; padding-top: 177.78%; width: 100%">
+        <!-- <div style="position: relative; padding-top: 177.78%; width: 100%">
           <iframe
             :src="slide.src"
             allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;"
@@ -94,7 +94,7 @@ const slides = ref(sliderLessonYouga);
               left: 0;
             "
           ></iframe>
-        </div>
+        </div> -->
       </div>
     </Slide>
 
