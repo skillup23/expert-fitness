@@ -40,14 +40,22 @@ const links = ref(linksMenu);
             <div
               class="mt-6 sm:mt-[18px] flex gap-5 justify-between sm:justify-start"
             >
-              <a href="#" target="_blank" class="w-[124px]">
+              <a
+                href="https://yandex.ru/maps/org/ekspert/31606864366/?display-text=эксперт%20фитнес&filter=alternate_vertical%3ARequestWindow&ll=39.003759%2C45.078269&mode=search&sctx=ZAAAAAgBEAAaKAoSCWeasP1kfENAEY%2F%2FAkGAjEZAEhIJZvUOt0PDuj8RqKj6lc6Hpz8iBgABAgMEBSgKOABAI0gBYjtyZWxldl9yYW5raW5nX2hlYXZ5X3JlbGV2X3NlcnBfZm9ybXVsYT0wLjYwOmwzX2RjMzc4MzQ1X2V4cGI7cmVsZXZfcmFua2luZ19oZWF2eV9yZWxldl93b3JsZF9mb3JtdWxhPTAuNzpsM19kYzM3ODM0NV9leHBiO3JlbGV2X3JhbmtpbmdfaGVhdnlfcmVsZXZfbWFwc19mb3JtdWxhPTAuNjA6bDNfZGMzNzgzNDVfZXhwYilyZWxldl9pcnJlbF9maWx0ZXI9MS4wOmlycmVsX2RjMzc5ODQxX2V4cGI0cmVhcnI9c2NoZW1lX0xvY2FsL0dlby9Qb3N0ZmlsdGVyL0lycmVsVGhyZXNob2xkPTAuNGJOcmVhcnI9c2NoZW1lX0xvY2FsL0dlby9SdWJyaWNSZWFycmFuZ2VzL1JlYXJyYW5nZVJ1YnJpY0J5L0Rpc2FibGVHdWRpbmlSZWFycj0xagJydZ0BzcxMPaABAKgBAL0BXRSDG8IBBe7zqd916gEA8gEA%2BAEAggIb0Y3QutGB0L%2FQtdGA0YIg0YTQuNGC0L3QtdGBigIAkgIAmgIMZGVza3RvcC1tYXBz&sll=39.003759%2C45.078269&sspn=0.104542%2C0.045974&text=эксперт%20фитнес&utm_campaign=desktop&utm_medium=search&utm_source=share&z=14"
+                target="_blank"
+                class="w-[124px]"
+              >
                 <img
                   src="/media/yandex-rating.jpg"
                   alt="Вконтакте"
                   class="rounded-lg"
                 />
               </a>
-              <a href="#" target="_blank" class="w-[124px]">
+              <a
+                href="https://2gis.ru/krasnodar/search/фитнес%20эксперт/firm/70000001044079186/38.98272%2C45.067742"
+                target="_blank"
+                class="w-[124px]"
+              >
                 <img
                   src="/media/2gis-rating.jpg"
                   alt="Вконтакте"
