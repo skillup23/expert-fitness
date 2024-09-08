@@ -53,7 +53,7 @@ function menuOpen() {
 
         <!-- Меню ПК -->
         <nav
-          class="hidden lg:flex justify-between text-4 text-white font-roboto font-light gap-6 xl:gap-[20px] 2xl:gap-[60px]"
+          class="hidden lg:flex justify-between text-4 text-white font-roboto font-light gap-6 xl:gap-[50px] 2xl:gap-[60px]"
         >
           <a
             v-for="link in links"
