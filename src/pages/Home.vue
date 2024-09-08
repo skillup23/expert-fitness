@@ -63,7 +63,7 @@ function toggleAnswer(id) {
           </div>
 
           <img
-            src="/media/Yoga/main-foto.png"
+            src="/media/Yoga/main-foto1.png"
             alt="Фото Йога"
             class="mx-auto lg:mx-0 mt-4 sm:mt-10 lg:mt-0 lg:-ml-[4vw] xl:-ml-[12vw] w-10/12 lg:w-6/12 xl:w-6/12"
           />
