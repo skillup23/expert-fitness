@@ -547,7 +547,7 @@ function toggleAnswer(id) {
             <AccordeonList
               :programms="programms.slice(5, 10)"
               @toggleAnswer="toggleAnswer"
-              class="mt-6 lg:mt-0"
+              class="mt-5 lg:mt-0"
             />
           </div>
 
