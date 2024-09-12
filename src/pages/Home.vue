@@ -1,17 +1,17 @@
 <script setup>
-import { ref } from "vue";
-import Heading from "@/components/Heading.vue";
-import SliderExpert from "@/components/SliderExpert.vue";
+import { ref } from 'vue';
+import Heading from '@/components/Heading.vue';
+import SliderExpert from '@/components/SliderExpert.vue';
 // import SliderLessonYoga from "@/components/SliderLessonYoga.vue";
-import SliderLessonYogaMobile from "@/components/SliderLessonYogaMobile.vue";
-import SliderReviews from "@/components/SliderReviews.vue";
-import ButtonMain from "@/components/ButtonMain.vue";
-import AccordeonList from "@/components/AccordeonList.vue";
-import FormFeedback from "@/components/FormFeedback.vue";
+import SliderLessonYogaMobile from '@/components/SliderLessonYogaMobile.vue';
+import SliderReviews from '@/components/SliderReviews.vue';
+import ButtonMain from '@/components/ButtonMain.vue';
+import AccordeonList from '@/components/AccordeonList.vue';
+import FormFeedback from '@/components/FormFeedback.vue';
 
-import { programmYoga } from "@/assets/data";
-import SliderAdvantages from "@/components/SliderAdvantages.vue";
-import YandexMap from "@/components/YandexMap.vue";
+import { programmYoga } from '@/assets/data';
+import SliderAdvantages from '@/components/SliderAdvantages.vue';
+import YandexMap from '@/components/YandexMap.vue';
 
 const isKyrs = ref(true);
 function toogleKyrs(elem) {
@@ -360,7 +360,7 @@ function toggleAnswer(id) {
             <div
               class="mx-auto lg:mx-0 mt-8 lg:mt-[121px] flex xl:flex-col gap-4 sm:gap-6"
             >
-              <a href="https://vk.com/fitnesstrener123" target="_blank">
+              <a href="https://vk.com/thapp?mid=-181150794" target="_blank">
                 <ButtonMain class="flex items-center gap-2">
                   <img
                     src="/media/vk-white.svg"
@@ -370,7 +370,10 @@ function toggleAnswer(id) {
                   <span>Учиться в вк</span>
                 </ButtonMain>
               </a>
-              <a href="https://vk.com/fitnesstrener123" target="_blank">
+              <a
+                href="https://thm.page/p/66bf9b59bafbff762d5b103c"
+                target="_blank"
+              >
                 <ButtonMain class="flex items-center gap-2">
                   <img
                     src="/media/telegram-white.svg"
