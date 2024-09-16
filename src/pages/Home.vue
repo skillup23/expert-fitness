@@ -370,7 +370,7 @@ function toggleAnswer(id) {
                   <span>Учиться в вк</span>
                 </ButtonMain>
               </a>
-              <a href="hhttps://thm.page/p/66bf9b59bafbff762d5b103c" target="_blank">
+              <a href="https://thm.page/p/66bf9b59bafbff762d5b103c" target="_blank">
                 <ButtonMain class="flex items-center gap-2">
                   <img
                     src="/media/telegram-white.svg"
