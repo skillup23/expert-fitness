@@ -360,7 +360,7 @@ function toggleAnswer(id) {
             <div
               class="mx-auto lg:mx-0 mt-8 lg:mt-[121px] flex xl:flex-col gap-4 sm:gap-6"
             >
-              <a href="https://vk.com/fitnesstrener123" target="_blank">
+              <a href="https://vk.com/thapp?mid=-181150794" target="_blank">
                 <ButtonMain class="flex items-center gap-2">
                   <img
                     src="/media/vk-white.svg"
@@ -370,7 +370,7 @@ function toggleAnswer(id) {
                   <span>Учиться в вк</span>
                 </ButtonMain>
               </a>
-              <a href="https://vk.com/fitnesstrener123" target="_blank">
+              <a href="hhttps://thm.page/p/66bf9b59bafbff762d5b103c" target="_blank">
                 <ButtonMain class="flex items-center gap-2">
                   <img
                     src="/media/telegram-white.svg"
@@ -583,7 +583,7 @@ function toggleAnswer(id) {
       <div class="wrapper px-0 lg:px-6 xl:px-14 2xl:px-20">
         <div class="p-8 lg:p-14 bg-purple lg:rounded-[20px]">
           <Heading
-            class="heading mb-8 xl:mb-14 ml-[22px] sm:ml-[71px] text-white text-start"
+            class="heading mb-8 xl:mb-14 ml-[22px] sm:ml-[0px] text-white text-start"
             >Отзывы</Heading
           >
           <SliderReviews />
