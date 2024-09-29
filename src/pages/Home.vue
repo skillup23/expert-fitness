@@ -73,17 +73,22 @@ function toggleAnswer(id) {
               <ButtonMain class="mt-6">Учиться бесплатно</ButtonMain>
             </a>
 
-            <div class="mx-auto flex mt-6 sm:mt-8 mb-0 sm:mb-10 gap-9">
+            <div
+              class="w-11/12 sm:w-8/12 mx-auto flex justify-between mt-6 sm:mt-8 mb-0 sm:mb-10"
+            >
+              <div>
+                <h6 class="font-light">Формат</h6>
+                <h6 class="text-purple font-medium">Очно</h6>
+                <h6 class="text-purple font-medium">Онлайн</h6>
+              </div>
               <div>
                 <h6 class="font-light">Старт</h6>
                 <h6 class="text-purple font-medium">19 октября</h6>
-              </div>
-              <div>
-                <h6 class="font-light">Формат</h6>
-                <h6 class="text-purple font-medium">Онлайн/Очно</h6>
+                <h6 class="text-purple font-medium">12 ноября</h6>
               </div>
               <div>
                 <h6 class="font-light">Длительность</h6>
+                <h6 class="text-purple font-medium">3 месяца</h6>
                 <h6 class="text-purple font-medium">3 месяца</h6>
               </div>
             </div>
@@ -139,16 +144,23 @@ function toggleAnswer(id) {
 
         <div class="hidden mt-2 mb-10 lg:flex gap-14">
           <div>
-            <h6 class="text-xl font-light">Старт</h6>
-            <h6 class="text-xl text-purple font-medium">19 октября</h6>
+            <h6 class="text-xl font-light">Формат</h6>
+            <h6 class="mt-5 text-xl text-purple font-medium">ОЧНО</h6>
+            <h6 class="mt-5 text-xl text-purple font-medium">ОНЛАЙН</h6>
           </div>
           <div>
-            <h6 class="text-xl font-light">Формат</h6>
-            <h6 class="text-xl text-purple font-medium">Онлайн/Очно</h6>
+            <h6 class="text-xl font-light">Дата начала курса</h6>
+            <h6 class="mt-5 text-xl text-purple font-medium">
+              19 октября 2024 г.
+            </h6>
+            <h6 class="mt-5 text-xl text-purple font-medium">
+              12 ноября 2024 г.
+            </h6>
           </div>
           <div>
             <h6 class="text-xl font-light">Длительность</h6>
-            <h6 class="text-xl text-purple font-medium">3 месяца</h6>
+            <h6 class="mt-5 text-xl text-purple font-medium">3 месяца</h6>
+            <h6 class="mt-5 text-xl text-purple font-medium">3 месяца</h6>
           </div>
         </div>
 
@@ -200,9 +212,7 @@ function toggleAnswer(id) {
     <section id="kyrs" class="py-6 sm:py-10 lg:py-14 bg-purple -scroll-mt-1">
       <div class="wrapper">
         <div class="flex flex-col lg:flex-row gap-6">
-          <div
-            class="w-full lg:w-5/12 xl:w-1/2 flex flex-col justify-between text-white"
-          >
+          <div class="w-full lg:w-5/12 xl:w-1/2 flex flex-col text-white">
             <Heading class="heading mb-4 sm:mb-8 text-start">О курсе</Heading>
             <p class="mb-6 sm:mb-[37px] leading-none sm:leading-5">
               Наш курс основан на таком направлении фитнеса как Mind and Body
@@ -222,16 +232,14 @@ function toggleAnswer(id) {
             class="w-full lg:w-7/12 xl:w-1/2 px-0 py-6 sm:p-8 flex flex-col justify-between bg-purple lg:bg-white rounded-[20px]"
           >
             <div
-              class="flex flex-col gap-6 sm:gap-[40px] lg:gap-[2.5vw] text-white lg:text-black"
+              class="md:mb-8 flex flex-col gap-6 sm:gap-[40px] lg:gap-[2vw] text-white lg:text-black"
             >
               <article class="flex">
                 <h6 class="w-1/2">Состав курса:</h6>
-                <p class="w-1/2">
-                  320 академических часов. Теоретические дисциплины и практика
-                </p>
+                <p class="w-1/2">320 академических часов. Теория и практика</p>
               </article>
               <article class="flex">
-                <h6 class="w-1/2">Продолжительность <br />обучения:</h6>
+                <h6 class="w-1/2">Время обучения:</h6>
                 <p class="w-1/2">3 месяца</p>
               </article>
               <article class="flex">
@@ -246,8 +254,24 @@ function toggleAnswer(id) {
                 </p>
               </article>
               <article class="flex">
-                <h6 class="w-1/2">Стоимость онлайн/<br />очно:</h6>
-                <p class="w-1/2">36 000 р./43 000 р.</p>
+                <h6 class="w-1/2">Старт очного курса:</h6>
+                <p class="w-1/2">19 октября 2024 г.</p>
+              </article>
+              <article class="flex">
+                <h6 class="w-1/2">Стоимость очно:</h6>
+                <p class="w-1/2">
+                  39 000 р. до 5 октября; <br />с 6 октября - 43 000 р.
+                </p>
+              </article>
+              <article class="flex">
+                <h6 class="w-1/2">Старт онлайн курса:</h6>
+                <p class="w-1/2">12 ноября 2024 г.</p>
+              </article>
+              <article class="flex">
+                <h6 class="w-1/2">Стоимость онлайн:</h6>
+                <p class="w-1/2">
+                  29 000 р. до 1 ноября; <br />со 2 ноября - 36 000 р.
+                </p>
               </article>
             </div>
 
@@ -586,7 +610,7 @@ function toggleAnswer(id) {
       <div class="wrapper px-0 lg:px-6 xl:px-14 2xl:px-20">
         <div class="p-8 lg:p-14 bg-purple lg:rounded-[20px]">
           <Heading
-            class="heading mb-8 xl:mb-14 ml-[22px] sm:ml-[71px] text-white text-start"
+            class="heading mb-8 xl:mb-14 ml-[22px] sm:ml-[0px] text-white text-start"
             >Отзывы</Heading
           >
           <SliderReviews />
