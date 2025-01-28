@@ -84,12 +84,12 @@ function toggleAnswer(id) {
               <div>
                 <h6 class="font-light">Старт</h6>
                 <h6 class="text-purple font-medium">1 марта</h6>
-                <h6 class="text-purple font-medium">20 января</h6>
+                <h6 class="text-purple font-medium">1 марта</h6>
               </div>
               <div>
                 <h6 class="font-light">Длительность</h6>
                 <h6 class="text-purple font-medium">3 месяца</h6>
-                <h6 class="text-purple font-medium">2,5 месяца</h6>
+                <h6 class="text-purple font-medium">3 месяца</h6>
               </div>
             </div>
           </div>
@@ -154,13 +154,13 @@ function toggleAnswer(id) {
               1 марта 2025 г.
             </h6>
             <h6 class="mt-5 text-xl text-purple font-medium">
-              20 января 2025 г.
+              1 марта 2025 г.
             </h6>
           </div>
           <div>
             <h6 class="text-xl font-light">Длительность</h6>
             <h6 class="mt-5 text-xl text-purple font-medium">3 месяца</h6>
-            <h6 class="mt-5 text-xl text-purple font-medium">2,5 месяца</h6>
+            <h6 class="mt-5 text-xl text-purple font-medium">3 месяца</h6>
           </div>
         </div>
 
@@ -260,17 +260,17 @@ function toggleAnswer(id) {
               <article class="flex">
                 <h6 class="w-1/2">Стоимость очно:</h6>
                 <p class="w-1/2">
-                  39 900 р. до 15 марта; <br />с 16 марта - 44 000 р.
+                  39 900 р. до 15 февраля; <br />с 16 февраля - 44 000 р.
                 </p>
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Старт онлайн курса:</h6>
-                <p class="w-1/2">20 января 2025 г.</p>
+                <p class="w-1/2">1 марта 2025 г.</p>
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Стоимость онлайн:</h6>
                 <p class="w-1/2">
-                  29 900 р. до 31 декабря; <br />со 1 января - 36 000 р.
+                  29 900 р. до 15 февраля; <br />с 16 февраля - 36 000 р.
                 </p>
               </article>
             </div>
