@@ -27,7 +27,7 @@ const links = ref(linksMenu);
               {{ link.text }}
             </a>
             <p class="hidden lg:block mt-24 text-[16px]">
-              © 2025 ЦДО ”ЭКСПЕРТ”
+              ©2025 ЦДО ”ЭКСПЕРТ”
             </p>
           </nav>
           <div class="text-white">
@@ -71,7 +71,7 @@ const links = ref(linksMenu);
         <p
           class="block lg:hidden mt-6 sm:mt-12 text-[14px] sm:text-[16px] text-white"
         >
-          © 2025 ЦДО ”ЭКСПЕРТ”
+          ©2025 ЦДО ”ЭКСПЕРТ”
         </p>
       </div>
     </div>
