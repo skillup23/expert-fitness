@@ -1,17 +1,17 @@
 <script setup>
-import Heading from "@/components/Heading.vue";
-import SliderExpert from "@/components/SliderExpert.vue";
-import { ref } from "vue";
+import Heading from '@/components/Heading.vue';
+import SliderExpert from '@/components/SliderExpert.vue';
+import { ref } from 'vue';
 // import SliderLessonYoga from "@/components/SliderLessonYoga.vue";
-import AccordeonList from "@/components/AccordeonList.vue";
-import ButtonMain from "@/components/ButtonMain.vue";
-import FormFeedback from "@/components/FormFeedback.vue";
-import SliderLessonYogaMobile from "@/components/SliderLessonYogaMobile.vue";
-import SliderReviews from "@/components/SliderReviews.vue";
+import AccordeonList from '@/components/AccordeonList.vue';
+import ButtonMain from '@/components/ButtonMain.vue';
+import FormFeedback from '@/components/FormFeedback.vue';
+import SliderLessonYogaMobile from '@/components/SliderLessonYogaMobile.vue';
+import SliderReviews from '@/components/SliderReviews.vue';
 
-import { programmYoga } from "@/assets/data";
-import SliderAdvantages from "@/components/SliderAdvantages.vue";
-import YandexMap from "@/components/YandexMap.vue";
+import { programmYoga } from '@/assets/data';
+import SliderAdvantages from '@/components/SliderAdvantages.vue';
+import YandexMap from '@/components/YandexMap.vue';
 
 const isKyrs = ref(true);
 function toogleKyrs(elem) {
@@ -83,12 +83,12 @@ function toggleAnswer(id) {
               </div>
               <div>
                 <h6 class="font-light">Старт</h6>
-                <h6 class="text-purple font-medium">1 марта</h6>
-                <h6 class="text-purple font-medium">20 января</h6>
+                <h6 class="text-purple font-medium">14 июня</h6>
+                <h6 class="text-purple font-medium">1 апреля</h6>
               </div>
               <div>
                 <h6 class="font-light">Длительность</h6>
-                <h6 class="text-purple font-medium">3 месяца</h6>
+                <h6 class="text-purple font-medium">2 месяца</h6>
                 <h6 class="text-purple font-medium">2,5 месяца</h6>
               </div>
             </div>
@@ -151,15 +151,15 @@ function toggleAnswer(id) {
           <div>
             <h6 class="text-xl font-light">Дата начала курса</h6>
             <h6 class="mt-5 text-xl text-purple font-medium">
-              1 марта 2025 г.
+              14 июня 2025 г.
             </h6>
             <h6 class="mt-5 text-xl text-purple font-medium">
-              20 января 2025 г.
+              1 апреля 2025 г.
             </h6>
           </div>
           <div>
             <h6 class="text-xl font-light">Длительность</h6>
-            <h6 class="mt-5 text-xl text-purple font-medium">3 месяца</h6>
+            <h6 class="mt-5 text-xl text-purple font-medium">2 месяца</h6>
             <h6 class="mt-5 text-xl text-purple font-medium">2,5 месяца</h6>
           </div>
         </div>
@@ -240,7 +240,7 @@ function toggleAnswer(id) {
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Время обучения:</h6>
-                <p class="w-1/2">3 месяца</p>
+                <p class="w-1/2">2,5 месяца</p>
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Формат обучения:</h6>
@@ -255,28 +255,29 @@ function toggleAnswer(id) {
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Старт очного курса:</h6>
-                <p class="w-1/2">1 марта 2025 г.</p>
+                <p class="w-1/2">14 июня 2025 г.</p>
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Стоимость очно:</h6>
                 <p class="w-1/2">
-                  39 900 р. до 15 марта; <br />с 16 марта - 44 000 р.
+                  <b>44 000 р.</b> до 3 июня; <br />с 4 июня - <b>49 900 р.</b>
                 </p>
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Старт онлайн курса:</h6>
-                <p class="w-1/2">20 января 2025 г.</p>
+                <p class="w-1/2">1 апреля 2025 г.</p>
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Стоимость онлайн:</h6>
                 <p class="w-1/2">
-                  29 900 р. до 31 декабря; <br />со 1 января - 36 000 р.
+                  <b>36 000 р.</b> до 24 марта; <br />с 25 марта -
+                  <b>42 000 р.</b>
                 </p>
               </article>
             </div>
 
             <div
-              class="mt-10 lg:mt-0 flex items-center justify-start lg:justify-end gap-6"
+              class="mt-10 lg:mt-0 flex items-center justify-center lg:justify-end gap-6"
             >
               <a href="#programma">
                 <ButtonMain
