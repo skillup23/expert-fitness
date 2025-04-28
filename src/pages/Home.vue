@@ -1,17 +1,17 @@
 <script setup>
-import Heading from '@/components/Heading.vue';
-import SliderExpert from '@/components/SliderExpert.vue';
-import { ref } from 'vue';
+import Heading from "@/components/Heading.vue";
+import SliderExpert from "@/components/SliderExpert.vue";
+import { ref } from "vue";
 // import SliderLessonYoga from "@/components/SliderLessonYoga.vue";
-import AccordeonList from '@/components/AccordeonList.vue';
-import ButtonMain from '@/components/ButtonMain.vue';
-import FormFeedback from '@/components/FormFeedback.vue';
-import SliderLessonYogaMobile from '@/components/SliderLessonYogaMobile.vue';
-import SliderReviews from '@/components/SliderReviews.vue';
+import AccordeonList from "@/components/AccordeonList.vue";
+import ButtonMain from "@/components/ButtonMain.vue";
+import FormFeedback from "@/components/FormFeedback.vue";
+import SliderLessonYogaMobile from "@/components/SliderLessonYogaMobile.vue";
+import SliderReviews from "@/components/SliderReviews.vue";
 
-import { programmYoga } from '@/assets/data';
-import SliderAdvantages from '@/components/SliderAdvantages.vue';
-import YandexMap from '@/components/YandexMap.vue';
+import { programmYoga } from "@/assets/data";
+import SliderAdvantages from "@/components/SliderAdvantages.vue";
+import YandexMap from "@/components/YandexMap.vue";
 
 const isKyrs = ref(true);
 function toogleKyrs(elem) {
@@ -84,7 +84,7 @@ function toggleAnswer(id) {
               <div>
                 <h6 class="font-light">Старт</h6>
                 <h6 class="text-purple font-medium">14 июня</h6>
-                <h6 class="text-purple font-medium">1 апреля</h6>
+                <h6 class="text-purple font-medium">5 июня</h6>
               </div>
               <div>
                 <h6 class="font-light">Длительность</h6>
@@ -153,9 +153,7 @@ function toggleAnswer(id) {
             <h6 class="mt-5 text-xl text-purple font-medium">
               14 июня 2025 г.
             </h6>
-            <h6 class="mt-5 text-xl text-purple font-medium">
-              1 апреля 2025 г.
-            </h6>
+            <h6 class="mt-5 text-xl text-purple font-medium">5 июня 2025 г.</h6>
           </div>
           <div>
             <h6 class="text-xl font-light">Длительность</h6>
@@ -232,7 +230,7 @@ function toggleAnswer(id) {
             class="w-full lg:w-7/12 xl:w-1/2 px-0 py-6 sm:p-8 flex flex-col justify-between bg-purple lg:bg-white rounded-[20px]"
           >
             <div
-              class="md:mb-8 flex flex-col gap-6 sm:gap-[40px] lg:gap-[2vw] text-white lg:text-black"
+              class="md:mb-8 flex flex-col gap-6 sm:gap-[40px] lg:gap-[1.3vw] text-white lg:text-black"
             >
               <article class="flex">
                 <h6 class="w-1/2">Состав курса:</h6>
@@ -265,13 +263,12 @@ function toggleAnswer(id) {
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Старт онлайн курса:</h6>
-                <p class="w-1/2">1 апреля 2025 г.</p>
+                <p class="w-1/2">5 июня 2025 г.</p>
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Стоимость онлайн:</h6>
                 <p class="w-1/2">
-                  <b>36 000 р.</b> до 24 марта; <br />с 25 марта -
-                  <b>42 000 р.</b>
+                  <b>36 000 р.</b>
                 </p>
               </article>
             </div>
@@ -460,7 +457,7 @@ function toggleAnswer(id) {
               />
             </a>
             <p class="w-1/2 text-[14px] 2xl:text-[16px] xl:leading-5">
-              Наш центр имеет лицензию на образователь-ную деятельность, после
+              Наш центр имеет лицензию на образовательную деятельность, после
               обучения вы можете получить налоговый вычет
             </p>
           </div>
@@ -499,7 +496,7 @@ function toggleAnswer(id) {
               class="w-1/2 rounded-[20px]"
             />
             <p class="w-1/2 text-[14px] 2xl:text-[16px] xl:leading-5">
-              Учитесь сейчас - платите потом!Доступна рассрочка на 3, 6 или 10
+              Учитесь сейчас - платите потом!Доступна рассрочка на 3, 4 или 6
               месяцев
             </p>
           </div>
