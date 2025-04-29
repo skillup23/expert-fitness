@@ -51,7 +51,10 @@
         class="text-[14px] leading-none font-roboto font-light"
         for="exampleCheck1"
         >Нажимая на кнопку Вы соглашаетесь
-        <a href="#" target="_blank" class="underline"
+        <a
+          href="/media/docs/Согласие субъекта персональных данных.docx"
+          target="_blank"
+          class="underline"
           >на обработку персональных данных</a
         ></label
       >

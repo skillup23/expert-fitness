@@ -26,9 +26,13 @@ const links = ref(linksMenu);
             >
               {{ link.text }}
             </a>
-            <p class="hidden lg:block mt-24 text-[16px]">
-              ©2025 ЦДО ”ЭКСПЕРТ”
-            </p>
+            <a
+              class="hidden lg:block mt-6 text-[16px]"
+              href="/media/docs/Политика конфиденциальности.docx"
+              target="_blank"
+              >Политика конфиденциальности</a
+            >
+            <p class="hidden lg:block text-[16px]">©2025 ЦДО ”ЭКСПЕРТ”</p>
           </nav>
           <div class="text-white">
             <h6 class="uppercase">Контакты</h6>
@@ -68,8 +72,14 @@ const links = ref(linksMenu);
             <YandexMap />
           </div>
         </div>
+        <a
+          class="block lg:hidden mt-6 text-[14px] text-white"
+          href="/media/docs/Политика конфиденциальности.docx"
+          target="_blank"
+          >Политика конфиденциальности</a
+        >
         <p
-          class="block lg:hidden mt-6 sm:mt-12 text-[14px] sm:text-[16px] text-white"
+          class="block lg:hidden mt-3 sm:mt-12 text-[14px] sm:text-[16px] text-white"
         >
           ©2025 ЦДО ”ЭКСПЕРТ”
         </p>
