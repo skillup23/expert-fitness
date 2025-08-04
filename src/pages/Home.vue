@@ -1,17 +1,17 @@
 <script setup>
-import Heading from "@/components/Heading.vue";
-import SliderExpert from "@/components/SliderExpert.vue";
-import { ref } from "vue";
+import Heading from '@/components/Heading.vue';
+import SliderExpert from '@/components/SliderExpert.vue';
+import { ref } from 'vue';
 // import SliderLessonYoga from "@/components/SliderLessonYoga.vue";
-import AccordeonList from "@/components/AccordeonList.vue";
-import ButtonMain from "@/components/ButtonMain.vue";
-import FormFeedback from "@/components/FormFeedback.vue";
-import SliderLessonYogaMobile from "@/components/SliderLessonYogaMobile.vue";
-import SliderReviews from "@/components/SliderReviews.vue";
+import AccordeonList from '@/components/AccordeonList.vue';
+import ButtonMain from '@/components/ButtonMain.vue';
+import FormFeedback from '@/components/FormFeedback.vue';
+import SliderLessonYogaMobile from '@/components/SliderLessonYogaMobile.vue';
+import SliderReviews from '@/components/SliderReviews.vue';
 
-import { programmYoga } from "@/assets/data";
-import SliderAdvantages from "@/components/SliderAdvantages.vue";
-import YandexMap from "@/components/YandexMap.vue";
+import { programmYoga } from '@/assets/data';
+import SliderAdvantages from '@/components/SliderAdvantages.vue';
+import YandexMap from '@/components/YandexMap.vue';
 
 const isKyrs = ref(true);
 function toogleKyrs(elem) {
@@ -83,12 +83,12 @@ function toggleAnswer(id) {
               </div>
               <div>
                 <h6 class="font-light">Старт</h6>
-                <h6 class="text-purple font-medium">14 июня</h6>
-                <h6 class="text-purple font-medium">5 июня</h6>
+                <h6 class="text-purple font-medium">11 октября</h6>
+                <h6 class="text-purple font-medium">11 октября</h6>
               </div>
               <div>
                 <h6 class="font-light">Длительность</h6>
-                <h6 class="text-purple font-medium">2 месяца</h6>
+                <h6 class="text-purple font-medium">2,5 месяца</h6>
                 <h6 class="text-purple font-medium">2,5 месяца</h6>
               </div>
             </div>
@@ -151,13 +151,15 @@ function toggleAnswer(id) {
           <div>
             <h6 class="text-xl font-light">Дата начала курса</h6>
             <h6 class="mt-5 text-xl text-purple font-medium">
-              14 июня 2025 г.
+              11 октября 2025 г.
             </h6>
-            <h6 class="mt-5 text-xl text-purple font-medium">5 июня 2025 г.</h6>
+            <h6 class="mt-5 text-xl text-purple font-medium">
+              11 октября 2025 г.
+            </h6>
           </div>
           <div>
             <h6 class="text-xl font-light">Длительность</h6>
-            <h6 class="mt-5 text-xl text-purple font-medium">2 месяца</h6>
+            <h6 class="mt-5 text-xl text-purple font-medium">2,5 месяца</h6>
             <h6 class="mt-5 text-xl text-purple font-medium">2,5 месяца</h6>
           </div>
         </div>
@@ -253,22 +255,23 @@ function toggleAnswer(id) {
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Старт очного курса:</h6>
-                <p class="w-1/2">14 июня 2025 г.</p>
+                <p class="w-1/2">11 октября 2025 г.</p>
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Стоимость очно:</h6>
                 <p class="w-1/2">
-                  <b>44 000 р.</b> до 3 июня; <br />с 4 июня - <b>49 900 р.</b>
+                  <b>48 000 р.</b> до 3 октября; <br />с 4 октября -
+                  <b>53 000 р.</b>
                 </p>
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Старт онлайн курса:</h6>
-                <p class="w-1/2">5 июня 2025 г.</p>
+                <p class="w-1/2">11 октября 2025 г.</p>
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Стоимость онлайн:</h6>
                 <p class="w-1/2">
-                  <b>36 000 р.</b>
+                  <b>39 000 р.</b>
                 </p>
               </article>
             </div>
