@@ -83,12 +83,12 @@ function toggleAnswer(id) {
               </div>
               <div>
                 <h6 class="font-light">Старт</h6>
-                <h6 class="text-purple font-medium">11 октября</h6>
-                <h6 class="text-purple font-medium">11 октября</h6>
+                <h6 class="text-purple font-medium">28 февраля</h6>
+                <h6 class="text-purple font-medium">15 января</h6>
               </div>
               <div>
                 <h6 class="font-light">Длительность</h6>
-                <h6 class="text-purple font-medium">2,5 месяца</h6>
+                <h6 class="text-purple font-medium">3 месяца</h6>
                 <h6 class="text-purple font-medium">2,5 месяца</h6>
               </div>
             </div>
@@ -151,15 +151,15 @@ function toggleAnswer(id) {
           <div>
             <h6 class="text-xl font-light">Дата начала курса</h6>
             <h6 class="mt-5 text-xl text-purple font-medium">
-              11 октября 2025 г.
+              28 февраля 2026 г.
             </h6>
             <h6 class="mt-5 text-xl text-purple font-medium">
-              11 октября 2025 г.
+              15 января 2026 г.
             </h6>
           </div>
           <div>
             <h6 class="text-xl font-light">Длительность</h6>
-            <h6 class="mt-5 text-xl text-purple font-medium">2,5 месяца</h6>
+            <h6 class="mt-5 text-xl text-purple font-medium">3 месяца</h6>
             <h6 class="mt-5 text-xl text-purple font-medium">2,5 месяца</h6>
           </div>
         </div>
@@ -212,9 +212,11 @@ function toggleAnswer(id) {
     <section id="kyrs" class="py-6 sm:py-10 lg:py-14 bg-purple -scroll-mt-1">
       <div class="wrapper">
         <div class="flex flex-col lg:flex-row gap-6">
-          <div class="w-full lg:w-5/12 xl:w-1/2 flex flex-col text-white">
+          <div
+            class="w-full lg:w-5/12 xl:w-1/2 flex flex-col justify-between text-white"
+          >
             <Heading class="heading mb-4 sm:mb-8 text-start">О курсе</Heading>
-            <p class="mb-6 sm:mb-[37px] leading-none sm:leading-5">
+            <p class="mb-6 sm:mb-[37px] leading-none sm:leading-7">
               Наш курс основан на таком направлении фитнеса как Mind and Body
               (психорегулирующие фитнес-программы), которое включет в себя
               фитнес-йогу, Систему Пилатес и стретчинг. Эти фитнес-направления
@@ -240,7 +242,7 @@ function toggleAnswer(id) {
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Время обучения:</h6>
-                <p class="w-1/2">2,5 месяца</p>
+                <p class="w-1/2">3 месяца</p>
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Формат обучения:</h6>
@@ -255,23 +257,24 @@ function toggleAnswer(id) {
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Старт очного курса:</h6>
-                <p class="w-1/2">11 октября 2025 г.</p>
+                <p class="w-1/2">28 февраля 2026 г.</p>
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Стоимость очно:</h6>
                 <p class="w-1/2">
-                  <b>48 000 р.</b> до 3 октября; <br />с 4 октября -
+                  <b>48 000 р.</b> до 20 февраля; <br />с 21 февраля -
                   <b>53 000 р.</b>
                 </p>
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Старт онлайн курса:</h6>
-                <p class="w-1/2">11 октября 2025 г.</p>
+                <p class="w-1/2">15 января 2026 г.</p>
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Стоимость онлайн:</h6>
                 <p class="w-1/2">
-                  <b>39 000 р.</b>
+                  <b>39 000 р.</b> до 9 января; <br />с 10 января -
+                  <b>43 000 р.</b>
                 </p>
               </article>
             </div>
