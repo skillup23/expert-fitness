@@ -11,6 +11,7 @@ import { createYmaps } from 'vue-yandex-maps';
 
 import Home from './pages/Home.vue';
 import Yoga from './pages/Yoga.vue';
+import Privacy from './pages/Privacy.vue';
 
 const app = createApp(App);
 
@@ -26,6 +27,12 @@ const routes = [
     name: 'yoga',
     meta: { title: 'Курс по йоге' },
     component: Yoga,
+  },
+  {
+    path: '/privacy',
+    name: 'privacy',
+    meta: { title: 'Политика конфиденциальности' },
+    component: Privacy,
   },
 ];
 
