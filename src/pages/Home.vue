@@ -1,17 +1,16 @@
 <script setup>
-import Heading from '@/components/Heading.vue';
-import SliderExpert from '@/components/SliderExpert.vue';
-import { ref } from 'vue';
+import Heading from "@/components/Heading.vue";
+import SliderExpert from "@/components/SliderExpert.vue";
+import { ref } from "vue";
 // import SliderLessonYoga from "@/components/SliderLessonYoga.vue";
-import AccordeonList from '@/components/AccordeonList.vue';
-import ButtonMain from '@/components/ButtonMain.vue';
-import FormFeedback from '@/components/FormFeedback.vue';
-import SliderLessonYogaMobile from '@/components/SliderLessonYogaMobile.vue';
-import SliderReviews from '@/components/SliderReviews.vue';
-
-import { programmYoga } from '@/assets/data';
-import SliderAdvantages from '@/components/SliderAdvantages.vue';
-import YandexMap from '@/components/YandexMap.vue';
+import { programmYoga } from "@/assets/data";
+import AccordeonList from "@/components/AccordeonList.vue";
+import ButtonMain from "@/components/ButtonMain.vue";
+import FormFeedback from "@/components/FormFeedback.vue";
+import SliderAdvantages from "@/components/SliderAdvantages.vue";
+import SliderLessonYogaMobile from "@/components/SliderLessonYogaMobile.vue";
+import SliderReviews from "@/components/SliderReviews.vue";
+import YandexMap from "@/components/YandexMap.vue";
 
 const isKyrs = ref(true);
 function toogleKyrs(elem) {
