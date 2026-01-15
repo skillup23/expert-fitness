@@ -98,28 +98,22 @@ function toggleAnswer(id) {
           >
             <div class="hidden lg:flex mb-[74px] flex-col gap-[12px]">
               <a href="https://vk.com/fitnesstrener123" target="_blank">
-                <img
-                  src="/media/vk.svg"
-                  alt="ВК"
-                  class="w-8 h-8 transition-hover hover:scale-110"
-                />
+                <svg class="w-8 h-8 transition-hover hover:scale-110">
+                  <use xlink:href="/icons-sprite.svg#vk"></use>
+                </svg>
               </a>
               <a
                 href="https://www.youtube.com/channel/UCcv3jQFkqR5G7hMGBEwxlXQ?view_as=subscriber"
                 target="_blank"
               >
-                <img
-                  src="/media/youtube.svg"
-                  alt="Ютюб"
-                  class="w-8 h-8 transition-hover hover:scale-110"
-                />
+                <svg class="w-8 h-8 transition-hover hover:scale-110">
+                  <use xlink:href="/icons-sprite.svg#youtube"></use>
+                </svg>
               </a>
               <a href="https://t.me/fitnesstrener23" target="_blank">
-                <img
-                  src="/media/telegram.svg"
-                  alt="Телеграм"
-                  class="w-8 h-8 transition-hover hover:scale-110"
-                />
+                <svg class="w-8 h-8 transition-hover hover:scale-110">
+                  <use xlink:href="/icons-sprite.svg#telegram"></use>
+                </svg>
               </a>
             </div>
 
@@ -320,54 +314,39 @@ function toggleAnswer(id) {
               тест-драйв
             </h4>
             <div
-              class="mx-[45px] sm:mx-0 mt-8 flex flex-col lg:flex-row items-start sm:items-center lg:items-start"
+              class="mx-[5px] sm:mx-0 mt-8 flex flex-col lg:flex-row items-start sm:items-center lg:items-start"
             >
               <div
                 class="w-full sm:w-1/2 flex flex-col items-start gap-3 sm:gap-6"
               >
                 <article class="flex items-center gap-2">
-                  <img
-                    src="/media/Yoga/free-kyrs-icon-1.svg"
-                    alt="Иконка"
-                    loading="lazy"
-                    class="w-4 sm:w-6 h-6"
-                  />
+                  <svg class="w-5 sm:w-6 h-6 flex-shrink-0">
+                    <use xlink:href="/icons-sprite.svg#free-kyrs-icon-1"></use>
+                  </svg>
                   <p>Анатомия человека</p>
                 </article>
                 <article class="flex items-center gap-2">
-                  <img
-                    src="/media/Yoga/free-kyrs-icon-2.svg"
-                    alt="Иконка"
-                    loading="lazy"
-                    class="w-4 sm:w-6 h-6"
-                  />
+                  <svg class="w-5 sm:w-6 h-6 flex-shrink-0">
+                    <use xlink:href="/icons-sprite.svg#free-kyrs-icon-2"></use>
+                  </svg>
                   <p>Фитнес-диагностика</p>
                 </article>
                 <article class="flex items-center gap-2">
-                  <img
-                    src="/media/Yoga/free-kyrs-icon-3.svg"
-                    alt="Иконка"
-                    loading="lazy"
-                    class="w-4 sm:w-6 h-6"
-                  />
+                  <svg class="w-5 sm:w-6 h-6 flex-shrink-0">
+                    <use xlink:href="/icons-sprite.svg#free-kyrs-icon-3"></use>
+                  </svg>
                   <p>Фитнес-йога</p>
                 </article>
                 <article class="flex items-center gap-2">
-                  <img
-                    src="/media/Yoga/free-kyrs-icon-4.svg"
-                    alt="Иконка"
-                    loading="lazy"
-                    class="w-4 sm:w-6 h-6"
-                  />
-                  <p>Система Пилатес</p>
+                  <svg class="ml-1 w-5 sm:w-6 h-6 flex-shrink-0">
+                    <use xlink:href="/icons-sprite.svg#free-kyrs-icon-4"></use>
+                  </svg>
+                  <p class="-ml-1">Система Пилатес</p>
                 </article>
                 <article class="flex items-center gap-2">
-                  <img
-                    src="/media/Yoga/free-kyrs-icon-5.svg"
-                    alt="Иконка"
-                    loading="lazy"
-                    class="w-4 sm:w-6 h-6"
-                  />
+                  <svg class="w-5 sm:w-6 h-6 flex-shrink-0">
+                    <use xlink:href="/icons-sprite.svg#free-kyrs-icon-5"></use>
+                  </svg>
                   <p>Cтретчинг</p>
                 </article>
               </div>
@@ -395,12 +374,9 @@ function toggleAnswer(id) {
             >
               <a href="https://vk.com/thapp?mid=-181150794" target="_blank">
                 <ButtonMain class="flex items-center gap-2">
-                  <img
-                    src="/media/vk-white.svg"
-                    alt="ВК ссылка"
-                    loading="lazy"
-                    class="w-5 sm:w-10"
-                  />
+                  <svg class="w-5 h-8 sm:w-10">
+                    <use xlink:href="/icons-sprite.svg#vk-white"></use>
+                  </svg>
                   <span>Учиться в вк</span>
                 </ButtonMain>
               </a>
@@ -409,12 +385,9 @@ function toggleAnswer(id) {
                 target="_blank"
               >
                 <ButtonMain class="flex items-center gap-2">
-                  <img
-                    src="/media/telegram-white.svg"
-                    alt="Телеграм ссылка"
-                    loading="lazy"
-                    class="w-5 sm:w-10"
-                  />
+                  <svg class="w-5 h-8 sm:w-10">
+                    <use xlink:href="/icons-sprite.svg#telegram-white"></use>
+                  </svg>
                   <span>Учиться в ТГ</span>
                 </ButtonMain>
               </a>
@@ -424,7 +397,7 @@ function toggleAnswer(id) {
           <img
             src="/media/Yoga/free-kyrs.jpg"
             alt="Асана Йога"
-            class="hidden lg:block w-5/12 xl:w-1/2 ml-6 xl:ml-24 rounded-[20px]"
+            class="hidden lg:block w-5/12 xl:w-1/2 ml-6 xl:ml-24 rounded-[25px]"
           />
         </div>
       </div>
