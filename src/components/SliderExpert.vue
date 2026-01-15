@@ -67,7 +67,12 @@ const slides = ref(slideExpert);
             </li>
           </ul>
         </div>
-        <img :src="slide.image" :alt="slide.title" class="w-full lg:w-[36%]" />
+        <img
+          :src="slide.image"
+          :alt="slide.title"
+          loading="lazy"
+          class="w-full lg:w-[36%]"
+        />
       </div>
     </Slide>
 

@@ -1,16 +1,16 @@
 <script setup>
-import Heading from "@/components/Heading.vue";
-import SliderExpert from "@/components/SliderExpert.vue";
-import { ref } from "vue";
+import Heading from '@/components/Heading.vue';
+import SliderExpert from '@/components/SliderExpert.vue';
+import { ref } from 'vue';
 // import SliderLessonYoga from "@/components/SliderLessonYoga.vue";
-import { programmYoga } from "@/assets/data";
-import AccordeonList from "@/components/AccordeonList.vue";
-import ButtonMain from "@/components/ButtonMain.vue";
-import FormFeedback from "@/components/FormFeedback.vue";
-import SliderAdvantages from "@/components/SliderAdvantages.vue";
-import SliderLessonYogaMobile from "@/components/SliderLessonYogaMobile.vue";
-import SliderReviews from "@/components/SliderReviews.vue";
-import YandexMap from "@/components/YandexMap.vue";
+import { programmYoga } from '@/assets/data';
+import AccordeonList from '@/components/AccordeonList.vue';
+import ButtonMain from '@/components/ButtonMain.vue';
+import FormFeedback from '@/components/FormFeedback.vue';
+import SliderAdvantages from '@/components/SliderAdvantages.vue';
+import SliderLessonYogaMobile from '@/components/SliderLessonYogaMobile.vue';
+import SliderReviews from '@/components/SliderReviews.vue';
+import YandexMap from '@/components/YandexMap.vue';
 
 const isKyrs = ref(true);
 function toogleKyrs(elem) {
@@ -225,6 +225,7 @@ function toggleAnswer(id) {
             <img
               src="/media/Yoga/o-kyrse.jpg"
               alt="Асаны группа людей"
+              loading="lazy"
               class="w-full rounded-[20px]"
             />
           </div>
@@ -328,6 +329,7 @@ function toggleAnswer(id) {
                   <img
                     src="/media/Yoga/free-kyrs-icon-1.svg"
                     alt="Иконка"
+                    loading="lazy"
                     class="w-4 sm:w-6 h-6"
                   />
                   <p>Анатомия человека</p>
@@ -336,6 +338,7 @@ function toggleAnswer(id) {
                   <img
                     src="/media/Yoga/free-kyrs-icon-2.svg"
                     alt="Иконка"
+                    loading="lazy"
                     class="w-4 sm:w-6 h-6"
                   />
                   <p>Фитнес-диагностика</p>
@@ -344,6 +347,7 @@ function toggleAnswer(id) {
                   <img
                     src="/media/Yoga/free-kyrs-icon-3.svg"
                     alt="Иконка"
+                    loading="lazy"
                     class="w-4 sm:w-6 h-6"
                   />
                   <p>Фитнес-йога</p>
@@ -352,6 +356,7 @@ function toggleAnswer(id) {
                   <img
                     src="/media/Yoga/free-kyrs-icon-4.svg"
                     alt="Иконка"
+                    loading="lazy"
                     class="w-4 sm:w-6 h-6"
                   />
                   <p>Система Пилатес</p>
@@ -360,6 +365,7 @@ function toggleAnswer(id) {
                   <img
                     src="/media/Yoga/free-kyrs-icon-5.svg"
                     alt="Иконка"
+                    loading="lazy"
                     class="w-4 sm:w-6 h-6"
                   />
                   <p>Cтретчинг</p>
@@ -392,6 +398,7 @@ function toggleAnswer(id) {
                   <img
                     src="/media/vk-white.svg"
                     alt="ВК ссылка"
+                    loading="lazy"
                     class="w-5 sm:w-10"
                   />
                   <span>Учиться в вк</span>
@@ -405,6 +412,7 @@ function toggleAnswer(id) {
                   <img
                     src="/media/telegram-white.svg"
                     alt="Телеграм ссылка"
+                    loading="lazy"
                     class="w-5 sm:w-10"
                   />
                   <span>Учиться в ТГ</span>
@@ -458,6 +466,7 @@ function toggleAnswer(id) {
               <img
                 src="/media/Yoga/preim2.jpg"
                 alt="Преимущества"
+                loading="lazy"
                 class="w-full rounded-[20px]"
               />
             </a>
@@ -472,6 +481,7 @@ function toggleAnswer(id) {
             <img
               src="/media/Yoga/preim3.jpg"
               alt="Преимущества"
+              loading="lazy"
               class="w-1/2 rounded-[20px]"
             />
             <p class="w-1/2 text-[14px] 2xl:text-[16px] xl:leading-5">
@@ -485,6 +495,7 @@ function toggleAnswer(id) {
             <img
               src="/media/Yoga/preim4.jpg"
               alt="Преимущества"
+              loading="lazy"
               class="w-1/2 rounded-[20px]"
             />
             <p class="w-1/2 text-[14px] 2xl:text-[16px] xl:leading-5">
@@ -498,6 +509,7 @@ function toggleAnswer(id) {
             <img
               src="/media/Yoga/preim5.jpg"
               alt="Преимущества"
+              loading="lazy"
               class="w-1/2 rounded-[20px]"
             />
             <p class="w-1/2 text-[14px] 2xl:text-[16px] xl:leading-5">
@@ -639,6 +651,7 @@ function toggleAnswer(id) {
                 <img
                   src="/media/Yoga/form-feedback.jpg"
                   alt="Выпускники школы Эксперт"
+                  loading="lazy"
                   class="rounded-[20px]"
                 />
               </div>

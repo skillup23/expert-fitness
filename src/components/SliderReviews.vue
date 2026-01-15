@@ -31,6 +31,7 @@ const slides = ref(sliderReviewYouga);
         <img
           :src="slide.image"
           :alt="slide.name"
+          loading="lazy"
           class="w-full lg:w-5/12 xl:w-[400px] mb-4 lg:mb-0 rounded-[18px]"
         />
         <div class="text-white">

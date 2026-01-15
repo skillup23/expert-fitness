@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="!consentGiven && showBanner"
-    class="fixed bottom-0 w-full z-[101] flex items-center justify-center bg-white wrapper"
+    class="fixed wrapper bottom-0 max-w-full mx-auto z-[101] flex items-center justify-center bg-white rounded"
   >
     <div class="p-2 md:p-3">
       <div class="mb-2">
@@ -61,14 +61,14 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from "vue";
+import { onMounted, ref } from 'vue';
 
 const consentGiven = ref(false);
 const showBanner = ref(false);
 
 const checkConsent = () => {
-  const consent = localStorage.getItem("cookieConsent");
-  const consentDate = localStorage.getItem("cookieConsentDate");
+  const consent = localStorage.getItem('cookieConsent');
+  const consentDate = localStorage.getItem('cookieConsentDate');
 
   if (consent && consentDate) {
     const date = new Date(consentDate);
@@ -76,11 +76,11 @@ const checkConsent = () => {
     const daysDiff = Math.floor((now - date) / (1000 * 60 * 60 * 24));
 
     if (daysDiff > 30) {
-      localStorage.removeItem("cookieConsent");
-      localStorage.removeItem("cookieConsentDate");
+      localStorage.removeItem('cookieConsent');
+      localStorage.removeItem('cookieConsentDate');
       showBanner.value = true;
     } else {
-      consentGiven.value = consent === "accepted";
+      consentGiven.value = consent === 'accepted';
     }
   } else {
     showBanner.value = true;
@@ -88,8 +88,8 @@ const checkConsent = () => {
 };
 
 const acceptCookies = () => {
-  localStorage.setItem("cookieConsent", "accepted");
-  localStorage.setItem("cookieConsentDate", new Date().toISOString());
+  localStorage.setItem('cookieConsent', 'accepted');
+  localStorage.setItem('cookieConsentDate', new Date().toISOString());
   consentGiven.value = true;
   showBanner.value = false;
 
@@ -100,8 +100,8 @@ const acceptCookies = () => {
 };
 
 const rejectCookies = () => {
-  localStorage.setItem("cookieConsent", "rejected");
-  localStorage.setItem("cookieConsentDate", new Date().toISOString());
+  localStorage.setItem('cookieConsent', 'rejected');
+  localStorage.setItem('cookieConsentDate', new Date().toISOString());
   consentGiven.value = false;
   showBanner.value = false;
 };

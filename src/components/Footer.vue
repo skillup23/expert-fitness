@@ -52,6 +52,7 @@ const links = ref(linksMenu);
                 <img
                   src="/media/yandex-rating.jpg"
                   alt="Вконтакте"
+                  loading="lazy"
                   class="rounded-lg"
                 />
               </a>
@@ -63,6 +64,7 @@ const links = ref(linksMenu);
                 <img
                   src="/media/2gis-rating.jpg"
                   alt="Вконтакте"
+                  loading="lazy"
                   class="rounded-lg"
                 />
               </a>
