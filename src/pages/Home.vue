@@ -23,10 +23,10 @@ function toggleAnswer(id) {
   programms.value = programms.value.map((programm) =>
     programm.isOpen && programm.id !== id
       ? { ...programm, isOpen: false }
-      : programm
+      : programm,
   );
   programms.value = programms.value.map((programm) =>
-    programm.id === id ? { ...programm, isOpen: !programm.isOpen } : programm
+    programm.id === id ? { ...programm, isOpen: !programm.isOpen } : programm,
   );
 }
 </script>
@@ -83,12 +83,12 @@ function toggleAnswer(id) {
               <div>
                 <h6 class="font-light">Старт</h6>
                 <h6 class="text-purple font-medium">28 февраля</h6>
-                <h6 class="text-purple font-medium">15 января</h6>
+                <h6 class="text-purple font-medium">28 февраля</h6>
               </div>
               <div>
                 <h6 class="font-light">Длительность</h6>
                 <h6 class="text-purple font-medium">3 месяца</h6>
-                <h6 class="text-purple font-medium">2,5 месяца</h6>
+                <h6 class="text-purple font-medium">3 месяца</h6>
               </div>
             </div>
           </div>
@@ -147,13 +147,13 @@ function toggleAnswer(id) {
               28 февраля 2026 г.
             </h6>
             <h6 class="mt-5 text-xl text-purple font-medium">
-              15 января 2026 г.
+              28 февраля 2026 г.
             </h6>
           </div>
           <div>
             <h6 class="text-xl font-light">Длительность</h6>
             <h6 class="mt-5 text-xl text-purple font-medium">3 месяца</h6>
-            <h6 class="mt-5 text-xl text-purple font-medium">2,5 месяца</h6>
+            <h6 class="mt-5 text-xl text-purple font-medium">3 месяца</h6>
           </div>
         </div>
 
@@ -262,13 +262,13 @@ function toggleAnswer(id) {
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Старт онлайн курса:</h6>
-                <p class="w-1/2">15 января 2026 г.</p>
+                <p class="w-1/2">28 февраля 2026 г.</p>
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Стоимость онлайн:</h6>
                 <p class="w-1/2">
-                  <b>39 000 р.</b> до 9 января; <br />с 10 января -
-                  <b>43 000 р.</b>
+                  <b>39 000 р.</b> до 20 февраля; <br />с 20 февраля -
+                  <b>45 000 р.</b>
                 </p>
               </article>
             </div>
