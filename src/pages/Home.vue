@@ -83,7 +83,7 @@ function toggleAnswer(id) {
               <div>
                 <h6 class="font-light">Старт</h6>
                 <h6 class="text-purple font-medium">28 февраля</h6>
-                <h6 class="text-purple font-medium">28 февраля</h6>
+                <h6 class="text-purple font-medium">1 апреля</h6>
               </div>
               <div>
                 <h6 class="font-light">Длительность</h6>
@@ -147,7 +147,7 @@ function toggleAnswer(id) {
               28 февраля 2026 г.
             </h6>
             <h6 class="mt-5 text-xl text-purple font-medium">
-              28 февраля 2026 г.
+              1 апреля 2026 г.
             </h6>
           </div>
           <div>
@@ -251,23 +251,23 @@ function toggleAnswer(id) {
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Старт очного курса:</h6>
-                <p class="w-1/2">28 февраля 2026 г.</p>
+                <p class="w-1/2">начался с 28 февраля 2026 г.</p>
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Стоимость очно:</h6>
                 <p class="w-1/2">
-                  <b>48 000 р.</b> до 20 февраля; <br />с 21 февраля -
+                  <!-- <b>48 000 р.</b> до 20 февраля; <br />с 21 февраля - -->
                   <b>53 000 р.</b>
                 </p>
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Старт онлайн курса:</h6>
-                <p class="w-1/2">28 февраля 2026 г.</p>
+                <p class="w-1/2">1 апреля 2026 г.</p>
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Стоимость онлайн:</h6>
                 <p class="w-1/2">
-                  <b>39 000 р.</b> до 20 февраля; <br />с 20 февраля -
+                  <!-- <b>39 000 р.</b> до 20 февраля; <br />с 20 февраля - -->
                   <b>45 000 р.</b>
                 </p>
               </article>
