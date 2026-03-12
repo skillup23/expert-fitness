@@ -32,6 +32,18 @@
       <option>Telegram</option>
       <option>Звонок</option>
     </select>
+
+    <!-- Ловушка для ботов -->
+    <div style="position: absolute; left: -9999px; opacity: 0">
+      <input
+        type="text"
+        v-model="honeypot"
+        tabindex="-1"
+        autocomplete="off"
+        placeholder="Do not fill this"
+      />
+    </div>
+
     <button
       type="submit"
       class="button-main mt-4 sm:mt-10 2xl:mt-20 rounded-[8px] bg-purple text-white hover:bg-black"
@@ -63,7 +75,7 @@
 </template>
 
 <script>
-const botToken = '7230527247:AAHyB7HsKfJgYdiLXJO3eLyGclYVBIzD54k';
+const botToken = '7230527247:AAEc6fXgjMRCwSWIRlXCDFOxIW4fBlrF5UU';
 const chatId = -4263099299;
 
 export default {
@@ -73,12 +85,32 @@ export default {
       tel: '',
       feedback: '',
       term: '',
+      honeypot: '',
+      startTime: 0,
     };
+  },
+  mounted() {
+    // Фиксируем время, когда страница загрузилась
+    this.loadTime = Date.now();
   },
   methods: {
     submitForm() {
+      const currentTime = Date.now();
+      const secondsOpened = (currentTime - this.loadTime) / 1000;
+
+      // 1. Проверка на бота:
+      // Если поле ловушки заполнено ИЛИ форма отправлена быстрее чем за 4 секунды
+      if (this.honeypot || secondsOpened < 4) {
+        console.warn('Spam detected');
+        // Имитируем успех для бота, чтобы он не пробовал другие методы
+        this.success();
+        this.resetForm();
+        return;
+      }
+
       //   Отправка заявки в Телеграмм
       const telegram_message = `Имя: ${this.name}\nТелефон: ${this.tel}\nСпособ связи: ${this.feedback}\nСогласие на обработку персональных данных: ${this.term}`;
+
       fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
         method: 'POST',
         headers: {
@@ -97,6 +129,13 @@ export default {
           console.error('Error sending message:', error);
           this.error();
         });
+    },
+    resetForm() {
+      this.name = '';
+      this.tel = '';
+      this.feedback = '';
+      // Сбрасываем время для следующей попытки
+      this.loadTime = Date.now();
     },
     success() {
       // Всплывающее окно об успехе отправки
