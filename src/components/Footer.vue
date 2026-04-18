@@ -1,9 +1,9 @@
 <script setup>
-import { ref } from 'vue';
-import { linksMenu } from '@/assets/data';
-import YandexMap from './YandexMap.vue';
-import SocialMedia from './SocialMedia.vue';
-import Contacts from './Contacts.vue';
+import { linksMenu } from "@/assets/data";
+import { ref } from "vue";
+import Contacts from "./Contacts.vue";
+import SocialMedia from "./SocialMedia.vue";
+import YandexMap from "./YandexMap.vue";
 
 const links = ref(linksMenu);
 </script>
@@ -32,7 +32,7 @@ const links = ref(linksMenu);
               target="_blank"
               >Политика конфиденциальности</a
             >
-            <p class="hidden lg:block text-[16px]">©2025 ЦДО ”ЭКСПЕРТ”</p>
+            <p class="hidden lg:block text-[16px]">©2026 ЦДО ”ЭКСПЕРТ”</p>
           </nav>
           <div class="text-white">
             <h6 class="uppercase">Контакты</h6>
@@ -83,7 +83,7 @@ const links = ref(linksMenu);
         <p
           class="block lg:hidden mt-3 sm:mt-12 text-[14px] sm:text-[16px] text-white"
         >
-          ©2025 ЦДО ”ЭКСПЕРТ”
+          ©2026 ЦДО ”ЭКСПЕРТ”
         </p>
       </div>
     </div>

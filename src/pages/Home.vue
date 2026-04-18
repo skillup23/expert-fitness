@@ -1,16 +1,16 @@
 <script setup>
-import Heading from '@/components/Heading.vue';
-import SliderExpert from '@/components/SliderExpert.vue';
-import { ref } from 'vue';
+import Heading from "@/components/Heading.vue";
+import SliderExpert from "@/components/SliderExpert.vue";
+import { ref } from "vue";
 // import SliderLessonYoga from "@/components/SliderLessonYoga.vue";
-import { programmYoga } from '@/assets/data';
-import AccordeonList from '@/components/AccordeonList.vue';
-import ButtonMain from '@/components/ButtonMain.vue';
-import FormFeedback from '@/components/FormFeedback.vue';
-import SliderAdvantages from '@/components/SliderAdvantages.vue';
-import SliderLessonYogaMobile from '@/components/SliderLessonYogaMobile.vue';
-import SliderReviews from '@/components/SliderReviews.vue';
-import YandexMap from '@/components/YandexMap.vue';
+import { programmYoga } from "@/assets/data";
+import AccordeonList from "@/components/AccordeonList.vue";
+import ButtonMain from "@/components/ButtonMain.vue";
+import FormFeedback from "@/components/FormFeedback.vue";
+import SliderAdvantages from "@/components/SliderAdvantages.vue";
+import SliderLessonYogaMobile from "@/components/SliderLessonYogaMobile.vue";
+import SliderReviews from "@/components/SliderReviews.vue";
+import YandexMap from "@/components/YandexMap.vue";
 
 const isKyrs = ref(true);
 function toogleKyrs(elem) {
@@ -44,14 +44,16 @@ function toggleAnswer(id) {
             <h1
               class="heading text-xl leading-[1.5rem] sm:leading-[2.5rem] sm:text-[32px] xl:leading-[4rem] xl:text-[52px] text-black"
             >
-              <span class="text-purple">Тренер</span> по фитнес-йоге пилатесу и
+              <span class="text-purple">Курс</span> по фитнес-йоге пилатесу и
               стретчингу
             </h1>
             <p
               class="max-w-[255px] sm:max-w-[438px] mt-6 sm:text-xl xl:text-2xl leading-none font-roboto font-light"
             >
-              Образовательный курс с выдачей
-              <span class="text-purple font-bold">диплома гос.обазца.</span>
+              Профессиональная подготовка тренеров с выдачей
+              <span class="text-purple font-bold"
+                >диплома государственного образца.</span
+              >
               <br />
               Стань экспертом “Mind and Body” - 3&nbsp;направления
               в&nbsp;одном&nbsp;курсе.
@@ -82,7 +84,7 @@ function toggleAnswer(id) {
               </div>
               <div>
                 <h6 class="font-light">Старт</h6>
-                <h6 class="text-purple font-medium">28 февраля</h6>
+                <h6 class="text-purple font-medium">13 июня</h6>
                 <h6 class="text-purple font-medium">1 апреля</h6>
               </div>
               <div>
@@ -144,7 +146,7 @@ function toggleAnswer(id) {
           <div>
             <h6 class="text-xl font-light">Дата начала курса</h6>
             <h6 class="mt-5 text-xl text-purple font-medium">
-              28 февраля 2026 г.
+              13 июня 2026 г.
             </h6>
             <h6 class="mt-5 text-xl text-purple font-medium">
               1 апреля 2026 г.
@@ -251,13 +253,13 @@ function toggleAnswer(id) {
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Старт очного курса:</h6>
-                <p class="w-1/2">начался с 28 февраля 2026 г.</p>
+                <p class="w-1/2">с 13 июня 2026 г.</p>
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Стоимость очно:</h6>
                 <p class="w-1/2">
                   <!-- <b>48 000 р.</b> до 20 февраля; <br />с 21 февраля - -->
-                  <b>53 000 р.</b>
+                  <b>51 000 р.</b>
                 </p>
               </article>
               <article class="flex">
@@ -369,9 +371,7 @@ function toggleAnswer(id) {
               </div>
             </div>
 
-            <div
-              class="mx-auto lg:mx-0 mt-8 lg:mt-[121px] flex xl:flex-col gap-4 sm:gap-6"
-            >
+            <div class="mx-auto lg:mx-0 mt-8 lg:mt-[121px] flex gap-4 sm:gap-6">
               <a href="https://vk.com/thapp?mid=-181150794" target="_blank">
                 <ButtonMain class="flex items-center gap-2">
                   <svg class="w-5 h-8 sm:w-10">
