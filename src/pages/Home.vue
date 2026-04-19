@@ -32,7 +32,7 @@ function toggleAnswer(id) {
 </script>
 
 <template>
-  <main>
+  <main class="mt-[64px] sm:mt-[7%]">
     <section
       class="pt-8 sm:pt-10 mb-10 sm:mb-24 relative bg-mandala bg-[left_35vw_top_-10px] sm:bg-[left_45vw_top_-70px] lg:bg-[left_72vw_top_55vh]"
     >
@@ -85,18 +85,18 @@ function toggleAnswer(id) {
               <div>
                 <h6 class="font-light">Старт</h6>
                 <h6 class="text-purple font-medium">13 июня</h6>
-                <h6 class="text-purple font-medium">1 апреля</h6>
+                <h6 class="text-purple font-medium">13 июня</h6>
               </div>
               <div>
                 <h6 class="font-light">Длительность</h6>
-                <h6 class="text-purple font-medium">3 месяца</h6>
-                <h6 class="text-purple font-medium">3 месяца</h6>
+                <h6 class="text-purple font-medium">2 месяца</h6>
+                <h6 class="text-purple font-medium">2 месяца</h6>
               </div>
             </div>
           </div>
 
           <div
-            class="mt-6 sm:mt-[35px] flex flex-row lg:flex-col items-end gap-4"
+            class="mt-6 sm:mt-[35px] flex flex-row lg:flex-col items-end gap-2 sm:gap-4"
           >
             <div class="hidden lg:flex mb-[74px] flex-col gap-[12px]">
               <a href="https://vk.com/fitnesstrener123" target="_blank">
@@ -115,6 +115,14 @@ function toggleAnswer(id) {
               <a href="https://t.me/fitnesstrener23" target="_blank">
                 <svg class="w-8 h-8 transition-hover hover:scale-110">
                   <use xlink:href="/icons-sprite.svg#telegram"></use>
+                </svg>
+              </a>
+              <a
+                href="https://max.ru/u/f9LHodD0cOKRUCpJV3h_pJ_NOJxi4t7FpCoAI-Izm78JOWQv80xTgZ6AfZE"
+                target="_blank"
+              >
+                <svg class="ml-1 w-7 h-7 transition-hover hover:scale-110">
+                  <use xlink:href="/icons-sprite.svg#max"></use>
                 </svg>
               </a>
             </div>
@@ -149,13 +157,13 @@ function toggleAnswer(id) {
               13 июня 2026 г.
             </h6>
             <h6 class="mt-5 text-xl text-purple font-medium">
-              1 апреля 2026 г.
+              13 июня 2026 г.
             </h6>
           </div>
           <div>
             <h6 class="text-xl font-light">Длительность</h6>
-            <h6 class="mt-5 text-xl text-purple font-medium">3 месяца</h6>
-            <h6 class="mt-5 text-xl text-purple font-medium">3 месяца</h6>
+            <h6 class="mt-5 text-xl text-purple font-medium">2 месяца</h6>
+            <h6 class="mt-5 text-xl text-purple font-medium">2 месяца</h6>
           </div>
         </div>
 
@@ -204,7 +212,7 @@ function toggleAnswer(id) {
     </section>
 
     <!--     О курсе      -->
-    <section id="kyrs" class="py-6 sm:py-10 lg:py-14 bg-purple -scroll-mt-1">
+    <section id="kyrs" class="scroll-mt-16 py-6 sm:py-10 lg:py-14 bg-purple">
       <div class="wrapper">
         <div class="flex flex-col lg:flex-row gap-6">
           <div
@@ -238,7 +246,7 @@ function toggleAnswer(id) {
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Время обучения:</h6>
-                <p class="w-1/2">3 месяца</p>
+                <p class="w-1/2">2 месяца</p>
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Формат обучения:</h6>
@@ -253,7 +261,7 @@ function toggleAnswer(id) {
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Старт очного курса:</h6>
-                <p class="w-1/2">с 13 июня 2026 г.</p>
+                <p class="w-1/2">13 июня 2026 г.</p>
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Стоимость очно:</h6>
@@ -264,7 +272,7 @@ function toggleAnswer(id) {
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Старт онлайн курса:</h6>
-                <p class="w-1/2">1 апреля 2026 г.</p>
+                <p class="w-1/2">13 июня 2026 г.</p>
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Стоимость онлайн:</h6>
@@ -299,7 +307,7 @@ function toggleAnswer(id) {
     <!--     Бесплатный мини-курс      -->
     <section
       id="minikyrs"
-      class="py-10 lg:py-24 bg-mandala bg-[left_53vw_top_-30px] sm:bg-[left_60vw_top_-100px] lg:bg-[left_70vw_bottom_70vh] -scroll-mt-1"
+      class="py-10 lg:py-24 bg-mandala bg-[left_53vw_top_-30px] sm:bg-[left_60vw_top_-100px] lg:bg-[left_70vw_bottom_70vh] scroll-mt-16"
     >
       <div class="wrapper">
         <Heading class="heading mb-4 sm:mb-14 text-center lg:text-start"
@@ -404,7 +412,7 @@ function toggleAnswer(id) {
     </section>
 
     <!--     Преимущества      -->
-    <section id="onas" class="py-10 lg:pt-14 lg:pb-24 bg-purple -scroll-mt-1">
+    <section id="onas" class="py-10 lg:pt-14 lg:pb-24 bg-purple scroll-mt-16">
       <div class="wrapper">
         <Heading class="heading text-white mb-8 lg:mb-14"
           >Наши преимущества</Heading
@@ -511,7 +519,7 @@ function toggleAnswer(id) {
     <!--     Программа курса и Примеры уроков     -->
     <section
       id="programma"
-      class="pt-10 sm:pt-24 bg-mandala bg-[left_25vw_top_750px] sm:bg-[right_36vw_top_-200px] lg:bg-[right_70vw_top_150px] -scroll-mt-1"
+      class="pt-10 sm:pt-24 bg-mandala bg-[left_25vw_top_750px] sm:bg-[right_36vw_top_-200px] lg:bg-[right_70vw_top_150px] scroll-mt-16"
     >
       <div class="wrapper">
         <!--     Программа курса      -->
@@ -593,7 +601,7 @@ function toggleAnswer(id) {
     <!--     Отзывы      -->
     <section
       id="otzivi"
-      class="py-10 lg:py-24 bg-150% sm:bg-48% lg:bg-[url('/media/Yoga/bg-mandala.png')] lg:bg-no-repeat lg:bg-[left_58vw_top_-41px] -scroll-mt-1"
+      class="py-10 lg:py-24 bg-150% sm:bg-48% lg:bg-[url('/media/Yoga/bg-mandala.png')] lg:bg-no-repeat lg:bg-[left_58vw_top_-41px] scroll-mt-16"
     >
       <div class="wrapper px-0 lg:px-6 xl:px-14 2xl:px-20">
         <div class="p-8 lg:p-14 bg-purple lg:rounded-[20px]">

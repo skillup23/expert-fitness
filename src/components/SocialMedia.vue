@@ -1,31 +1,30 @@
 <template>
   <div class="flex gap-5">
     <a href="https://vk.com/fitnesstrener123" target="_blank">
-      <img
-        src="/media/vk-white.svg"
-        alt="Вконтакте"
-        loading="lazy"
-        class="w-10 sm:w-8 h-10 sm:h-8 opacity-100 hover:opacity-70 transition-hover"
-      />
+      <svg class="w-8 h-8 transition-hover hover:scale-110">
+        <use xlink:href="/icons-sprite.svg#vk-white"></use>
+      </svg>
     </a>
     <a
       href="https://www.youtube.com/channel/UCcv3jQFkqR5G7hMGBEwxlXQ?view_as=subscriber"
       target="_blank"
     >
-      <img
-        src="/media/youtube-white.svg"
-        alt="Ютюб"
-        loading="lazy"
-        class="w-10 sm:w-8 h-10 sm:h-8 opacity-100 hover:opacity-70 transition-hover"
-      />
+      <svg class="w-8 h-8 transition-hover hover:scale-110">
+        <use xlink:href="/icons-sprite.svg#youtube-white"></use>
+      </svg>
     </a>
     <a href="https://t.me/fitnesstrener23" target="_blank">
-      <img
-        src="/media/telegram-white.svg"
-        alt="Телеграм"
-        loading="lazy"
-        class="w-10 sm:w-8 h-10 sm:h-8 opacity-100 hover:opacity-70 transition-hover"
-      />
+      <svg class="w-8 h-8 transition-hover hover:scale-110">
+        <use xlink:href="/icons-sprite.svg#telegram-white"></use>
+      </svg>
+    </a>
+    <a
+      href="https://max.ru/u/f9LHodD0cOKRUCpJV3h_pJ_NOJxi4t7FpCoAI-Izm78JOWQv80xTgZ6AfZE"
+      target="_blank"
+    >
+      <svg class="mt-1 w-7 h-7 transition-hover hover:scale-110">
+        <use xlink:href="/icons-sprite.svg#max-white"></use>
+      </svg>
     </a>
   </div>
 </template>
