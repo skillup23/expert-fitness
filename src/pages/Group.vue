@@ -1,56 +1,112 @@
 <script setup>
-import ButtonMain from '@/components/ButtonMain.vue';
+import { programmYoga } from "@/assets/data";
+import AccordeonList from "@/components/AccordeonList.vue";
+import ButtonMain from "@/components/ButtonMain.vue";
+import FormFeedback from "@/components/FormFeedback.vue";
+import FreeMiniKyrs from "@/components/FreeMiniKyrs.vue";
+import Heading from "@/components/Heading.vue";
+import SliderAdvantages from "@/components/SliderAdvantages.vue";
+import SliderExpert from "@/components/SliderExpert.vue";
+import SliderLessonYogaMobile from "@/components/SliderLessonYogaMobile.vue";
+import SliderReviews from "@/components/SliderReviews.vue";
+import YandexMap from "@/components/YandexMap.vue";
+import { ref } from "vue";
+
+const isKyrs = ref(true);
+function toogleKyrs(elem) {
+  isKyrs.value = elem;
+}
+
+const programms = ref(programmYoga);
+
+function toggleAnswer(id) {
+  programms.value = programms.value.map((programm) =>
+    programm.isOpen && programm.id !== id
+      ? { ...programm, isOpen: false }
+      : programm,
+  );
+  programms.value = programms.value.map((programm) =>
+    programm.id === id ? { ...programm, isOpen: !programm.isOpen } : programm,
+  );
+}
 </script>
 
 <template>
-  <main class="mt-[64px] xl:mt-[7%] 2xl:mt-[6%]">
+  <main class="mt-[64px] lg:mt-[7%] xl:mt-[6%]">
     <section class="pt-8 sm:pt-10 mb-10 sm:mb-24 relative">
       <div class="wrapper">
         <div class="flex flex-col lg:flex-row justify-between">
           <div
-            class="mt-0 lg:mt-14 flex flex-col items-start w-full lg:w-5/12 xl:w-2/3"
+            class="mt-0 lg:mt-14 flex flex-col items-start w-full lg:w-8/12 xl:w-[824px]"
           >
             <h1
-              class="heading text-xl leading-[1.5rem] sm:leading-[2.5rem] sm:text-[32px] xl:leading-[4rem] xl:text-[52px] text-black"
+              class="heading -mr-20 text-xl lg:text-[42px] xl:text-[52px] leading-[1.5rem] sm:leading-[2.5rem] sm:text-[32px] xl:leading-[4rem] text-black"
             >
-              <span class="text-purple">курс тренера</span> групповых фитнес
-              программ
+              <span class="text-purple">курс тренера</span> групповых программ
             </h1>
             <p
-              class="max-w-[255px] sm:max-w-[438px] mt-6 sm:text-xl xl:text-2xl leading-none font-roboto font-light"
+              class="max-w-[255px] sm:max-w-[600px] mt-5 sm:text-xl xl:text-2xl leading-none font-roboto font-light"
             >
-              Профессиональная подготовка тренеров с выдачей
-              <span class="text-purple font-bold"
+              Профессиональная подготовка тренеров с&nbsp;выдачей&nbsp;<span
+                class="text-purple font-bold"
                 >диплома государственного образца.</span
               >
             </p>
             <p
-              class="max-w-[255px] sm:max-w-[438px] mt-6 sm:text-xl xl:text-2xl leading-none font-roboto font-light"
+              class="max-w-[255px] sm:max-w-[438px] mt-8 sm:text-xl xl:text-2xl leading-none font-roboto font-light"
             >
               3 направления в одном курсе:
             </p>
-            <ul>
-              <li class="flex items-center">
+            <ul class="mt-7 flex flex-col gap-6">
+              <li class="flex items-center gap-4">
                 <svg class="w-6 h-6 text-[#923EA1]">
                   <use xlink:href="/icons-sprite.svg#romb"></use>
                 </svg>
-                Базовая аэробика
+                <p
+                  class="sm:text-xl xl:text-2xl font-roboto font-light leading-none"
+                >
+                  Базовая аэробика
+                </p>
+              </li>
+              <li
+                class="flex items-center gap-4 sm:text-xl xl:text-2xl font-roboto font-light leading-none"
+              >
+                <svg class="w-6 h-6 text-[#923EA1]">
+                  <use xlink:href="/icons-sprite.svg#romb"></use>
+                </svg>
+                <p
+                  class="sm:text-xl xl:text-2xl font-roboto font-light leading-none"
+                >
+                  Степ - аэробика
+                </p>
+              </li>
+              <li
+                class="flex items-center gap-4 sm:text-xl xl:text-2xl font-roboto font-light leading-none"
+              >
+                <svg class="w-6 h-6 text-[#923EA1]">
+                  <use xlink:href="/icons-sprite.svg#romb"></use>
+                </svg>
+                <p
+                  class="sm:text-xl xl:text-2xl font-roboto font-light leading-none"
+                >
+                  Силовой тренинг
+                </p>
               </li>
             </ul>
-            <a href="#minikyrs" class="hidden lg:block">
-              <ButtonMain class="mt-6">Учиться бесплатно</ButtonMain>
+            <a href="#minikyrs" class="hidden lg:block mt-10">
+              <ButtonMain class="mt-6">Записаться</ButtonMain>
             </a>
           </div>
 
           <img
             src="/media/Group/main-group1.png"
             alt="Фото Йога"
-            class="mx-auto lg:mx-0 mt-4 sm:mt-10 lg:mt-0 lg:-ml-[4vw] xl:-ml-[12vw] w-10/12 lg:w-6/12 xl:w-6/12"
+            class="w-10/12 xl:w-6/12 mx-auto -mr-20"
           />
 
           <div class="flex flex-col items-center lg:hidden">
             <a href="#minikyrs" class="w-full sm:w-9/12">
-              <ButtonMain class="mt-6">Учиться бесплатно</ButtonMain>
+              <ButtonMain class="mt-6">Записаться</ButtonMain>
             </a>
 
             <div
@@ -64,12 +120,12 @@ import ButtonMain from '@/components/ButtonMain.vue';
               <div>
                 <h6 class="font-light">Старт</h6>
                 <h6 class="text-purple font-medium">13 июня</h6>
-                <h6 class="text-purple font-medium">1 апреля</h6>
+                <h6 class="text-purple font-medium">13 июня</h6>
               </div>
               <div>
                 <h6 class="font-light">Длительность</h6>
-                <h6 class="text-purple font-medium">3 месяца</h6>
-                <h6 class="text-purple font-medium">3 месяца</h6>
+                <h6 class="text-purple font-medium">2 месяца</h6>
+                <h6 class="text-purple font-medium">2 месяца</h6>
               </div>
             </div>
           </div>
@@ -100,7 +156,7 @@ import ButtonMain from '@/components/ButtonMain.vue';
           </div>
         </div>
 
-        <div class="hidden mt-2 mb-10 lg:flex gap-14">
+        <div class="hidden -mt-40 mb-10 lg:flex gap-14">
           <div>
             <h6 class="text-xl font-light">Формат</h6>
             <h6 class="mt-5 text-xl text-purple font-medium">ОЧНО</h6>
@@ -112,13 +168,13 @@ import ButtonMain from '@/components/ButtonMain.vue';
               13 июня 2026 г.
             </h6>
             <h6 class="mt-5 text-xl text-purple font-medium">
-              1 апреля 2026 г.
+              13 июня 2026 г.
             </h6>
           </div>
           <div>
             <h6 class="text-xl font-light">Длительность</h6>
-            <h6 class="mt-5 text-xl text-purple font-medium">3 месяца</h6>
-            <h6 class="mt-5 text-xl text-purple font-medium">3 месяца</h6>
+            <h6 class="mt-5 text-xl text-purple font-medium">2 месяца</h6>
+            <h6 class="mt-5 text-xl text-purple font-medium">2 месяца</h6>
           </div>
         </div>
       </div>
@@ -143,6 +199,353 @@ import ButtonMain from '@/components/ButtonMain.vue';
             alt="Тренерам Фото"
             class="mx-auto sm:mx-0 w-10/12 sm:w-5/12 rounded-2xl"
           />
+        </div>
+      </div>
+    </section>
+
+    <!--     О курсе      -->
+    <section id="kyrs" class="scroll-mt-16 py-6 sm:py-10 lg:py-14 bg-purple">
+      <div class="wrapper">
+        <div class="flex flex-col lg:flex-row gap-6">
+          <div
+            class="w-full lg:w-5/12 xl:w-1/2 flex flex-col justify-between text-white"
+          >
+            <Heading class="heading mb-4 sm:mb-8 text-start">О курсе</Heading>
+            <p class="mb-6 sm:mb-[37px] leading-none sm:leading-7">
+              Наш курс основан на таком направлении фитнеса как Mind and Body
+              (психорегулирующие фитнес-программы), которое включет в себя
+              фитнес-йогу, Систему Пилатес и стретчинг. Эти фитнес-направления
+              положительно влияют как на развитие физических качеств, так и на
+              психоэмоциональное состояние человека.
+            </p>
+            <img
+              src="/media/Yoga/o-kyrse.jpg"
+              alt="Асаны группа людей"
+              loading="lazy"
+              class="w-full rounded-[20px]"
+            />
+          </div>
+
+          <div
+            class="w-full lg:w-7/12 xl:w-1/2 px-0 py-6 sm:p-8 flex flex-col justify-between bg-purple lg:bg-white rounded-[20px]"
+          >
+            <div
+              class="md:mb-8 flex flex-col gap-6 sm:gap-[40px] lg:gap-[1.3vw] text-white lg:text-black"
+            >
+              <article class="flex">
+                <h6 class="w-1/2">Состав курса:</h6>
+                <p class="w-1/2">320 академических часов. Теория и практика</p>
+              </article>
+              <article class="flex">
+                <h6 class="w-1/2">Время обучения:</h6>
+                <p class="w-1/2">2 месяца</p>
+              </article>
+              <article class="flex">
+                <h6 class="w-1/2">Формат обучения:</h6>
+                <p class="w-1/2">Онлайн или очно</p>
+              </article>
+              <article class="flex">
+                <h6 class="w-1/2">Документ:</h6>
+                <p class="w-1/2">
+                  Диплом установленного государством образца с внесением в базу
+                  ФИС ФРДО
+                </p>
+              </article>
+              <article class="flex">
+                <h6 class="w-1/2">Старт очного курса:</h6>
+                <p class="w-1/2">13 июня 2026 г.</p>
+              </article>
+              <article class="flex">
+                <h6 class="w-1/2">Стоимость очно:</h6>
+                <p class="w-1/2">
+                  <!-- <b>48 000 р.</b> до 20 февраля; <br />с 21 февраля - -->
+                  <b>51 000 р.</b>
+                </p>
+              </article>
+              <article class="flex">
+                <h6 class="w-1/2">Старт онлайн курса:</h6>
+                <p class="w-1/2">13 июня 2026 г.</p>
+              </article>
+              <article class="flex">
+                <h6 class="w-1/2">Стоимость онлайн:</h6>
+                <p class="w-1/2">
+                  <!-- <b>39 000 р.</b> до 20 февраля; <br />с 20 февраля - -->
+                  <b>45 000 р.</b>
+                </p>
+              </article>
+            </div>
+
+            <div
+              class="mt-10 lg:mt-0 flex items-center justify-center lg:justify-end gap-6"
+            >
+              <a href="#programma">
+                <ButtonMain
+                  class="px-4 py-[14px] sm:px-[22px] sm:py-[14px] bg-purple lg:bg-white border-white lg:border-purple border-2 text-white lg:text-purple hover:border-black hover:text-white"
+                  >Программа</ButtonMain
+                >
+              </a>
+              <a href="#zapisatca">
+                <ButtonMain
+                  class="bg-white lg:bg-purple text-black lg:text-white"
+                  >Записаться</ButtonMain
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--     Бесплатный мини-курс      -->
+    <section id="minikyrs" class="py-10 lg:py-24 scroll-mt-16">
+      <div class="wrapper">
+        <FreeMiniKyrs
+          image-src="/media/Group/free-kyrs.jpg"
+          vkLink="#"
+          tgLink="#"
+          :lessons="[
+            { id: 1, text: 'Анатомия человека', icon: 'free-kyrs-icon-1' },
+            { id: 2, text: 'Фитнес-диагностика', icon: 'free-kyrs-icon-2' },
+            { id: 3, text: 'Базовая аэробика', icon: 'free-kyrs-icon-6' },
+            { id: 4, text: 'Степ-аэробика', icon: 'free-kyrs-icon-7' },
+            { id: 5, text: 'Cиловой тренинг', icon: 'free-kyrs-icon-8' },
+          ]"
+        />
+      </div>
+    </section>
+
+    <!--     Преимущества      -->
+    <section id="onas" class="py-10 lg:pt-14 lg:pb-24 bg-purple scroll-mt-16">
+      <div class="wrapper">
+        <Heading class="heading text-white mb-8 lg:mb-14"
+          >Наши преимущества</Heading
+        >
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+          <!-- <img
+            src="/media/Yoga/preim1.jpg"
+            alt="Преимущества"
+            class="w-full h-full row-span-2 col-span-2 rounded-[20px]"
+          /> -->
+          <div
+            class="relative w-full h-[260px] sm:h-[51.5vw] lg:h-full row-span-2 col-span-2 rounded-[20px] bg-white"
+          >
+            <iframe
+              src="https://kinescope.io/embed/ikgpxoDrV9m2F1X11Nz9K3?preload=1"
+              allow="fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;"
+              frameborder="0"
+              style="
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+              "
+            ></iframe>
+          </div>
+
+          <div
+            class="p-[18px] hidden lg:flex items-start rounded-[20px] bg-white gap-4"
+          >
+            <a href="/media/Yoga/preim2.jpg" target="_blank" class="w-1/2">
+              <img
+                src="/media/Yoga/preim2.jpg"
+                alt="Преимущества"
+                loading="lazy"
+                class="w-full rounded-[20px]"
+              />
+            </a>
+            <p class="w-1/2 text-[14px] 2xl:text-[16px] xl:leading-5">
+              Наш центр имеет лицензию на образовательную деятельность, после
+              обучения вы можете получить налоговый вычет
+            </p>
+          </div>
+          <div
+            class="p-[18px] hidden lg:flex items-start rounded-[20px] bg-white gap-4"
+          >
+            <img
+              src="/media/Yoga/preim3.jpg"
+              alt="Преимущества"
+              loading="lazy"
+              class="w-1/2 rounded-[20px]"
+            />
+            <p class="w-1/2 text-[14px] 2xl:text-[16px] xl:leading-5">
+              Вы получаете официальный документ, и компетенцию, которая позволит
+              эффективно работать фитнес-тренером
+            </p>
+          </div>
+          <div
+            class="p-[18px] hidden lg:flex items-start rounded-[20px] bg-white gap-4"
+          >
+            <img
+              src="/media/Yoga/preim4.jpg"
+              alt="Преимущества"
+              loading="lazy"
+              class="w-1/2 rounded-[20px]"
+            />
+            <p class="w-1/2 text-[14px] 2xl:text-[16px] xl:leading-5">
+              Учитесь только у экспертов со стажем более 20 лет в сфере фитнеса
+              и образования
+            </p>
+          </div>
+          <div
+            class="p-[18px] hidden lg:flex items-start rounded-[20px] bg-white gap-4"
+          >
+            <img
+              src="/media/Yoga/preim5.jpg"
+              alt="Преимущества"
+              loading="lazy"
+              class="w-1/2 rounded-[20px]"
+            />
+            <p class="w-1/2 text-[14px] 2xl:text-[16px] xl:leading-5">
+              Учитесь сейчас - платите потом!Доступна рассрочка на 3, 4 или 6
+              месяцев
+            </p>
+          </div>
+        </div>
+
+        <SliderAdvantages class="block lg:hidden" />
+      </div>
+    </section>
+
+    <!--     Эксперты      -->
+    <section
+      class="-mt-[1px] lg:mt-0 pt-4 pb-10 sm:py-10 lg:pt-14 lg:pb-24 bg-purple"
+    >
+      <div class="wrapper">
+        <Heading class="heading text-white mb-8 lg:mb-14"
+          >Наши эксперты</Heading
+        >
+        <SliderExpert class="-mx-3" />
+      </div>
+    </section>
+
+    <!--     Программа курса и Примеры уроков     -->
+    <section
+      id="programma"
+      class="pt-10 sm:pt-24 bg-mandala bg-[left_25vw_top_750px] sm:bg-[right_36vw_top_-200px] lg:bg-[right_70vw_top_150px] scroll-mt-16"
+    >
+      <div class="wrapper">
+        <!--     Программа курса      -->
+        <Heading class="heading mb-8 sm:mb-14 lg:text-start"
+          >Программа курса</Heading
+        >
+        <div class="lg:-mt-28 flex flex-col">
+          <div
+            class="w-full lg:w-[550px] 2xl:w-[664px] flex bg-pink self-end rounded-t-[20px]"
+          >
+            <div
+              class="w-1/2 py-4 xl:py-[26px] flex items-center justify-center cursor-pointer rounded-t-[20px]"
+              :class="[isKyrs ? `bg-pink` : `bg-purple`]"
+              @click="toogleKyrs(false)"
+            >
+              <h4
+                class="text-base sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-[36px]"
+                :class="[isKyrs ? `text-black` : `text-white`]"
+              >
+                ОНЛАЙН
+              </h4>
+            </div>
+            <div
+              class="w-1/2 py-4 xl:py-[26px] flex items-center justify-center cursor-pointer rounded-t-[20px]"
+              :class="[isKyrs ? `bg-purple` : `bg-pink`]"
+              @click="toogleKyrs(true)"
+            >
+              <h4
+                class="text-base sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-[36px]"
+                :class="[isKyrs ? `text-white` : `text-black`]"
+              >
+                ОЧНО
+              </h4>
+            </div>
+          </div>
+
+          <div
+            v-if="isKyrs"
+            class="-mt-[1px] w-full min-h-96 p-6 sm:p-14 grid lg:grid-cols-2 gap-x-4 sm:gap-x-6 bg-purple rounded-b-[20px] lg:rounded-tl-[20px]"
+          >
+            <AccordeonList
+              :programms="programms.slice(0, 5)"
+              @toggleAnswer="toggleAnswer"
+            />
+            <AccordeonList
+              :programms="programms.slice(5, 10)"
+              @toggleAnswer="toggleAnswer"
+              class="mt-5 lg:mt-0"
+            />
+          </div>
+
+          <div
+            v-else
+            class="-mt-[1px] w-full min-h-96 p-6 sm:p-14 grid lg:grid-cols-2 gap-x-4 sm:gap-x-6 bg-purple rounded-b-[20px] lg:rounded-tl-[20px]"
+          >
+            <AccordeonList
+              :programms="programms.slice(0, 4)"
+              @toggleAnswer="toggleAnswer"
+            />
+            <AccordeonList
+              :programms="programms.slice(5, 9)"
+              @toggleAnswer="toggleAnswer"
+              class="mt-6 lg:mt-0"
+            />
+          </div>
+        </div>
+
+        <!--     Примеры уроков и связок      -->
+        <div id="yroki" class="mt-10 sm:mt-24 scroll-mt-4">
+          <Heading class="heading mb-8 sm:mb-14"
+            >Примеры уроков и связок</Heading
+          >
+          <!-- <SliderLessonYoga class="-mx-6 hidden sm:block" /> -->
+          <SliderLessonYogaMobile class="-mx-6" />
+        </div>
+      </div>
+    </section>
+
+    <!--     Отзывы      -->
+    <section
+      id="otzivi"
+      class="py-10 lg:py-24 bg-150% sm:bg-48% lg:bg-[url('/media/Yoga/bg-mandala.png')] lg:bg-no-repeat lg:bg-[left_58vw_top_-41px] scroll-mt-16"
+    >
+      <div class="wrapper px-0 lg:px-6 xl:px-14 2xl:px-20">
+        <div class="p-8 lg:p-14 bg-purple lg:rounded-[20px]">
+          <Heading
+            class="heading mb-8 xl:mb-14 ml-[22px] sm:ml-[0px] text-white text-start"
+            >Отзывы</Heading
+          >
+          <SliderReviews />
+        </div>
+
+        <!--     Записаться на обучение      -->
+        <div id="zapisatca" class="px-[23px] sm:px-28 lg:px-0 scroll-mt-4">
+          <Heading class="heading mt-10 lg:mt-24 mb-4 sm:mb-14 lg:text-start"
+            >Записаться на обучение</Heading
+          >
+          <div>
+            <h6
+              class="text-purple uppercase text-center lg:text-start font-bold sm:font-medium"
+            >
+              Присоединяйтесь к нашей команде профессионалов!
+            </h6>
+            <div class="mt-6 flex gap-14 justify-center lg:justify-start">
+              <div class="lg:w-1/2 sm:mt-6 px-[22px]">
+                <FormFeedback />
+              </div>
+
+              <div class="hidden lg:block w-1/2">
+                <img
+                  src="/media/Yoga/form-feedback.jpg"
+                  alt="Выпускники школы Эксперт"
+                  loading="lazy"
+                  class="rounded-[20px]"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="block lg:hidden mx-auto mt-10 px-6 sm:px-14 w-full h-[210px] sm:h-[500px] rounded-[20px]"
+        >
+          <YandexMap />
         </div>
       </div>
     </section>

@@ -1,11 +1,11 @@
 <script>
-import { defineComponent } from 'vue';
-import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel';
+import { defineComponent } from "vue";
+import { Carousel, Navigation, Pagination, Slide } from "vue3-carousel";
 
-import 'vue3-carousel/dist/carousel.css';
+import "vue3-carousel/dist/carousel.css";
 
 export default defineComponent({
-  name: 'Basic',
+  name: "Basic",
   components: {
     Carousel,
     Slide,
@@ -16,8 +16,8 @@ export default defineComponent({
 </script>
 
 <script setup>
-import { ref } from 'vue';
-import { slideExpert } from '@/assets/data';
+import { slideExpert } from "@/assets/data";
+import { ref } from "vue";
 
 const slides = ref(slideExpert);
 </script>
@@ -32,13 +32,13 @@ const slides = ref(slideExpert);
           class="-mt-28 sm:mt-0 text-start w-full lg:w-[59%] lg:mb-8 bg-white z-10"
         >
           <h3
-            class="mt-4 sm:mt-0 mb-4 lg:mb-8 text-[14px] sm:text-[24px] lg:text-3xl xl:text-4xl font-bold text-start"
+            class="mt-4 sm:mt-0 mb-4 lg:mb-8 text-[14px] sm:text-[20px] lg:text-2xl xl:text-3xl font-bold text-start"
           >
             {{ slide.title }}
           </h3>
 
           <h4
-            class="hidden lg:block mb-8 text-xl xl:text-2xl font-light leading-6"
+            class="hidden lg:block mb-8 text-base xl:text-lg font-light leading-6"
           >
             {{ slide.subtitle }}
           </h4>
@@ -49,7 +49,7 @@ const slides = ref(slideExpert);
             class="hidden lg:block"
           >
             <li
-              class="ml-7 mb-3 xl:mb-5 texl-lg xl:text-xl leading-6 font-light list-disc"
+              class="ml-7 mb-3 xl:mb-5 text-sm xl:text-base leading-6 font-light list-disc"
             >
               {{ listText }}
             </li>
@@ -71,7 +71,7 @@ const slides = ref(slideExpert);
           :src="slide.image"
           :alt="slide.title"
           loading="lazy"
-          class="w-full lg:w-[36%]"
+          class="w-full lg:w-[30%]"
         />
       </div>
     </Slide>
@@ -99,6 +99,7 @@ const slides = ref(slideExpert);
 }
 
 .slider__expert .carousel__item {
+  min-height: 620px;
   background-color: #f8f4f3;
   color: #242424;
   flex-direction: column-reverse;
@@ -165,7 +166,7 @@ const slides = ref(slideExpert);
     padding-right: 12px;
   }
   .slider__expert .carousel__item {
-    min-height: 750px;
+    min-height: 600px;
   }
   .slider__expert .carousel__item {
     flex-direction: row;
@@ -181,7 +182,7 @@ const slides = ref(slideExpert);
 }
 @media (min-width: 1280px) {
   .slider__expert .carousel__item {
-    min-height: 825px;
+    min-height: 650px;
   }
 }
 </style>

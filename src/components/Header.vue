@@ -30,7 +30,7 @@ function menuOpen() {
       <div class="flex justify-between items-center">
         <RouterLink
           to="/"
-          class="w-[220px] xl:w-[250px] my-2 sm:my-4 flex justify-between items-center gap-2 opacity-100 hover:opacity-90 transition-hover"
+          class="w-[220px] xl:w-[250px] my-2 sm:my-3 flex justify-between items-center gap-2 opacity-100 hover:opacity-90 transition-hover"
         >
           <img
             src="/media/logo.png"

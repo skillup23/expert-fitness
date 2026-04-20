@@ -7,6 +7,7 @@ import { programmYoga } from "@/assets/data";
 import AccordeonList from "@/components/AccordeonList.vue";
 import ButtonMain from "@/components/ButtonMain.vue";
 import FormFeedback from "@/components/FormFeedback.vue";
+import FreeMiniKyrs from "@/components/FreeMiniKyrs.vue";
 import SliderAdvantages from "@/components/SliderAdvantages.vue";
 import SliderLessonYogaMobile from "@/components/SliderLessonYogaMobile.vue";
 import SliderReviews from "@/components/SliderReviews.vue";
@@ -32,7 +33,7 @@ function toggleAnswer(id) {
 </script>
 
 <template>
-  <main class="mt-[64px] sm:mt-[7%]">
+  <main class="mt-[64px] lg:mt-[7%] xl:mt-[6%]">
     <section
       class="pt-8 sm:pt-10 mb-10 sm:mb-24 relative bg-mandala bg-[left_35vw_top_-10px] sm:bg-[left_45vw_top_-70px] lg:bg-[left_72vw_top_55vh]"
     >
@@ -310,104 +311,7 @@ function toggleAnswer(id) {
       class="py-10 lg:py-24 bg-mandala bg-[left_53vw_top_-30px] sm:bg-[left_60vw_top_-100px] lg:bg-[left_70vw_bottom_70vh] scroll-mt-16"
     >
       <div class="wrapper">
-        <Heading class="heading mb-4 sm:mb-14 text-center lg:text-start"
-          >Бесплатный мини-курс</Heading
-        >
-        <div class="w-full flex items-start">
-          <div
-            class="w-full lg:w-7/12 xl:w-1/2 flex flex-col item-center lg:items-start"
-          >
-            <h4
-              class="m-auto lg:m-0 md:w-[400px] lg:w-full text-purple text-center lg:text-start"
-            >
-              Чтобы понять подходит ли вам курс, вы&nbsp;можете&nbsp;пройти
-              тест-драйв
-            </h4>
-            <div
-              class="mx-[5px] sm:mx-0 mt-8 flex flex-col lg:flex-row items-start sm:items-center lg:items-start"
-            >
-              <div
-                class="w-full sm:w-1/2 flex flex-col items-start gap-3 sm:gap-6"
-              >
-                <article class="flex items-center gap-2">
-                  <svg class="w-5 sm:w-6 h-6 flex-shrink-0">
-                    <use xlink:href="/icons-sprite.svg#free-kyrs-icon-1"></use>
-                  </svg>
-                  <p>Анатомия человека</p>
-                </article>
-                <article class="flex items-center gap-2">
-                  <svg class="w-5 sm:w-6 h-6 flex-shrink-0">
-                    <use xlink:href="/icons-sprite.svg#free-kyrs-icon-2"></use>
-                  </svg>
-                  <p>Фитнес-диагностика</p>
-                </article>
-                <article class="flex items-center gap-2">
-                  <svg class="w-5 sm:w-6 h-6 flex-shrink-0">
-                    <use xlink:href="/icons-sprite.svg#free-kyrs-icon-3"></use>
-                  </svg>
-                  <p>Фитнес-йога</p>
-                </article>
-                <article class="flex items-center gap-2">
-                  <svg class="ml-1 w-5 sm:w-6 h-6 flex-shrink-0">
-                    <use xlink:href="/icons-sprite.svg#free-kyrs-icon-4"></use>
-                  </svg>
-                  <p class="-ml-1">Система Пилатес</p>
-                </article>
-                <article class="flex items-center gap-2">
-                  <svg class="w-5 sm:w-6 h-6 flex-shrink-0">
-                    <use xlink:href="/icons-sprite.svg#free-kyrs-icon-5"></use>
-                  </svg>
-                  <p>Cтретчинг</p>
-                </article>
-              </div>
-
-              <div
-                class="mt-6 lg:mt-0 w-full sm:w-1/2 lg:w-[45%] flex flex-col gap-4 sm:gap-6"
-              >
-                <p class="text-sm sm:text-[16px]">
-                  Мини-курс содержит 6 уроков и тестовые задания после каждого
-                  урока
-                </p>
-                <p class="text-sm sm:text-[16px]">
-                  Уроки вы изучаете последовательно, начиная с теоретических
-                  дисциплин, после каждого урока вы проходите мини-тест для
-                  закрепления знаний.
-                </p>
-                <p class="text-sm sm:text-[16px]">
-                  Мини-курс можно пройти на платформе ВКонтакте или Телеграм.
-                </p>
-              </div>
-            </div>
-
-            <div class="mx-auto lg:mx-0 mt-8 lg:mt-[121px] flex gap-4 sm:gap-6">
-              <a href="https://vk.com/thapp?mid=-181150794" target="_blank">
-                <ButtonMain class="flex items-center gap-2">
-                  <svg class="w-5 h-8 sm:w-10">
-                    <use xlink:href="/icons-sprite.svg#vk-white"></use>
-                  </svg>
-                  <span>Учиться в вк</span>
-                </ButtonMain>
-              </a>
-              <a
-                href="https://thm.page/p/66bf9b59bafbff762d5b103c"
-                target="_blank"
-              >
-                <ButtonMain class="flex items-center gap-2">
-                  <svg class="w-5 h-8 sm:w-10">
-                    <use xlink:href="/icons-sprite.svg#telegram-white"></use>
-                  </svg>
-                  <span>Учиться в ТГ</span>
-                </ButtonMain>
-              </a>
-            </div>
-          </div>
-
-          <img
-            src="/media/Yoga/free-kyrs.jpg"
-            alt="Асана Йога"
-            class="hidden lg:block w-5/12 xl:w-1/2 ml-6 xl:ml-24 rounded-[25px]"
-          />
-        </div>
+        <FreeMiniKyrs />
       </div>
     </section>
 
