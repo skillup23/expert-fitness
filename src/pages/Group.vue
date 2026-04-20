@@ -1,19 +1,19 @@
 <script setup>
-import ButtonMain from "@/components/ButtonMain.vue";
+import ButtonMain from '@/components/ButtonMain.vue';
 </script>
 
 <template>
-  <main>
+  <main class="mt-[64px] xl:mt-[7%] 2xl:mt-[6%]">
     <section class="pt-8 sm:pt-10 mb-10 sm:mb-24 relative">
       <div class="wrapper">
         <div class="flex flex-col lg:flex-row justify-between">
           <div
-            class="mt-0 lg:mt-14 flex flex-col items-start w-full lg:w-5/12 xl:max-w-[502px]"
+            class="mt-0 lg:mt-14 flex flex-col items-start w-full lg:w-5/12 xl:w-2/3"
           >
             <h1
               class="heading text-xl leading-[1.5rem] sm:leading-[2.5rem] sm:text-[32px] xl:leading-[4rem] xl:text-[52px] text-black"
             >
-              <span class="text-purple">Курс</span> инструктор групповых фитнес
+              <span class="text-purple">курс тренера</span> групповых фитнес
               программ
             </h1>
             <p
@@ -23,16 +23,27 @@ import ButtonMain from "@/components/ButtonMain.vue";
               <span class="text-purple font-bold"
                 >диплома государственного образца.</span
               >
-              <br />
-              Обучение методикам силовых, функциональных и аэробных тренировок.
             </p>
+            <p
+              class="max-w-[255px] sm:max-w-[438px] mt-6 sm:text-xl xl:text-2xl leading-none font-roboto font-light"
+            >
+              3 направления в одном курсе:
+            </p>
+            <ul>
+              <li class="flex items-center">
+                <svg class="w-6 h-6 text-[#923EA1]">
+                  <use xlink:href="/icons-sprite.svg#romb"></use>
+                </svg>
+                Базовая аэробика
+              </li>
+            </ul>
             <a href="#minikyrs" class="hidden lg:block">
               <ButtonMain class="mt-6">Учиться бесплатно</ButtonMain>
             </a>
           </div>
 
           <img
-            src="/media/Yoga/main-foto1.png"
+            src="/media/Group/main-group1.png"
             alt="Фото Йога"
             class="mx-auto lg:mx-0 mt-4 sm:mt-10 lg:mt-0 lg:-ml-[4vw] xl:-ml-[12vw] w-10/12 lg:w-6/12 xl:w-6/12"
           />
@@ -86,22 +97,6 @@ import ButtonMain from "@/components/ButtonMain.vue";
                 </svg>
               </a>
             </div>
-
-            <img
-              src="/media/Yoga/foto-top-1.jpg"
-              alt="Фото Йога"
-              class="w-[32%] lg:w-full mb-4 rounded-2xl"
-            />
-            <img
-              src="/media/Yoga/foto-top-5.jpg"
-              alt="Фото Йога"
-              class="w-[32%] lg:hidden mb-4 rounded-2xl"
-            />
-            <img
-              src="/media/Yoga/foto-top-2.jpg"
-              alt="Фото Йога"
-              class="w-[32%] lg:w-full mb-4 rounded-2xl"
-            />
           </div>
         </div>
 
