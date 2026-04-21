@@ -1,17 +1,18 @@
 <script setup>
-import Heading from "@/components/Heading.vue";
-import SliderExpert from "@/components/SliderExpert.vue";
-import { ref } from "vue";
+import Heading from '@/components/Heading.vue';
+import SliderExpert from '@/components/SliderExpert.vue';
+import { ref } from 'vue';
 // import SliderLessonYoga from "@/components/SliderLessonYoga.vue";
-import { programmYoga } from "@/assets/data";
-import AccordeonList from "@/components/AccordeonList.vue";
-import ButtonMain from "@/components/ButtonMain.vue";
-import FormFeedback from "@/components/FormFeedback.vue";
-import FreeMiniKyrs from "@/components/FreeMiniKyrs.vue";
-import SliderAdvantages from "@/components/SliderAdvantages.vue";
-import SliderLessonYogaMobile from "@/components/SliderLessonYogaMobile.vue";
-import SliderReviews from "@/components/SliderReviews.vue";
-import YandexMap from "@/components/YandexMap.vue";
+import { programmYoga } from '@/assets/data';
+import AccordeonList from '@/components/AccordeonList.vue';
+import ButtonMain from '@/components/ButtonMain.vue';
+import FormFeedback from '@/components/FormFeedback.vue';
+import FreeMiniKyrs from '@/components/FreeMiniKyrs.vue';
+import SliderAdvantages from '@/components/SliderAdvantages.vue';
+import SliderLessonYogaMobile from '@/components/SliderLessonYogaMobile.vue';
+import SliderReviews from '@/components/SliderReviews.vue';
+import YandexMap from '@/components/YandexMap.vue';
+import Preimushestva from '@/components/Preimushestva.vue';
 
 const isKyrs = ref(true);
 function toogleKyrs(elem) {
@@ -59,9 +60,15 @@ function toggleAnswer(id) {
               Стань экспертом “Mind and Body” - 3&nbsp;направления
               в&nbsp;одном&nbsp;курсе.
             </p>
-            <a href="#minikyrs" class="hidden lg:block">
-              <ButtonMain class="mt-6">Учиться бесплатно</ButtonMain>
-            </a>
+            <div class="hidden lg:flex flex-col mt-8">
+              <a href="#zapisatca">
+                <ButtonMain class="mt-6">Записаться</ButtonMain>
+              </a>
+
+              <a href="#minikyrs">
+                <ButtonMain class="mt-6">Бесплатный мини-курс</ButtonMain>
+              </a>
+            </div>
           </div>
 
           <img
@@ -71,9 +78,15 @@ function toggleAnswer(id) {
           />
 
           <div class="flex flex-col items-center lg:hidden">
-            <a href="#minikyrs" class="w-full sm:w-9/12">
-              <ButtonMain class="mt-6">Учиться бесплатно</ButtonMain>
-            </a>
+            <div class="w-full flex flex-col gap-6">
+              <a href="#zapisatca" class="w-full">
+                <ButtonMain class="mt-6">Записаться</ButtonMain>
+              </a>
+
+              <a href="#minikyrs">
+                <ButtonMain>Бесплатный мини-курс</ButtonMain>
+              </a>
+            </div>
 
             <div
               class="w-11/12 sm:w-8/12 mx-auto flex justify-between mt-6 sm:mt-8 mb-0 sm:mb-10"
@@ -318,92 +331,7 @@ function toggleAnswer(id) {
     <!--     Преимущества      -->
     <section id="onas" class="py-10 lg:pt-14 lg:pb-24 bg-purple scroll-mt-16">
       <div class="wrapper">
-        <Heading class="heading text-white mb-8 lg:mb-14"
-          >Наши преимущества</Heading
-        >
-        <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
-          <!-- <img
-            src="/media/Yoga/preim1.jpg"
-            alt="Преимущества"
-            class="w-full h-full row-span-2 col-span-2 rounded-[20px]"
-          /> -->
-          <div
-            class="relative w-full h-[260px] sm:h-[51.5vw] lg:h-full row-span-2 col-span-2 rounded-[20px] bg-white"
-          >
-            <iframe
-              src="https://kinescope.io/embed/ikgpxoDrV9m2F1X11Nz9K3?preload=1"
-              allow="fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write;"
-              frameborder="0"
-              style="
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-              "
-            ></iframe>
-          </div>
-
-          <div
-            class="p-[18px] hidden lg:flex items-start rounded-[20px] bg-white gap-4"
-          >
-            <a href="/media/Yoga/preim2.jpg" target="_blank" class="w-1/2">
-              <img
-                src="/media/Yoga/preim2.jpg"
-                alt="Преимущества"
-                loading="lazy"
-                class="w-full rounded-[20px]"
-              />
-            </a>
-            <p class="w-1/2 text-[14px] 2xl:text-[16px] xl:leading-5">
-              Наш центр имеет лицензию на образовательную деятельность, после
-              обучения вы можете получить налоговый вычет
-            </p>
-          </div>
-          <div
-            class="p-[18px] hidden lg:flex items-start rounded-[20px] bg-white gap-4"
-          >
-            <img
-              src="/media/Yoga/preim3.jpg"
-              alt="Преимущества"
-              loading="lazy"
-              class="w-1/2 rounded-[20px]"
-            />
-            <p class="w-1/2 text-[14px] 2xl:text-[16px] xl:leading-5">
-              Вы получаете официальный документ, и компетенцию, которая позволит
-              эффективно работать фитнес-тренером
-            </p>
-          </div>
-          <div
-            class="p-[18px] hidden lg:flex items-start rounded-[20px] bg-white gap-4"
-          >
-            <img
-              src="/media/Yoga/preim4.jpg"
-              alt="Преимущества"
-              loading="lazy"
-              class="w-1/2 rounded-[20px]"
-            />
-            <p class="w-1/2 text-[14px] 2xl:text-[16px] xl:leading-5">
-              Учитесь только у экспертов со стажем более 20 лет в сфере фитнеса
-              и образования
-            </p>
-          </div>
-          <div
-            class="p-[18px] hidden lg:flex items-start rounded-[20px] bg-white gap-4"
-          >
-            <img
-              src="/media/Yoga/preim5.jpg"
-              alt="Преимущества"
-              loading="lazy"
-              class="w-1/2 rounded-[20px]"
-            />
-            <p class="w-1/2 text-[14px] 2xl:text-[16px] xl:leading-5">
-              Учитесь сейчас - платите потом!Доступна рассрочка на 3, 4 или 6
-              месяцев
-            </p>
-          </div>
-        </div>
-
+        <Preimushestva />
         <SliderAdvantages class="block lg:hidden" />
       </div>
     </section>

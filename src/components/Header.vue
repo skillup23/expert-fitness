@@ -1,9 +1,9 @@
 <script setup>
-import { linksMenu } from "@/assets/data";
-import ButtonMain from "@/components/ButtonMain.vue";
-import { ref } from "vue";
-import Contacts from "./Contacts.vue";
-import SocialMedia from "./SocialMedia.vue";
+import { linksMenu } from '@/assets/data';
+import ButtonMain from '@/components/ButtonMain.vue';
+import { ref } from 'vue';
+import Contacts from './Contacts.vue';
+import SocialMedia from './SocialMedia.vue';
 
 const links = ref(linksMenu);
 
@@ -12,14 +12,14 @@ const isOpen = ref(false);
 function menuOpen() {
   isOpen.value = !isOpen.value;
 
-  const b = document.querySelector("body");
+  const b = document.querySelector('body');
 
   if (isOpen.value === true) {
-    b.classList.add("overflow-hidden");
-    b.classList.remove("overflow-auto");
+    b.classList.add('overflow-hidden');
+    b.classList.remove('overflow-auto');
   } else {
-    b.classList.add("overflow-auto");
-    b.classList.remove("overflow-hidden");
+    b.classList.add('overflow-auto');
+    b.classList.remove('overflow-hidden');
   }
 }
 </script>
@@ -77,7 +77,7 @@ function menuOpen() {
         >
 
         <!-- Бургер меню кнопка -->
-        <div @click="menuOpen" class="flex lg:hidden hamburger-lines">
+        <div @click="menuOpen" class="flex lg:hidden hamburger-lines z-[160]">
           <span
             class="line transition-transform"
             :class="[isOpen ? `rotate-45 translate-y-[9px]` : `origin-[0%_0%]`]"
@@ -106,7 +106,7 @@ function menuOpen() {
 
     <!-- Меню мобильное -->
     <div
-      class="fixed w-full h-dvh bg-purple p-8 left-0 top-[63px] sm:top-[93px] flex flex-col gap-8 rounded-b-[15px] transition-transform duration-300 z-30"
+      class="fixed w-full h-dvh bg-purple p-8 left-0 top-[63px] sm:top-[93px] flex flex-col gap-8 rounded-b-[15px] transition-transform duration-300 z-[140]"
       :class="[isOpen ? `translate-x-0` : `-translate-x-full`]"
     >
       <a
