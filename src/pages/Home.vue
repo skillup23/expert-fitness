@@ -281,7 +281,7 @@ function toggleAnswer(id) {
                 <h6 class="w-1/2">Стоимость очно:</h6>
                 <p class="w-1/2">
                   <!-- <b>48 000 р.</b> до 20 февраля; <br />с 21 февраля - -->
-                  <b>59 000 р.</b>
+                  <b>57 000 р.</b>
                 </p>
               </article>
               <article class="flex">
