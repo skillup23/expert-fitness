@@ -1,18 +1,18 @@
 <script setup>
-import Heading from '@/components/Heading.vue';
-import SliderExpert from '@/components/SliderExpert.vue';
-import { ref } from 'vue';
+import Heading from "@/components/Heading.vue";
+import SliderExpert from "@/components/SliderExpert.vue";
+import { ref } from "vue";
 // import SliderLessonYoga from "@/components/SliderLessonYoga.vue";
-import { programmYoga } from '@/assets/data';
-import AccordeonList from '@/components/AccordeonList.vue';
-import ButtonMain from '@/components/ButtonMain.vue';
-import FormFeedback from '@/components/FormFeedback.vue';
-import FreeMiniKyrs from '@/components/FreeMiniKyrs.vue';
-import SliderAdvantages from '@/components/SliderAdvantages.vue';
-import SliderLessonYogaMobile from '@/components/SliderLessonYogaMobile.vue';
-import SliderReviews from '@/components/SliderReviews.vue';
-import YandexMap from '@/components/YandexMap.vue';
-import Preimushestva from '@/components/Preimushestva.vue';
+import { programmYoga } from "@/assets/data";
+import AccordeonList from "@/components/AccordeonList.vue";
+import ButtonMain from "@/components/ButtonMain.vue";
+import FormFeedback from "@/components/FormFeedback.vue";
+import FreeMiniKyrs from "@/components/FreeMiniKyrs.vue";
+import Preimushestva from "@/components/Preimushestva.vue";
+import SliderAdvantages from "@/components/SliderAdvantages.vue";
+import SliderLessonYogaMobile from "@/components/SliderLessonYogaMobile.vue";
+import SliderReviews from "@/components/SliderReviews.vue";
+import YandexMap from "@/components/YandexMap.vue";
 
 const isKyrs = ref(true);
 function toogleKyrs(elem) {
@@ -292,7 +292,7 @@ function toggleAnswer(id) {
                 <h6 class="w-1/2">Стоимость онлайн:</h6>
                 <p class="w-1/2">
                   <!-- <b>39 000 р.</b> до 20 февраля; <br />с 20 февраля - -->
-                  <b>39 900 р.</b>
+                  <b>49 900 р.</b>
                 </p>
               </article>
             </div>
