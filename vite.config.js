@@ -1,25 +1,34 @@
+/* eslint-env node */
 import { fileURLToPath, URL } from 'node:url';
-import path from 'node:path';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
-import prerender from '@prerenderer/rollup-plugin';
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
+// Импортируем ваш плагин пререндеринга (у вас это может быть prerender или @prerenderer/rollup-plugin)
+import Prerender from '@prerenderer/rollup-plugin';
 
 export default defineConfig({
   plugins: [
     vue(),
-    prerender({
-      // Указываем плагину, где лежит скомпилированный проект
-      staticDir: path.resolve(__dirname, 'dist'),
-      // Список роутов, которые нужно отрендерить в статический HTML
+    Prerender({
+      // Ваши маршруты для SEO
       routes: ['/', '/group', '/privacy'],
+
+      // НАСТРОЙКИ БРАУЗЕРА ДЛЯ TIMEWEB:
       rendererOptions: {
-        // Указываем путь к стабильной версии установленного Google Chrome
+        renderAfterDocumentEvent: 'custom-render-trigger', // если используете события, либо удалите эту строку
+
+        // Передаем правильные аргументы для Linux-сервера
+        args: [
+          '--no-sandbox',
+          '--disable-setuid-sandbox',
+          '--disable-dev-shm-usage',
+        ],
+
+        // Автоматически определяем путь: если сборка идет на сервере (Linux),
+        // плагин сам найдет системный chromium. Если на Windows — указывать ничего не нужно.
         executablePath:
-          'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe',
-        // Отключаем песочницу (частая причина ошибки 3221225477 в Windows)
-        args: ['--no-sandbox', '--disable-setuid-sandbox'],
+          process.platform === 'linux'
+            ? '/usr/bin/chromium-browser'
+            : undefined,
       },
     }),
   ],
