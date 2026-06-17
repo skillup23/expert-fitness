@@ -73,7 +73,7 @@ function toggleAnswer(id) {
 
           <img
             src="/media/Yoga/main-foto1.png"
-            alt="Фото Йога"
+            alt="Обучение инструкторов по фитнес-йоге, Пилатес и стретчингу в школе Эксперт"
             class="mx-auto lg:mx-0 mt-4 sm:mt-10 lg:mt-0 lg:-ml-[4vw] xl:-ml-[12vw] w-10/12 lg:w-6/12 xl:w-6/12"
           />
 
@@ -143,17 +143,17 @@ function toggleAnswer(id) {
 
             <img
               src="/media/Yoga/foto-top-1.jpg"
-              alt="Фото Йога"
+              alt="Обучение инструкторов по фитнес-йоге, Пилатес и стретчингу в школе Эксперт"
               class="w-[32%] lg:w-full mb-4 rounded-2xl"
             />
             <img
               src="/media/Yoga/foto-top-5.jpg"
-              alt="Фото Йога"
+              alt="Обучение инструкторов по фитнес-йоге, Пилатес и стретчингу в школе Эксперт"
               class="w-[32%] lg:hidden mb-4 rounded-2xl"
             />
             <img
               src="/media/Yoga/foto-top-2.jpg"
-              alt="Фото Йога"
+              alt="Обучение инструкторов по фитнес-йоге, Пилатес и стретчингу в школе Эксперт"
               class="w-[32%] lg:w-full mb-4 rounded-2xl"
             />
           </div>
@@ -189,12 +189,12 @@ function toggleAnswer(id) {
           <div class="flex flex-col sm:flex-row justify-center gap-6 sm:gap-20">
             <img
               src="/media/Yoga/foto-top-3.jpg"
-              alt="Начинающим Фото"
+              alt="Обучение инструкторов по фитнес-йоге, Пилатес и стретчингу в школе Эксперт"
               class="mx-auto sm:mx-0 w-10/12 sm:w-5/12 rounded-2xl"
             />
             <img
               src="/media/Yoga/foto-top-4.jpg"
-              alt="Тренерам Фото"
+              alt="Обучение инструкторов по фитнес-йоге, Пилатес и стретчингу в школе Эксперт"
               class="mx-auto sm:mx-0 w-10/12 sm:w-5/12 rounded-2xl"
             />
           </div>
@@ -213,12 +213,12 @@ function toggleAnswer(id) {
         <div class="flex flex-col sm:flex-row justify-center gap-6 sm:gap-20">
           <img
             src="/media/Yoga/foto-top-3.jpg"
-            alt="Начинающим Фото"
+            alt="Обучение инструкторов по фитнес-йоге, Пилатес и стретчингу в школе Эксперт"
             class="mx-auto sm:mx-0 w-10/12 sm:w-5/12 rounded-2xl"
           />
           <img
             src="/media/Yoga/foto-top-4.jpg"
-            alt="Тренерам Фото"
+            alt="Обучение инструкторов по фитнес-йоге, Пилатес и стретчингу в школе Эксперт"
             class="mx-auto sm:mx-0 w-10/12 sm:w-5/12 rounded-2xl"
           />
         </div>
@@ -242,7 +242,7 @@ function toggleAnswer(id) {
             </p>
             <img
               src="/media/Yoga/o-kyrse.jpg"
-              alt="Асаны группа людей"
+              alt="Обучение инструкторов по фитнес-йоге, Пилатес и стретчингу в школе Эксперт"
               loading="lazy"
               class="w-full rounded-[20px]"
             />
@@ -463,7 +463,7 @@ function toggleAnswer(id) {
               <div class="hidden lg:block w-1/2">
                 <img
                   src="/media/Yoga/form-feedback.jpg"
-                  alt="Выпускники школы Эксперт"
+                  alt="Выпускники школы Эксперт, Обучение инструкторов по фитнес-йоге, Пилатес и стретчингу в школе Эксперт"
                   loading="lazy"
                   class="rounded-[20px]"
                 />

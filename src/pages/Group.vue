@@ -108,7 +108,7 @@ function toggleAnswer(id) {
 
           <img
             src="/media/Group/main-group1.png"
-            alt="Фото Йога"
+            alt="Курсы тренеров групповых программ — базовая и степ-аэробика"
             class="w-8/12 xl:w-4/12 mx-auto -mr-1 sm:mr-20 -mt-72 sm:mt-3"
           />
 
@@ -205,12 +205,12 @@ function toggleAnswer(id) {
         >
           <img
             src="/media/Yoga/foto-top-3.jpg"
-            alt="Начинающим Фото"
+            alt="Курсы тренеров групповых программ — базовая и степ-аэробика"
             class="mx-auto sm:mx-0 w-10/12 sm:w-5/12 rounded-2xl"
           />
           <img
             src="/media/Yoga/foto-top-4.jpg"
-            alt="Тренерам Фото"
+            alt="Курсы тренеров групповых программ — базовая и степ-аэробика"
             class="mx-auto sm:mx-0 w-10/12 sm:w-5/12 rounded-2xl"
           />
         </div>
@@ -238,7 +238,7 @@ function toggleAnswer(id) {
             </p>
             <img
               src="/media/Yoga/o-kyrse.jpg"
-              alt="Асаны группа людей"
+              alt="Курсы тренеров групповых программ — базовая и степ-аэробика"
               loading="lazy"
               class="w-full rounded-[20px]"
             />
@@ -467,7 +467,7 @@ function toggleAnswer(id) {
               <div class="hidden lg:block w-1/2">
                 <img
                   src="/media/Yoga/form-feedback.jpg"
-                  alt="Выпускники школы Эксперт"
+                  alt="Выпускники школы Эксперт, Курсы тренеров групповых программ — базовая и степ-аэробика"
                   loading="lazy"
                   class="rounded-[20px]"
                 />
