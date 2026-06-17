@@ -33,3 +33,11 @@ npm run build
 ```sh
 npm run lint
 ```
+
+### Настройки переменных
+PUPPETEER_EXECUTABLE_PATH
+/usr/bin/chromium
+
+PUPPETEER_SKIP_CHROMIUM_DOWNLOAD
+true
+

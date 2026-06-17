@@ -1,7 +1,4 @@
 User-agent: *
-Allow: /
-Allow: /group
-Allow: /assets/
 Disallow: /privacy
 
 Sitemap: https://fitness-trener23.ru/sitemap.xml
