@@ -2,33 +2,27 @@
 import { fileURLToPath, URL } from 'node:url';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
-// Импортируем ваш плагин пререндеринга (у вас это может быть prerender или @prerenderer/rollup-plugin)
-import Prerender from '@prerenderer/rollup-plugin';
+import Prerender from '@prerenderer/rollup-plugin'; // Или ваш текущий плагин пререндера
+import os from 'node:os';
 
 export default defineConfig({
   plugins: [
     vue(),
     Prerender({
-      // Ваши маршруты для SEO
+      // Укажите ваши роуты для пререндеринга
       routes: ['/', '/group', '/privacy'],
-
-      // НАСТРОЙКИ БРАУЗЕРА ДЛЯ TIMEWEB:
       rendererOptions: {
-        renderAfterDocumentEvent: 'custom-render-trigger', // если используете события, либо удалите эту строку
-
-        // Передаем правильные аргументы для Linux-сервера
+        // Обязательные флаги для запуска Chromium в Docker/Linux контейнерах без графического интерфейса
         args: [
           '--no-sandbox',
           '--disable-setuid-sandbox',
           '--disable-dev-shm-usage',
         ],
 
-        // Автоматически определяем путь: если сборка идет на сервере (Linux),
-        // плагин сам найдет системный chromium. Если на Windows — указывать ничего не нужно.
+        // Динамически определяем путь к браузеру
         executablePath:
-          process.platform === 'linux'
-            ? '/usr/bin/chromium-browser'
-            : undefined,
+          process.env.PUPPETEER_EXECUTABLE_PATH ||
+          (os.platform() === 'linux' ? '/usr/bin/chromium-browser' : undefined),
       },
     }),
   ],
