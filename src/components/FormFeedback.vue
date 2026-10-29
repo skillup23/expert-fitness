@@ -8,149 +8,164 @@
       <input
         required
         type="text"
-        class=""
         id="nameUser"
         v-model="name"
         placeholder="Имя"
+        class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-purple"
       />
     </div>
     <div>
       <input
         required
         type="tel"
-        pattern="(^8|7|\+7)([0-9]{10})"
-        class="w-full"
+        pattern="^(\+7|7|8)\d{10}$"
+        title="Введите номер в формате +79991234567 или 89991234567"
         id="telephone"
         v-model="tel"
         placeholder="Телефон"
+        class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-purple"
       />
     </div>
 
-    <select required v-model="feedback" id="feedback">
-      <option disabled selected value="">Выбрать способ связи</option>
-      <option>What's app</option>
+    <select 
+      required 
+      v-model="feedback" 
+      id="feedback"
+      class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-purple bg-white"
+    >
+      <option disabled value="">Выбрать способ связи</option>
+      <option>WhatsApp</option>
       <option>Telegram</option>
       <option>Звонок</option>
     </select>
 
-    <!-- Ловушка для ботов -->
+    <!-- Скрытая ловушка для ботов (honeypot) -->
     <div style="position: absolute; left: -9999px; opacity: 0">
       <input
         type="text"
         v-model="honeypot"
         tabindex="-1"
         autocomplete="off"
-        placeholder="Do not fill this"
       />
     </div>
 
     <button
       type="submit"
-      class="button-main mt-4 sm:mt-10 2xl:mt-20 rounded-[8px] bg-purple text-white hover:bg-black"
+      :disabled="isSubmitting"
+      class="button-main mt-4 sm:mt-10 2xl:mt-20 rounded-[8px] bg-purple text-white hover:bg-black transition-colors"
     >
-      Записаться
+      {{ isSubmitting ? 'Отправка...' : 'Записаться' }}
     </button>
-    <div class="mt-0 sm:-mt-2 mb-3 form-check flex items-center gap-4">
+
+    <!-- Чекбокс согласия (по закону 152-ФЗ галочка изначально снята) -->
+    <div class="mt-0 sm:-mt-2 mb-3 form-check flex items-start gap-3">
       <input
         required
         type="checkbox"
-        checked
-        class="w-6 h-6 border-purple"
-        id="exampleCheck1"
+        class="w-5 h-5 mt-0.5 rounded border-purple text-purple focus:ring-purple cursor-pointer accent-[#923EA1]"
+        id="termCheck"
         v-model="term"
       />
       <label
-        class="text-[14px] leading-none font-roboto font-light"
-        for="exampleCheck1"
-        >Нажимая на кнопку Вы соглашаетесь
-        <a
-          href="/media/docs/Согласие субъекта персональных данных.docx"
-          target="_blank"
-          class="underline"
-          >на обработку персональных данных</a
-        ></label
+        class="text-[14px] leading-tight font-roboto font-light text-gray-700 cursor-pointer"
+        for="termCheck"
       >
+        Я даю 
+        <a 
+          href="/media/docs/Согласие субъекта персональных данных.pdf" 
+          target="_blank" 
+          class="underline text-purple hover:text-black"
+        >
+          согласие на обработку персональных данных
+        </a> 
+        и соглашаюсь с 
+        <router-link 
+          to="/privacy" 
+          target="_blank" 
+          class="underline text-purple hover:text-black"
+        >
+          политикой конфиденциальности
+        </router-link>
+      </label>
     </div>
   </form>
 </template>
 
 <script>
-const botToken = '7230527247:AAEc6fXgjMRCwSWIRlXCDFOxIW4fBlrF5UU';
-const chatId = -4263099299;
-
 export default {
   data() {
     return {
       name: '',
       tel: '',
       feedback: '',
-      term: '',
+      term: false, // галочка изначально выключена
       honeypot: '',
-      startTime: 0,
+      loadTime: 0,
+      isSubmitting: false,
     };
   },
   mounted() {
-    // Фиксируем время, когда страница загрузилась
     this.loadTime = Date.now();
   },
   methods: {
-    submitForm() {
-      const currentTime = Date.now();
-      const secondsOpened = (currentTime - this.loadTime) / 1000;
-
-      // 1. Проверка на бота:
-      // Если поле ловушки заполнено ИЛИ форма отправлена быстрее чем за 4 секунды
-      if (this.honeypot || secondsOpened < 4) {
-        console.warn('Spam detected');
-        // Имитируем успех для бота, чтобы он не пробовал другие методы
+    async submitForm() {
+      // Защита: форма не может быть заполнена живым человеком быстрее 2 секунд
+      const secondsOpened = (Date.now() - this.loadTime) / 1000;
+      if (this.honeypot || secondsOpened < 2) {
         this.success();
         this.resetForm();
         return;
       }
 
-      //   Отправка заявки в Телеграмм
-      const telegram_message = `Имя: ${this.name}\nТелефон: ${this.tel}\nСпособ связи: ${this.feedback}\nСогласие на обработку персональных данных: ${this.term}`;
+      this.isSubmitting = true;
 
-      fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          chat_id: chatId,
-          text: telegram_message,
-        }),
-      })
-        .then(() => {
-          this.$refs.mainForm.reset();
-          this.success();
-        })
-        .catch((error) => {
-          console.error('Error sending message:', error);
-          this.error();
+      try {
+        // Отправляем запрос на ваш скрипт на хостинге Reg.ru
+        const response = await fetch('https://energo-alyans.com/send.php', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            name: this.name,
+            tel: this.tel,
+            feedback: this.feedback,
+            honeypot: this.honeypot,
+          }),
         });
+
+        if (!response.ok) {
+          throw new Error('Ошибка сервера при отправке');
+        }
+
+        this.resetForm();
+        this.success();
+      } catch (err) {
+        console.error('Ошибка:', err);
+        this.error();
+      } finally {
+        this.isSubmitting = false;
+      }
     },
     resetForm() {
       this.name = '';
       this.tel = '';
       this.feedback = '';
-      // Сбрасываем время для следующей попытки
+      this.honeypot = '';
       this.loadTime = Date.now();
     },
     success() {
-      // Всплывающее окно об успехе отправки
       this.$swal({
         icon: 'success',
         title: 'Отлично!',
-        text: 'Заявка отправлена!',
+        text: 'Заявка отправлена! Мы свяжемся с вами в ближайшее время.',
       });
     },
     error() {
-      // Всплывающее окно об успехе отправки
       this.$swal({
         icon: 'error',
         title: 'Ошибка!',
-        text: 'Попробуйте позже.',
+        text: 'Не удалось отправить заявку. Попробуйте позже.',
       });
     },
   },

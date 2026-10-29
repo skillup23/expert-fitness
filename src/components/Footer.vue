@@ -28,11 +28,10 @@ const links = ref(linksMenu);
             </a>
             <a
               class="hidden lg:block mt-6 text-[16px]"
-              href="/media/docs/Политика конфиденциальности.docx"
-              target="_blank"
+              href="/privacy"
               >Политика конфиденциальности</a
             >
-            <p class="hidden lg:block text-[16px]">©2026 ЦДО ”ЭКСПЕРТ”</p>
+            <p class="hidden lg:block text-[16px]">©2026 ЦДO ”ЭКСПЕРТ”</p>
           </nav>
           <div class="text-white">
             <h6 class="uppercase">Контакты</h6>

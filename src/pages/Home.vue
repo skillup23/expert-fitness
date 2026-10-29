@@ -98,8 +98,8 @@ function toggleAnswer(id) {
               </div>
               <div>
                 <h6 class="font-light">Старт</h6>
-                <h6 class="text-purple font-medium">13 июня</h6>
-                <h6 class="text-purple font-medium">13 июня</h6>
+                <h6 class="text-purple font-medium">март 2027 г.</h6>
+                <h6 class="text-purple font-medium">март 2027 г.</h6>
               </div>
               <div>
                 <h6 class="font-light">Длительность</h6>
@@ -168,10 +168,10 @@ function toggleAnswer(id) {
           <div>
             <h6 class="text-xl font-light">Дата начала курса</h6>
             <h6 class="mt-5 text-xl text-purple font-medium">
-              13 июня 2026 г.
+              март 2027 г.
             </h6>
             <h6 class="mt-5 text-xl text-purple font-medium">
-              13 июня 2026 г.
+              март 2027 г.
             </h6>
           </div>
           <div>
@@ -275,24 +275,24 @@ function toggleAnswer(id) {
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Старт очного курса:</h6>
-                <p class="w-1/2">13 июня 2026 г.</p>
+                <p class="w-1/2">март 2027 г.</p>
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Стоимость очно:</h6>
                 <p class="w-1/2">
                   <!-- <b>48 000 р.</b> до 20 февраля; <br />с 21 февраля - -->
-                  <b>57 000 р.</b>
+                  <b>от 57 000 р.</b>
                 </p>
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Старт онлайн курса:</h6>
-                <p class="w-1/2">13 июня 2026 г.</p>
+                <p class="w-1/2">март 2027 г.</p>
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Стоимость онлайн:</h6>
                 <p class="w-1/2">
                   <!-- <b>39 000 р.</b> до 20 февраля; <br />с 20 февраля - -->
-                  <b>49 900 р.</b>
+                  <b>от 39 900 р.</b>
                 </p>
               </article>
             </div>
@@ -456,7 +456,7 @@ function toggleAnswer(id) {
               Присоединяйтесь к нашей команде профессионалов!
             </h6>
             <div class="mt-6 flex gap-14 justify-center lg:justify-start">
-              <div class="lg:w-1/2 sm:mt-6 px-[22px]">
+              <div class="lg:w-1/2 sm:mt-6 pr-[22px]">
                 <FormFeedback />
               </div>
 
