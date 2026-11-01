@@ -34,9 +34,33 @@ function toggleAnswer(id) {
 </script>
 
 <template>
-  <main class="mt-[64px] lg:mt-[7%] xl:mt-[6%]">
+  <main class="mt-16 lg:mt-[80px] xl:mt-[88px]">
+    <!-- Плашка Черная Пятница 11.11 -->
+    <aside class="w-full bg-[#1A1A1A] text-white py-5 px-4 z-50 shadow-md">
+      <div
+        class="wrapper flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left"
+      >
+        <div class="flex items-center gap-4">
+          <span
+            class="hidden sm:block bg-purple text-white text-sm sm:text-xl font-bold uppercase px-2 py-0.5 rounded"
+            >11.11</span
+          >
+          <p class="text-base sm:text-xl font-medium">
+            <b>ЧЕРНАЯ ПЯТНИЦА:</b> Скидки до 30% на очные и онлайн-курсы только
+            с 11 по 13 ноября!
+          </p>
+        </div>
+        <router-link
+          to="/sales"
+          class="text-sm sm:text-xl bg-purple hover:bg-pink hover:text-black transition-colors font-bold px-4 py-1.5 rounded-full whitespace-nowrap"
+        >
+          Посмотреть скидки &rarr;
+        </router-link>
+      </div>
+    </aside>
+
     <section
-      class="pt-8 sm:pt-10 mb-10 sm:mb-24 relative bg-mandala bg-[left_35vw_top_-10px] sm:bg-[left_45vw_top_-70px] lg:bg-[left_72vw_top_55vh]"
+      class="pt-8 mb-10 sm:mb-24 relative bg-mandala bg-[left_35vw_top_-10px] sm:bg-[left_45vw_top_-70px] lg:bg-[left_72vw_top_55vh]"
     >
       <div class="wrapper">
         <div class="flex flex-col lg:flex-row justify-between">
@@ -99,12 +123,12 @@ function toggleAnswer(id) {
               <div>
                 <h6 class="font-light">Старт</h6>
                 <h6 class="text-purple font-medium">март 2027 г.</h6>
-                <h6 class="text-purple font-medium">март 2027 г.</h6>
+                <h6 class="text-purple font-medium">17 ноября 2026 г.</h6>
               </div>
               <div>
                 <h6 class="font-light">Длительность</h6>
-                <h6 class="text-purple font-medium">2 месяца</h6>
-                <h6 class="text-purple font-medium">2 месяца</h6>
+                <h6 class="text-purple font-medium">3 месяца</h6>
+                <h6 class="text-purple font-medium">3 месяца</h6>
               </div>
             </div>
           </div>
@@ -167,17 +191,15 @@ function toggleAnswer(id) {
           </div>
           <div>
             <h6 class="text-xl font-light">Дата начала курса</h6>
+            <h6 class="mt-5 text-xl text-purple font-medium">март 2027 г.</h6>
             <h6 class="mt-5 text-xl text-purple font-medium">
-              март 2027 г.
-            </h6>
-            <h6 class="mt-5 text-xl text-purple font-medium">
-              март 2027 г.
+              17 ноября 2026 г.
             </h6>
           </div>
           <div>
             <h6 class="text-xl font-light">Длительность</h6>
-            <h6 class="mt-5 text-xl text-purple font-medium">2 месяца</h6>
-            <h6 class="mt-5 text-xl text-purple font-medium">2 месяца</h6>
+            <h6 class="mt-5 text-xl text-purple font-medium">3 месяца</h6>
+            <h6 class="mt-5 text-xl text-purple font-medium">3 месяца</h6>
           </div>
         </div>
 
@@ -260,7 +282,7 @@ function toggleAnswer(id) {
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Время обучения:</h6>
-                <p class="w-1/2">2 месяца</p>
+                <p class="w-1/2">3 месяца</p>
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Формат обучения:</h6>
@@ -286,7 +308,7 @@ function toggleAnswer(id) {
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Старт онлайн курса:</h6>
-                <p class="w-1/2">март 2027 г.</p>
+                <p class="w-1/2">17 ноября 2026 г.</p>
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Стоимость онлайн:</h6>

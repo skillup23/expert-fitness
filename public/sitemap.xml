@@ -14,10 +14,11 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- Страница распродажи 11.11 -->
   <url>
-    <loc>https://fitness-trener23.ru/privacy</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://fitness-trener23.ru/sales</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
   </url>
 </urlset>
