@@ -1,9 +1,9 @@
 <script setup>
-import { linksMenu } from '@/assets/data';
-import ButtonMain from '@/components/ButtonMain.vue';
-import { ref } from 'vue';
-import Contacts from './Contacts.vue';
-import SocialMedia from './SocialMedia.vue';
+import { linksMenu } from "@/assets/data";
+import ButtonMain from "@/components/ButtonMain.vue";
+import { ref } from "vue";
+import Contacts from "./Contacts.vue";
+import SocialMedia from "./SocialMedia.vue";
 
 const links = ref(linksMenu);
 
@@ -12,14 +12,14 @@ const isOpen = ref(false);
 function menuOpen() {
   isOpen.value = !isOpen.value;
 
-  const b = document.querySelector('body');
+  const b = document.querySelector("body");
 
   if (isOpen.value === true) {
-    b.classList.add('overflow-hidden');
-    b.classList.remove('overflow-auto');
+    b.classList.add("overflow-hidden");
+    b.classList.remove("overflow-auto");
   } else {
-    b.classList.add('overflow-auto');
-    b.classList.remove('overflow-hidden');
+    b.classList.add("overflow-auto");
+    b.classList.remove("overflow-hidden");
   }
 }
 </script>
@@ -55,14 +55,14 @@ function menuOpen() {
         <nav
           class="hidden lg:flex justify-between text-4 text-white font-roboto font-light gap-6 xl:gap-[50px] 2xl:gap-[60px]"
         >
-          <a
+          <RouterLink
             v-for="link in links"
             :key="link.id"
-            :href="link.url"
+            :to="link.url"
             class="lg:text-[16px] opacity-100 hover:opacity-70 transition-hover"
           >
             {{ link.text }}
-          </a>
+          </RouterLink>
         </nav>
 
         <a href="tel:89615858995" class="hidden lg:flex gap-2"
@@ -109,15 +109,15 @@ function menuOpen() {
       class="fixed w-full h-dvh bg-purple p-8 left-0 top-[63px] sm:top-[93px] flex flex-col gap-8 rounded-b-[15px] transition-transform duration-300 z-[140]"
       :class="[isOpen ? `translate-x-0` : `-translate-x-full`]"
     >
-      <a
+      <RouterLink
         v-for="link in links"
         :key="link.id"
-        :href="link.url"
+        :to="link.url"
         @click="menuOpen"
         class="text-[20px] text-white uppercase opacity-100 hover:opacity-70 transition-hover"
       >
         {{ link.text }}
-      </a>
+      </RouterLink>
 
       <div class="mt-2 flex gap-9">
         <a

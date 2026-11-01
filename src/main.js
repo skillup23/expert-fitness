@@ -67,6 +67,19 @@ const options = {
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: "smooth",
+        top: 40, // отступ сверху, чтобы фиксированный хедер не закрывал заголовок блока
+      };
+    }
+    if (savedPosition) {
+      return savedPosition;
+    }
+    return { top: 0, behavior: "smooth" };
+  },
 });
 
 // Объединяем логику обновления Title, Description, Open Graph и Canonical тегов
