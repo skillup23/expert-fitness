@@ -122,13 +122,13 @@ function toggleAnswer(id) {
               </div>
               <div>
                 <h6 class="font-light">Старт</h6>
-                <h6 class="text-purple font-medium">март 2027 г.</h6>
+                <h6 class="text-purple font-medium">13 февраля 2027 г.</h6>
                 <h6 class="text-purple font-medium">17 ноября 2026 г.</h6>
               </div>
               <div>
                 <h6 class="font-light">Длительность</h6>
-                <h6 class="text-purple font-medium">3 месяца</h6>
-                <h6 class="text-purple font-medium">3 месяца</h6>
+                <h6 class="text-purple font-medium">2,5 месяца</h6>
+                <h6 class="text-purple font-medium">2,5 месяца</h6>
               </div>
             </div>
           </div>
@@ -191,15 +191,15 @@ function toggleAnswer(id) {
           </div>
           <div>
             <h6 class="text-xl font-light">Дата начала курса</h6>
-            <h6 class="mt-5 text-xl text-purple font-medium">март 2027 г.</h6>
+            <h6 class="mt-5 text-xl text-purple font-medium">13 февраля 2027 г.</h6>
             <h6 class="mt-5 text-xl text-purple font-medium">
               17 ноября 2026 г.
             </h6>
           </div>
           <div>
             <h6 class="text-xl font-light">Длительность</h6>
-            <h6 class="mt-5 text-xl text-purple font-medium">3 месяца</h6>
-            <h6 class="mt-5 text-xl text-purple font-medium">3 месяца</h6>
+            <h6 class="mt-5 text-xl text-purple font-medium">2,5 месяца</h6>
+            <h6 class="mt-5 text-xl text-purple font-medium">2,5 месяца</h6>
           </div>
         </div>
 
@@ -282,7 +282,7 @@ function toggleAnswer(id) {
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Время обучения:</h6>
-                <p class="w-1/2">3 месяца</p>
+                <p class="w-1/2">2,5 месяца</p>
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Формат обучения:</h6>
@@ -297,13 +297,13 @@ function toggleAnswer(id) {
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Старт очного курса:</h6>
-                <p class="w-1/2">март 2027 г.</p>
+                <p class="w-1/2">13 февраля 2027 г.</p>
               </article>
               <article class="flex">
                 <h6 class="w-1/2">Стоимость очно:</h6>
                 <p class="w-1/2">
-                  <!-- <b>48 000 р.</b> до 20 февраля; <br />с 21 февраля - -->
-                  <b>от 57 000 р.</b>
+                  <b>49 900 р.</b> до 5 февраля; <br />с 5 февраля -
+                  <b>от 55 000 р.</b>
                 </p>
               </article>
               <article class="flex">
